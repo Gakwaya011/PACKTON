@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Identity Colors */
+  --color-brand-orange: #E8520A;
+  --color-brand-dark: #4A4A4A;
+  --color-brand-light: #9E9E9E;
+  --color-brand-white: #FFFFFF;
+}   
