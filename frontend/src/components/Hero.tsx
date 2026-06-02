@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Hero() {
   const [activeTab, setActiveTab] = useState<'track' | 'estimate'>('track');
@@ -31,7 +30,7 @@ export default function Hero() {
             The dependable delivery pipeline for Rwanda. Whether you are scaling daily bulk orders for business or sending a single parcel across town, we confirm the recipient first to guarantee completion.
           </p>
 
-          {/* THE LOGISTICS CONSOLE (The element that makes it look like real software) */}
+          {/* THE LOGISTICS CONSOLE */}
           <div className="w-full max-w-xl bg-black/40 backdrop-blur-md p-1.5 rounded-2xl border border-white/10 shadow-2xl">
             
             {/* Console Toggles */}
@@ -83,7 +82,6 @@ export default function Hero() {
         {/* Right Hand: Contextual Visual Frame */}
         <div className="lg:col-span-5 relative hidden lg:flex items-center justify-center w-full aspect-square">
           
-          {/* Main Structural Layered Block */}
           <div className="w-[85%] h-[85%] bg-black/20 rounded-3xl border border-white/10 overflow-hidden relative shadow-2xl">
             <img 
               src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&q=80&w=1200" 
