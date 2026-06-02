@@ -3,7 +3,8 @@
 @theme {
   /* Brand Identity Colors */
   --color-brand-orange: #E8520A;
-  --color-brand-dark: #4A4A4A;
+  --color-brand-dark: #1A1A1A; /* Deepened the black */
+  --color-brand-teal: #0F3535; /* The new deep teal from the design */
   --color-brand-light: #9E9E9E;
-  --color-brand-white: #FFFFFF;
-}   
+  --color-brand-ultra: #F8F9FA;
+}
