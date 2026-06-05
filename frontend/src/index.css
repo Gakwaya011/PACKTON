@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Identity Colors */
+  /* This automatically changes every "font-sans" utility class to use Poppins */
+  --font-sans: 'Poppins', sans-serif;
+  
   --color-brand-orange: #E8520A;
-  --color-brand-dark: #1A1A1A; /* Deepened the black */
-  --color-brand-teal: #0F3535; /* The new deep teal from the design */
+  --color-brand-teal: #0F3535;
+  --color-brand-dark: #1A1A1A;
   --color-brand-light: #9E9E9E;
   --color-brand-ultra: #F8F9FA;
 }
