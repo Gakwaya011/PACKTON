@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function HomeServices() {
   return (
-    <section className="bg-white py-24 px-6 lg:px-12 border-t border-brand-light/20">
+    <section className="bg-white py-24 px-6 lg:px-12 border-t border-brand-light/20" >
       <div className="max-w-7xl mx-auto">
         
         <div className="mb-16 max-w-xl">

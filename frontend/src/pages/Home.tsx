@@ -1,18 +1,25 @@
 import Hero from '../components/Hero';
+import ValueProposition from '../components/ValueProposition'; // <-- Imported the new component
 import QuickFacts from '../components/QuickFacts';
 import HomeServices from '../components/HomeServices';
-import Features from '../components/Features';
-import FAQ from '../components/FAQ';
 import CTABanner from '../components/CTABanner';
 
 export default function Home() {
   return (
-    <div className="bg-white min-h-screen font-sans pt-24 md:pt-32">
+    <div className="bg-white min-h-screen font-sans">
+      {/* 1. Cinematic Header */}
       <Hero />
-      <QuickFacts />
+      
+      {/* 2. The New Enterprise Value Proposition */}
+      <ValueProposition /> 
+      
+      {/* 3. Services Grid */}
       <HomeServices />
-      <Features />
-      <FAQ />
+      
+      {/* 4. Trust/Data Points */}
+      <QuickFacts />
+      
+      {/* 5. Bottom Call to Action */}
       <CTABanner />
     </div>
   );
