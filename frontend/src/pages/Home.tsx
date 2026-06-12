@@ -3,6 +3,7 @@ import ValueProposition from '../components/ValueProposition'; // <-- Imported t
 import QuickFacts from '../components/QuickFacts';
 import HomeServices from '../components/HomeServices';
 import CTABanner from '../components/CTABanner';
+import FAQ from '../components/FAQ';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       
       {/* 4. Trust/Data Points */}
       <QuickFacts />
+      <FAQ />
       
       {/* 5. Bottom Call to Action */}
       <CTABanner />
