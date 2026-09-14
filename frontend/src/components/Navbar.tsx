@@ -12,7 +12,8 @@ export default function Navbar() {
 
   // Trigger the drop-in animation exactly when the component mounts
   useEffect(() => {
-    setIsLoaded(true);
+    const frame = requestAnimationFrame(() => setIsLoaded(true));
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {

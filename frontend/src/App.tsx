@@ -7,6 +7,8 @@ import Services from './pages/Services';
 import HowItWorks from './pages/HowItWorks';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import Blog from './pages/Blog';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 

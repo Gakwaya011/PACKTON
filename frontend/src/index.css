@@ -7,6 +7,18 @@
   --color-brand-orange: #E8520A;
   --color-brand-teal: #0F3535;
   --color-brand-dark: #1A1A1A;
+  --color-brand-mid: #6B6B6B;
   --color-brand-light: #9E9E9E;
   --color-brand-ultra: #F8F9FA;
+  --color-brand-white: #FFFFFF;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
