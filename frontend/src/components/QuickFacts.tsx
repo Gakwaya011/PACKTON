@@ -52,9 +52,9 @@ const StatItem = ({ endValue, suffix, label, delay, isVisible }: { endValue: num
       <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-brand-orange scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom"></div>
       
       {/* Massive Data Point with Counting State */}
-      <h3 className="text-6xl md:text-7xl font-black text-brand-dark tracking-tighter mb-2 flex items-baseline gap-1 transition-transform duration-500 group-hover:-translate-y-1">
+      <h3 className="text-4xl md:text-5xl font-black text-brand-dark tracking-tighter mb-2 flex items-baseline gap-1 transition-transform duration-500 group-hover:-translate-y-1">
         {count}
-        <span className="text-4xl md:text-5xl text-brand-orange">{suffix}</span>
+        <span className="text-2xl md:text-3xl text-brand-orange">{suffix}</span>
       </h3>
       
       {/* Technical Label */}
@@ -95,7 +95,7 @@ export default function QuickFacts() {
   ];
 
   return (
-    <section ref={sectionRef} className="w-full bg-brand-ultra/50 py-32 overflow-hidden border-t border-gray-100">
+    <section ref={sectionRef} className="w-full bg-brand-ultra/50 py-20 lg:py-24 overflow-hidden border-t border-gray-100">
       <div className="max-w-[1760px] mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-16 items-center">
         
         {/* Left Side: Commitment Copy */}
@@ -111,17 +111,17 @@ export default function QuickFacts() {
             </p>
           </div>
 
-          <h2 
-            className={`text-5xl md:text-6xl lg:text-7xl font-black text-brand-dark leading-[1.05] tracking-tighter mb-8 transform transition-all duration-[1200ms] delay-100 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          <h2
+            className={`text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark leading-[1.1] tracking-tighter mb-6 transform transition-all duration-[1200ms] delay-100 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            Built for business. <br/> 
+            Built for business. <br/>
             <span className="text-brand-light">Accessible to all.</span>
           </h2>
 
-          <p 
-            className={`text-brand-dark/70 text-lg md:text-xl font-light leading-relaxed max-w-lg transform transition-all duration-[1200ms] delay-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          <p
+            className={`text-brand-dark/70 text-base md:text-lg font-light leading-relaxed max-w-lg transform transition-all duration-[1200ms] delay-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >

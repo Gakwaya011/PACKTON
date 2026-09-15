@@ -82,7 +82,7 @@ export default function HomeServices() {
   ];
 
   return (
-    <section ref={sectionRef} className="relative bg-brand-dark/90 py-24 lg:py-32 w-full overflow-hidden">
+    <section ref={sectionRef} className="relative bg-brand-dark/90 py-16 lg:py-20 w-full overflow-hidden">
       {/* Ambient background glow for depth */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-orange/10 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -100,16 +100,16 @@ export default function HomeServices() {
             </p>
           </div>
           
-          <h2 
-            className={`text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.1] mb-6 transform transition-all duration-[1200ms] delay-100 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          <h2
+            className={`text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tighter leading-[1.1] mb-6 transform transition-all duration-[1200ms] delay-100 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
             Explore our services.
           </h2>
-          
-          <p 
-            className={`text-lg md:text-xl text-white/70 font-light transform transition-all duration-[1200ms] delay-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+
+          <p
+            className={`text-base md:text-lg text-white/70 font-light transform transition-all duration-[1200ms] delay-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
@@ -123,8 +123,8 @@ export default function HomeServices() {
             <div
               key={index}
               style={{ transitionDelay: `${300 + (index * 120)}ms` }}
-              className={`group relative bg-white/[0.03] border border-white/10 rounded-2xl p-8 lg:p-10 flex flex-col justify-between h-full overflow-hidden transform transition-all duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white/[0.06] hover:-translate-y-2 hover:border-brand-orange/40 hover:shadow-[0_20px_40px_-15px_rgba(232,82,10,0.25)] ${
-                isVisible ? "translate-y-0 opacity-100 scale-100" : "translate-y-16 opacity-0 scale-95"
+              className={`group relative bg-white/[0.03] border border-white/10 rounded-2xl p-6 lg:p-8 flex flex-col justify-between h-full overflow-hidden transform transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white/[0.06] hover:-translate-y-2 hover:border-brand-orange/40 hover:shadow-[0_20px_40px_-15px_rgba(232,82,10,0.25)] ${
+                isVisible ? "translate-x-0 opacity-100 scale-100" : "-translate-x-20 opacity-0 scale-95"
               }`}
             >
               {/* Soft corner glow — teal at rest, orange on hover */}
@@ -142,11 +142,11 @@ export default function HomeServices() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 tracking-tight transition-colors duration-300 group-hover:text-brand-orange">
+                <h3 className="text-lg lg:text-xl font-bold text-white mb-3 tracking-tight transition-colors duration-300 group-hover:text-brand-orange">
                   {service.title}
                 </h3>
 
-                <p className="text-base text-white/60 leading-relaxed mb-10 transition-colors duration-300 group-hover:text-white/90">
+                <p className="text-sm text-white/60 leading-relaxed mb-8 transition-colors duration-300 group-hover:text-white/90">
                   {service.description}
                 </p>
               </div>

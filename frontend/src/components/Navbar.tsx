@@ -79,7 +79,6 @@ export default function Navbar() {
               { name: 'Home', path: '/' },
               { name: 'About', path: '/about' },
               { name: 'Services', path: '/services' },
-              { name: 'How it works', path: '/how-it-works' },
               { name: 'Blog', path: '/blog' },
               { name: 'Contact', path: '/contact' },
             ].map((item) => (
@@ -143,7 +142,6 @@ export default function Navbar() {
               { name: 'Home', path: '/' },
               { name: 'About', path: '/about' },
               { name: 'Services', path: '/services' },
-              { name: 'How it works', path: '/how-it-works' },
               { name: 'Blog', path: '/blog' },
               { name: 'Contact', path: '/contact' },
               { name: 'Login to Portal', path: '/login' },

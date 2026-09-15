@@ -78,7 +78,7 @@ export default function Services() {
     <div className="w-full bg-white font-sans">
       
       {/* 1. DARK ARCHITECTURAL HERO */}
-      <section className="bg-[#1A1A1A] pt-40 pb-32 lg:pt-56 lg:pb-48 px-6 lg:px-12 relative border-b border-white/5">
+      <section className="bg-[#1A1A1A] pt-28 pb-20 lg:pt-36 lg:pb-28 px-6 lg:px-12 relative border-b border-white/5">
         <div className="absolute inset-0 pointer-events-none flex justify-center w-full max-w-[1760px] mx-auto px-6 lg:px-12">
            <div className="w-px h-full bg-white/5"></div>
            <div className="w-full h-full flex justify-between">
@@ -96,49 +96,49 @@ export default function Services() {
             </p>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-[96px] font-black tracking-tighter leading-[1.05] mb-12">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-8">
             <span className="text-white block mb-2">End-to-end</span>
             <span className="text-white/30 block">delivery architecture.</span>
           </h1>
-          
-          <p className="text-xl md:text-2xl text-white/50 font-light max-w-3xl leading-relaxed">
+
+          <p className="text-base md:text-lg text-white/50 font-light max-w-3xl leading-relaxed">
             From single-parcel urgent dispatches to high-volume API-driven routing. Explore the physical and digital services we deploy to scale your business.
           </p>
         </div>
       </section>
 
       {/* 2. THE SERVICES STACK (Sticky Left, Data Right) */}
-      <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="py-14 lg:py-20 px-6 lg:px-12 bg-white">
         <div className="max-w-[1760px] mx-auto">
-          
+
           <div className="flex flex-col gap-0 border-t border-gray-200">
             {services.map((service) => (
-              <div key={service.id} className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 py-16 lg:py-24 border-b border-gray-200 group">
-                
+              <div key={service.id} className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 py-10 lg:py-14 border-b border-gray-200 group">
+
                 {/* Left Side: Sticky ID & Title */}
                 <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-32 h-fit">
-                  <div className="w-16 h-16 bg-gray-50 border border-gray-200 text-brand-dark flex items-center justify-center mb-8 group-hover:bg-[#E8520A] group-hover:text-white group-hover:border-[#E8520A] transition-all duration-500">
+                  <div className="w-14 h-14 bg-gray-50 border border-gray-200 text-brand-dark flex items-center justify-center mb-6 group-hover:bg-[#E8520A] group-hover:text-white group-hover:border-[#E8520A] transition-all duration-500">
                     {service.icon}
                   </div>
-                  <span className="text-gray-300 font-mono text-xl font-bold mb-4 block group-hover:text-[#E8520A] transition-colors duration-300">
+                  <span className="text-gray-300 font-mono text-lg font-bold mb-4 block group-hover:text-[#E8520A] transition-colors duration-300">
                     {service.id} //
                   </span>
-                  <h2 className="text-4xl md:text-5xl font-black text-brand-dark tracking-tighter leading-[1.1] mb-4">
+                  <h2 className="text-2xl md:text-3xl font-black text-brand-dark tracking-tighter leading-[1.1] mb-4">
                     {service.title}
                   </h2>
-                  <p className="text-lg text-[#E8520A] font-bold tracking-wide">
+                  <p className="text-base text-[#E8520A] font-bold tracking-wide">
                     {service.shortDesc}
                   </p>
                 </div>
 
                 {/* Right Side: Description & Spec Grid */}
                 <div className="lg:col-span-7 flex flex-col lg:pl-16">
-                  <p className="text-xl lg:text-2xl text-gray-500 font-light leading-relaxed mb-12">
+                  <p className="text-base lg:text-lg text-gray-500 font-light leading-relaxed mb-10">
                     {service.description}
                   </p>
 
                   {/* Informational Density: The Spec Box */}
-                  <div className="bg-gray-50 border border-gray-200 p-8 lg:p-10 w-full mt-auto">
+                  <div className="bg-gray-50 border border-gray-200 p-6 lg:p-8 w-full mt-auto">
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-6">Service Specifications</p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                       {service.specs.map((spec, i) => (
@@ -167,15 +167,15 @@ export default function Services() {
       </section>
 
       {/* 3. LIGHT BOTTOM CTA */}
-      <section className="bg-gray-50 py-32 px-6 lg:px-12 text-center border-b border-gray-200">
+      <section className="bg-gray-50 py-20 px-6 lg:px-12 text-center border-b border-gray-200">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <div className="w-12 h-12 bg-[#1A1A1A] flex items-center justify-center mb-8">
             <span className="text-white font-black text-xl">P</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-brand-dark tracking-tighter mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark tracking-tighter mb-6">
             Not sure which tier fits?
           </h2>
-          <p className="text-xl text-gray-500 font-light mb-12">
+          <p className="text-base lg:text-lg text-gray-500 font-light mb-10">
             Let our operations team audit your current shipping volume and build a custom pricing model that scales with you.
           </p>
           <Link 

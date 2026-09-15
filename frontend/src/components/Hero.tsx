@@ -29,7 +29,7 @@ export default function Hero() {
       <div className={`absolute inset-0 bg-[#1A1A1A]/70 md:hidden z-0 transition-opacity duration-[2000ms] ease-in-out ${isLoaded ? "opacity-100" : "opacity-0"}`}></div>
 
       {/* LAYER 3: The Content Area */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-16 pt-32 pb-20">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-16 pt-28 pb-16">
         
         <div className="max-w-3xl">
           
@@ -47,7 +47,7 @@ export default function Hero() {
           </div>
 
           {/* Headline - Staggered slide up */}
-          <h1 className="text-white text-5xl md:text-6xl lg:text-[72px] font-extrabold leading-[1.1] tracking-tight mb-8 drop-shadow-lg flex flex-col">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight mb-6 drop-shadow-lg flex flex-col">
             <span 
               className={`transform transition-all duration-1000 delay-500 ease-out ${
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
@@ -66,7 +66,7 @@ export default function Hero() {
           
           {/* Paragraph - Slides up after headline */}
           <p 
-            className={`text-white/90 text-lg md:text-xl mb-10 font-light leading-relaxed max-w-xl drop-shadow-md transform transition-all duration-1000 delay-[900ms] ease-out ${
+            className={`text-white/90 text-base md:text-lg mb-8 font-light leading-relaxed max-w-xl drop-shadow-md transform transition-all duration-1000 delay-[900ms] ease-out ${
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >

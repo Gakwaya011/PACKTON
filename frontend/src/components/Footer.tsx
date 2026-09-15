@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-white pt-24 lg:pt-32 pb-10 w-full overflow-hidden border-t border-white/5">
+    <footer className="bg-brand-dark text-white pt-16 lg:pt-20 pb-10 w-full overflow-hidden border-t border-white/5">
       <div className="max-w-[1760px] mx-auto px-6 lg:px-10">
-        
+
         {/* Top Section: The Mega CTA */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-24 lg:mb-32">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-16 lg:mb-20">
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-8 h-[2px] bg-brand-orange"></div>
@@ -14,18 +14,18 @@ export default function Footer() {
                 Ready to scale?
               </p>
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter leading-[1.1] mb-6">
               Move faster. <br />
               <span className="text-white/40">Scale smarter.</span>
             </h2>
-            <p className="text-lg text-white/60 font-light leading-relaxed">
+            <p className="text-base text-white/60 font-light leading-relaxed">
               Partner with Packton to build a frictionless, high-volume delivery pipeline across Rwanda and beyond.
             </p>
           </div>
-          
-          <Link 
-            to="/contact" 
-            className="group relative inline-flex items-center justify-center px-8 py-5 lg:px-10 lg:py-6 bg-brand-orange text-white font-black uppercase tracking-[0.15em] text-sm overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(232,82,10,0.4)] flex-shrink-0"
+
+          <Link
+            to="/contact"
+            className="group relative inline-flex items-center justify-center px-6 py-4 lg:px-8 lg:py-5 bg-brand-orange text-white font-black uppercase tracking-[0.15em] text-sm overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(232,82,10,0.4)] flex-shrink-0"
           >
              <span className="relative z-10 flex items-center gap-3">
                Start Shipping 
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         {/* Middle Section: Structural Link Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 lg:gap-8 pb-16 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-12 border-b border-white/10">
           
           {/* Column 1: Brand & Core Mission */}
           <div className="lg:col-span-4 flex flex-col items-start gap-8">
@@ -45,7 +45,7 @@ export default function Footer() {
               <div className="w-12 h-12 bg-brand-orange flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-lg shadow-brand-orange/20">
                 <span className="text-white font-black text-xl">P</span>
               </div>
-              <span className="font-black text-3xl text-white tracking-tighter uppercase transition-colors group-hover:text-brand-orange">
+              <span className="font-black text-2xl text-white tracking-tighter uppercase transition-colors group-hover:text-brand-orange">
                 Packton
               </span>
             </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
             <h4 className="font-mono font-bold text-xs uppercase tracking-widest text-brand-light mb-2">Platform</h4>
             {[
               { name: 'About Us', path: '/about' },
-              { name: 'How It Works', path: '/how-it-works' },
+              { name: 'How It Works', path: '/' },
               { name: 'Get a Quote', path: '/contact' },
             ].map((link) => (
               <Link key={link.name} to={link.path} className="group flex items-center gap-3 text-sm text-white/70 hover:text-white transition-colors">

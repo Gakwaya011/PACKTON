@@ -9,7 +9,7 @@ export default function Blog() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20 bg-brand-white">
       <p className="text-brand-orange font-bold tracking-[0.2em] uppercase text-xs mb-6">Packton Journal</p>
-      <h1 className="text-5xl md:text-7xl font-black text-brand-dark tracking-tighter mb-6">
+      <h1 className="text-4xl md:text-5xl font-black text-brand-dark tracking-tighter mb-6">
         Coming soon.
       </h1>
       <p className="text-lg text-brand-mid font-light max-w-md mb-10">

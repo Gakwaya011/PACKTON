@@ -39,7 +39,7 @@ export default function ValueProposition() {
   ];
 
   return (
-    <section ref={sectionRef} className="py-32 bg-gray-50 w-full relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 lg:py-24 bg-gray-50 w-full relative overflow-hidden">
       
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-white hidden lg:block"></div>
@@ -75,10 +75,10 @@ export default function ValueProposition() {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             }`}
           >
-            <h2 className="text-5xl md:text-6xl font-extrabold text-brand-dark tracking-tighter leading-none mb-6">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-brand-dark tracking-tighter leading-tight mb-6">
               Packton — Structured <br /> logistics for Rwanda.
             </h2>
-            <p className="text-lg text-gray-500 font-light max-w-lg">
+            <p className="text-base text-gray-500 font-light max-w-lg">
               We move beyond generic delivery services by acting as an extension of your business. Reliable, transparent, and built for scale.
             </p>
           </div>

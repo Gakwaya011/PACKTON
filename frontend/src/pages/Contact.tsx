@@ -53,7 +53,7 @@ export default function Contact() {
       <section className="flex-grow grid grid-cols-1 lg:grid-cols-2">
         
         {/* LEFT SIDE: Dark Architectural Command Center */}
-        <div className="bg-[#1A1A1A] text-white pt-40 pb-20 lg:pt-56 lg:pb-32 px-6 lg:px-16 xl:px-24 flex flex-col justify-between relative overflow-hidden">
+        <div className="bg-[#1A1A1A] text-white pt-28 pb-16 lg:pt-36 lg:pb-24 px-6 lg:px-16 xl:px-24 flex flex-col justify-between relative overflow-hidden">
           {/* Blueprint Background Lines */}
           <div className="absolute inset-0 pointer-events-none flex justify-center w-full">
             <div className="w-px h-full bg-white/5 absolute left-[20%]"></div>
@@ -68,12 +68,12 @@ export default function Contact() {
               </p>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-[72px] font-black tracking-tighter leading-[1.05] mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6">
               Let's build your <br/>
               <span className="text-white/30">logistics pipeline.</span>
             </h1>
-            
-            <p className="text-xl text-white/50 font-light leading-relaxed mb-16">
+
+            <p className="text-base lg:text-lg text-white/50 font-light leading-relaxed mb-12">
               Whether you need to integrate your e-commerce platform via API or just need a reliable partner for daily bulk dispatches, our operations team is ready to scale with you.
             </p>
           </div>
@@ -97,7 +97,7 @@ export default function Contact() {
         </div>
 
         {/* RIGHT SIDE: The Intake Terminal (Form) */}
-        <div className="bg-white pt-20 pb-20 lg:pt-56 lg:pb-32 px-6 lg:px-16 xl:px-24 flex items-center justify-center">
+        <div className="bg-white pt-16 pb-16 lg:pt-36 lg:pb-24 px-6 lg:px-16 xl:px-24 flex items-center justify-center">
           <div className="w-full max-w-2xl">
             
             <h2 className="text-3xl font-black text-brand-dark tracking-tighter mb-10">

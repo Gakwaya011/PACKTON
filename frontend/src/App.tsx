@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'; // <-- Import the new footer
+import Loader from './components/Loader';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
-import HowItWorks from './pages/HowItWorks';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Blog from './pages/Blog';
@@ -13,6 +13,7 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <Router>
+      <Loader />
       {/* We use flex-col and min-h-screen to ensure the footer is always pushed to the bottom */}
       <div className="min-h-screen flex flex-col bg-brand-white font-sans text-brand-dark antialiased">
         <Navbar />
@@ -23,7 +24,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/blog" element={<Blog />} />
