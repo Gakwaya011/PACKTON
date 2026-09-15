@@ -14,11 +14,11 @@ export default function Footer() {
                 Ready to scale?
               </p>
             </div>
-            <h2 className="text-5xl md:text-7xl font-black tracking-tighter leading-[1.05] mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6">
               Move faster. <br />
               <span className="text-white/40">Scale smarter.</span>
             </h2>
-            <p className="text-xl text-white/60 font-light leading-relaxed">
+            <p className="text-lg text-white/60 font-light leading-relaxed">
               Partner with Packton to build a frictionless, high-volume delivery pipeline across Rwanda and beyond.
             </p>
           </div>

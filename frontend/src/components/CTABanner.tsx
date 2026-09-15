@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 export default function CTABanner() {
   return (
     <section className="py-12 px-4 md:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto bg-black text-white p-12 md:p-20 rounded-[2.5rem] text-center relative overflow-hidden shadow-xl">
-        <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-6 uppercase">
+      <div className="max-w-7xl mx-auto bg-black text-white p-10 md:p-16 rounded-[2.5rem] text-center relative overflow-hidden shadow-xl">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-6 uppercase">
           Ready to get moving?
         </h2>
         <p className="text-white/60 max-w-xl mx-auto mb-10 text-base md:text-lg font-light">

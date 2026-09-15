@@ -95,7 +95,7 @@ export default function QuickFacts() {
   ];
 
   return (
-    <section ref={sectionRef} className="w-full bg-brand-ultra py-32 overflow-hidden border-t border-gray-200">
+    <section ref={sectionRef} className="w-full bg-brand-ultra/50 py-32 overflow-hidden border-t border-gray-100">
       <div className="max-w-[1760px] mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-16 items-center">
         
         {/* Left Side: Commitment Copy */}

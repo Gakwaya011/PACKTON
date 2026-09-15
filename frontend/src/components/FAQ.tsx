@@ -73,8 +73,8 @@ export default function FAQ() {
             </p>
           </div>
           
-          <h2 
-            className={`text-5xl md:text-6xl lg:text-[64px] font-bold text-brand-dark tracking-tighter leading-[1.05] transform transition-all duration-[1200ms] delay-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          <h2
+            className={`text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark tracking-tighter leading-[1.1] transform transition-all duration-[1200ms] delay-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >

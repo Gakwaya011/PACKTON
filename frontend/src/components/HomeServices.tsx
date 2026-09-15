@@ -82,8 +82,11 @@ export default function HomeServices() {
   ];
 
   return (
-    <section ref={sectionRef} className="bg-brand-teal py-24 lg:py-32 w-full overflow-hidden">
-      <div className="max-w-[1760px] mx-auto px-6 lg:px-10">
+    <section ref={sectionRef} className="relative bg-brand-dark/90 py-24 lg:py-32 w-full overflow-hidden">
+      {/* Ambient background glow for depth */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-orange/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+      <div className="max-w-[1760px] mx-auto px-6 lg:px-10 relative z-10">
         
         {/* Header Section */}
         <div className="mb-16 lg:mb-20 max-w-3xl">
@@ -117,45 +120,40 @@ export default function HomeServices() {
         {/* The Animated Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               style={{ transitionDelay: `${300 + (index * 120)}ms` }}
-              className={`group relative bg-white/5 border border-white/10 p-8 lg:p-10 flex flex-col justify-between h-full overflow-hidden transform transition-all duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white/10 hover:-translate-y-2 hover:scale-[1.02] hover:border-brand-orange/40 hover:shadow-[0_20px_40px_-15px_rgba(232,82,10,0.3)] ${
+              className={`group relative bg-white/[0.03] border border-white/10 rounded-2xl p-8 lg:p-10 flex flex-col justify-between h-full overflow-hidden transform transition-all duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white/[0.06] hover:-translate-y-2 hover:border-brand-orange/40 hover:shadow-[0_20px_40px_-15px_rgba(232,82,10,0.25)] ${
                 isVisible ? "translate-y-0 opacity-100 scale-100" : "translate-y-16 opacity-0 scale-95"
               }`}
             >
-              {/* Premium Glass Shimmer Effect on Hover */}
-              <div className="absolute inset-0 -translate-x-[150%] group-hover:translate-x-[150%] bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-[1200ms] ease-in-out skew-x-12 z-0 pointer-events-none"></div>
+              {/* Soft corner glow — teal at rest, orange on hover */}
+              <div className="absolute -top-16 -left-16 w-48 h-48 bg-brand-teal/40 group-hover:bg-brand-orange/25 rounded-full blur-3xl transition-colors duration-700 pointer-events-none z-0"></div>
 
-              {/* Ambient Glow behind the text on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/0 via-brand-orange/0 to-brand-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-0"></div>
-              
+              {/* Thin top accent line */}
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-brand-teal via-white/20 to-transparent group-hover:from-brand-orange transition-colors duration-500 pointer-events-none z-0"></div>
+
               <div className="relative z-10">
-                {/* Header Row: Icon + Index Number */}
-                <div className="flex justify-between items-start mb-8">
-                  {/* Icon with Physics */}
-                  <div className="w-12 h-12 bg-brand-teal border border-white/10 rounded-lg flex items-center justify-center text-brand-orange transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-brand-orange group-hover:text-white group-hover:shadow-[0_0_20px_rgba(232,82,10,0.4)]">
+                {/* Icon */}
+                <div className="mb-8">
+                  <div className="w-12 h-12 bg-brand-teal/25 border border-white/10 rounded-lg flex items-center justify-center text-brand-orange transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-110 group-hover:rotate-3 group-hover:bg-brand-orange group-hover:text-white group-hover:shadow-[0_0_20px_rgba(232,82,10,0.4)]">
                     {service.icon}
                   </div>
-                  {/* Index Number slides down gently on hover */}
-                  <span className="text-white/20 font-mono text-sm font-bold transition-all duration-500 ease-out group-hover:text-brand-orange/80 group-hover:translate-y-1">
-                    0{index + 1}
-                  </span>
                 </div>
-                
+
                 {/* Content */}
                 <h3 className="text-xl lg:text-2xl font-bold text-white mb-4 tracking-tight transition-colors duration-300 group-hover:text-brand-orange">
                   {service.title}
                 </h3>
-                
+
                 <p className="text-base text-white/60 leading-relaxed mb-10 transition-colors duration-300 group-hover:text-white/90">
                   {service.description}
                 </p>
               </div>
 
               {/* Packton Arrow Link */}
-              <Link 
-                to="/services" 
+              <Link
+                to="/services"
                 className="relative z-10 inline-flex items-center gap-3 text-sm font-bold text-white uppercase tracking-widest group/link mt-auto w-fit transition-colors duration-300 hover:text-brand-orange"
               >
                 Learn More
