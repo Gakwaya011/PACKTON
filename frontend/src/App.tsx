@@ -14,6 +14,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import Track from './pages/Track';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Status from './pages/Status';
 import NotFound from './pages/NotFound';
 import DashboardLayout from './pages/dashboard/DashboardLayout';
@@ -58,6 +59,7 @@ function AppShell() {
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/track/:orderId" element={<Track />} />
             <Route path="/status" element={<Status />} />
             <Route

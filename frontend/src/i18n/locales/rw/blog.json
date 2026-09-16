@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "eyebrow": "Ubutumwa",
+    "heading": "Amakuru n'Ibitekerezo",
+    "paragraph": "Inyandiko ziva ku murimo w'ubwikorezi bwa nyuma, ubwikorezi muri rusange, no kubaka urusobe rw'abakozi mu Rwanda — zanditswe n'abantu bakora uyu murimo."
+  },
+  "section": {
+    "heading": "Inyandiko Zose",
+    "paragraph": "Amabwiriza, amakuru, n'inkuru ziva ku murimo — ibyo twiga byose ku bijyanye no kohereza imizigo mu Rwanda hose."
+  },
+  "searchPlaceholder": "Shakisha inyandiko...",
+  "categories": {
+    "all": "Inyandiko Zose",
+    "guides": "Amabwiriza",
+    "company": "Ikigo",
+    "logistics": "Ubwikorezi",
+    "riders": "Umukozi w'Icyumweru"
+  },
+  "learnMore": "Menya Byinshi",
+  "noResults": "Nta nyandiko ihuye n'ubushakashatsi bwawe.",
+  "post": {
+    "back": "Inyandiko Zose",
+    "moreHeading": "Izindi nyandiko z'ubutumwa",
+    "notFoundHeading": "Inyandiko ntabwo yabonetse",
+    "notFoundParagraph": "Iyi nyandiko ishobora kuba yarimuwe cyangwa ntikiriho.",
+    "notFoundLink": "Subira ku nyandiko zose"
+  },
+  "posts": [
+    {
+      "id": "reduce-failed-deliveries",
+      "category": "guides",
+      "date": "Gashyantare 24, 2026",
+      "title": "Uburyo 5 bwo kugabanya kunanirwa gutanga ibicuruzwa i Kigali",
+      "excerpt": "Gutanga ibicuruzwa bikananirana bitwara igihe n'amafaranga kabiri. Dore ibintu bifasha koko — kuva kuri kwemeza aderesi kugeza ku gutumira mbere yo kugera.",
+      "content": [
+        "Gutanga ibicuruzwa bikananirana bitwara igihe cyawe kabiri — rimwe ku rugendo rwatakaye uyu munsi, na none ku kongera kugerageza ejo. Mu rusobe rwacu, impamvu nyamukuru zigaruka kenshi, kandi nyinshi zishobora gukemuka mbere y'uko umuzigo uva mu bubiko.",
+        "Tangira ku aderesi. Saba ikimenyetso, ntabwo ari inomero y'inzu gusa — iduka riri hafi, itorero, cyangwa uruziga rw'imodoka bifasha umukozi kugira igihe nyacyo, kuko inomero z'aderesi i Kigali zitagenda zihuye ku muhanda umwe ku wundi.",
+        "Hamagara mbere y'uko ugera, aho gusa kugaragara. Ubutumwa bugufi cyangwa telefone iminota cumi n'itanu mbere yo kugera biha uwakira umuzigo amahirwe yo kuba ahari, kandi ni cyo kintu nyamukuru gitera intsinzi ku igerageza rya mbere.",
+        "Tanga igihe cy'amasaha abiri aho kuvuga 'uyu munsi' gusa. Igihe kitagaragara neza gitera gukatirwa gufatirwa, ariko igihe cyagenwe neza gituma umukozi ashobora kwiyemeza akanategura n'ibindi ku rugendo rwe.",
+        "Niba igerageza rya mbere ritagenze neza, fata ifoto y'aho wagombaga gutanga umuzigo maze ubyandike ako kanya. Iyo foto igaragariza umukozi ukurikira aho agomba kujya aho gutangirira kuva ku busa, kandi ikagabanya amahirwe yo ko iryo gerageza rigwa munsi y'urutonde rwa ejo.",
+        "Nta na kimwe muri ibi gisaba ikoranabuhanga rishya — ni ubushishozi bushyirwa mu bihe bike ariko by'ingenzi. Ni na cyo gituma dushyira izi ngenzura mu buryo bwacu bwo kohereza ibicuruzwa, aho kubireka ku bwibutswa gusa."
+      ]
+    },
+    {
+      "id": "cod-cash-safety",
+      "category": "company",
+      "date": "Gashyantare 10, 2026",
+      "title": "Uko dubika amafaranga yo kwishyura igihe cyo gutanga",
+      "excerpt": "Buri gukusanya amafaranga kw'ubwishyu igihe cyo gutanga byanditswe ako kanya. Reba uburyo bw'igitabo cy'ikoranabuhanga n'inzira yo kohereza amafaranga.",
+      "content": [
+        "Kwishyura igihe cyo gutanga bisa n'ibyoroshye kugeza igihe uba ari wowe utegereje amafaranga. Ku bucuruzi bwinshi dukorana, COD yahoze imeze nk'ikintu kitagaragara hagati y'igihe umuzigo uva mu bubiko n'igihe — rimwe rimwe iminsi cyangwa ibyumweru nyuma — amafaranga agera koko.",
+        "Dufunga icyo cyuho mu kwandika buri gukusanya ako kanya gabaye. Igihe umukozi yakiriye amafaranga ku muryango, byanditswe ako kanya muri porogaramu, bihuzwa n'iyo gutanga, hamwe n'umukono w'ikoranabuhanga nk'ikimenyetso.",
+        "Iryo yanditswe rigenda mu gitabo twese natwe n'abafatanyabikorwa bacu dushobora kureba, bitatuma hakenerwa kwizera ijambo ry'umuntu ku gukusanya kwabayeho amasaha maze ashize. Niba amafaranga yavuguruzanyijwe, iryo yanditswe rifite igihe ryemeza ikibazo mu minota, ntabwo ari mu minsi.",
+        "Buri gukusanya gikohererezwa kuri konti yawe ya banki cyangwa mobile money mu masaha 48, hakurikijwe gahunda igenwe aho gukurikiza igihe cyoroheye. Ku bucuruzi bugenzura amafaranga make, ubwo buhanuzi bufite agaciro kangana n'umutekano ubwawo."
+      ]
+    },
+    {
+      "id": "day-in-the-life-rider",
+      "category": "riders",
+      "date": "Mutarama 28, 2026",
+      "title": "Umunsi umwe mu buzima bw'umukozi wa Packton",
+      "excerpt": "Kuva ku rutonde rwo mu gitondo kugeza ku gutanga iheruka — uko akazi gasanzwe kagenda ku bwoya i Kigali mu muhanda wuzuye.",
+      "content": [
+        "Baza umukozi wacu uwo ari we wese uko umunsi usanzwe umeze, kandi uzumva inkuru imwe isa: itangira mbere y'uko umujyi urikanguka rwose.",
+        "Akazi gatangira n'urutonde rwo mu gitondo — itsinda ry'amaderesi ateranyijwe hakurikijwe akarere kugira ngo umukozi atazenguruka inzira imwe kabiri. Mbere yo gufata ibicuruzwa bya mbere, hari isuzuma ryihuse ry'igare, agasanduku k'ibicuruzwa, n'aho gushyira telefone kugira ngo inzira igaragare nta guhagarara buri minota itanu.",
+        "Igice cyo hagati cy'umunsi kigenda mu buryo bw'itanga ry'ibicuruzwa, amatelefone yo kwemeza ko uwakira ari mu rugo, n'igihe kimwe cyo gukusanya amafaranga byanditswe ako kanya. Imisozi n'imodoka byinshi bya Kigali bituma nta nzira ebyiri zimara igihe kimwe inshuro ebyiri, ku buryo abakozi bahora bahindura urutonde rw'aho bajya uko umunsi ugenda.",
+        "Mu masaha ya nyuma y'amanywa, akazi karangira ku gusoza: gusuzuma amafaranga yakusanyijwe, kumenyekanisha itanga ridakunze kunanirana kugira ngo rishyirwe ku rutonde rwa ejo, hanyuma bagataha. Ntabwo ari akazi gaseka, ariko ni yo mfuruka y'ubucuruzi ihura koko n'umukiriya — ni na cyo gituma dushyira ibindi byose ku buryo bworohereza uyu murimo."
+      ]
+    },
+    {
+      "id": "last-mile-hardest-problem",
+      "category": "logistics",
+      "date": "Mutarama 15, 2026",
+      "title": "Impamvu ubwikorezi bwa nyuma ari ikibazo gikomeye cy'ubwikorezi mu Rwanda",
+      "excerpt": "Kilometero ya nyuma ni aho urusobe rw'ubwikorezi rwinshi rwananirwa. Dore icyo bitandukanya n'ubwikorezi bunini kure — n'uko dubikemura.",
+      "content": [
+        "Kwimura agasanduku kava i Mombasa kugera i Kigali, mu buryo bumwe, ni cyo gice cyoroshye cy'ubwikorezi — inzira imwe, imodoka imwe, igihe gishoboka kumenyekana. Kilometero ya nyuma, kuva mu bubiko kugeza ku irembo ry'umuntu, ni aho urusobe rw'ubwikorezi rwinshi rwananirwa koko.",
+        "Igice cy'ikibazo kiterwa n'ubutaka. Imisozi ya Kigali ituma amaderesi abiri asa n'ari hafi kuri mapu ashobora kuba yatandukanyijwe n'iminota cumi n'itanu y'urugendo, kandi uburyo bw'amaderesi bushingiye ku bimenyetso aho kuba ku nomero z'imihanda zihuye butera agaciro ku bumenyi bw'aho ahantu kuruta GPS gusa.",
+        "Ikindi gice kiterwa n'ingano itandukanye. Ubwikorezi bunini kure bugenda mu bwinshi — ikamyo imwe, inzira imwe, imizigo amagana. Ubwikorezi bwa nyuma ni ikinyuranyo: imizigo yonyine, ahantu icumi n'icumi, buri hamwe hakenera igerageza ryaho, rimwe na rimwe telefone yaho.",
+        "Ni yo mpamvu uburyo bwacu bushingira cyane ku bwinshi bw'abakozi n'urutonde rw'aho hafi aho gukemura kilometero ya nyuma nk'uko wakemura urugendo rw'umuhanda munini. Abakozi benshi bazi neza uturere twabo baruta uburyo bwikoranabuhanga bunoze ariko bukoresha amakuru y'aderesi yashaje."
+      ]
+    },
+    {
+      "id": "onboard-in-a-week",
+      "category": "guides",
+      "date": "Mutarama 3, 2026",
+      "title": "Urutonde rw'Ubucuruzi (B2B): uko wakwinjiza ubucuruzi bwawe mu cyumweru kimwe",
+      "excerpt": "Amabwiriza yumvikana yo guhuza uko utanga ibicuruzwa na API cyangwa CSV, kuva ku rutonde rwa mbere kugeza ku gutanga kwa mbere.",
+      "content": [
+        "Ikibazo abafatanyabikorwa bashya batubaza kenshi ni igihe gisabwa kugira ngo batangire koko gukorana natwe. Mu bihe byinshi, igisubizo ni hafi icyumweru kimwe, kigabanyijwemo intambwe nke zumvikana.",
+        "Iminsi ya mbere n'iya kabiri ni itumanaho ryo guhuza: gufata icyemezo niba uzohereza ibicuruzwa binyuze kuri REST API yacu cyangwa ukoresheje CSV ya buri munsi, no gushyiraho uburenganzira bw'umuyobozi w'ikonti yawe ku ruhande rwacu.",
+        "Umunsi wa gatatu ni urutonde rw'igerageza — amateka make y'ibicuruzwa cyangwa afite agaciro gake kugira ngo hemezwe ko imiterere ihuye kandi urutonde rugenda uko byitezwe, mbere y'uko amateka nyayo y'abakiriya ashyirwaho.",
+        "Iminsi ya kane n'iya gatanu igenda ku itsinda ry'igerageza ry'amateka nyayo, rito bihagije kugira ngo habonwe ibibazo bidasanzwe nta kwica ingano yawe yose. Ku iherezo ry'icyumweru, abafatanyabikorwa benshi bamaze kohereza urutonde rwabo rwose rwa buri munsi binyuze muri twe, hamwe n'umuyobozi w'ikonti wihariye ukomeza kuba maze kwitaba ikibazo cyose kizamo."
+      ]
+    },
+    {
+      "id": "expanding-beyond-kigali",
+      "category": "company",
+      "date": "Ukuboza 18, 2025",
+      "title": "Kwaguka hanze ya Kigali: icyo ubwikorezi mu turere bisobanura kuri wowe",
+      "excerpt": "Uko inzira zacu mu ntara no ku mipaka ziyongera, dore uko ubwikorezi bwiyongera n'icyo bituma ubucuruzi bukura bushobora kugeraho.",
+      "content": [
+        "Igice kinini cy'ibyo dukora kigikorerwa imbere muri Kigali, ariko igice kigenda kiyongera cy'abafatanyabikorwa bacu gikeneye kugera ku bakiriya hanze cyane y'umurwa mukuru — aho ni ho urusobe rwacu rw'akarere rugira uruhare.",
+        "Ku bwikorezi bujya mu ntara, dukora ingendo ziteganyijwe zerekeza ku bigo binini by'intara aho kuba ingendo z'inshuro imwe, bikaba bituma ikiguzi kiri munsi kuri buri muzigo n'iyo ari ku nzira zifite umubare muto hanze y'umujyi.",
+        "Ku mateka anyura ku mipaka ajya mu masoko nka DRC na Uganda, duhuza ubwacu ikibazo cyo kwimurwa ku bijyanye n'ikirimbuzi, kugira ngo ubucuruzi bwohereza mu turere hafi ntibukenere kubaka ubwabwo uwo mubano cyangwa uwo mwenda w'inyandiko.",
+        "Ku bucuruzi bukura, ibi bihindura ahanini ikintu kimwe: mapu y'abo ushobora kugeraho neza irakura, nta nkeneye wo kubaka cyangwa gucunga umuparata wawe bwite kugira ngo ubukwize."
+      ]
+    }
+  ]
+}

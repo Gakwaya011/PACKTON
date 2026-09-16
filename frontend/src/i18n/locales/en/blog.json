@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "eyebrow": "Blog",
+    "heading": "Insights & Updates",
+    "paragraph": "Field notes on last-mile delivery, logistics, and building a courier network in Rwanda — written by the people running it."
+  },
+  "section": {
+    "heading": "All Articles",
+    "paragraph": "Guides, updates, and stories from the road — everything we're learning about moving parcels across Rwanda."
+  },
+  "searchPlaceholder": "Search articles...",
+  "categories": {
+    "all": "All Articles",
+    "guides": "Guides",
+    "company": "Company",
+    "logistics": "Logistics",
+    "riders": "Rider Spotlight"
+  },
+  "learnMore": "Learn more",
+  "noResults": "No articles match your search.",
+  "post": {
+    "back": "All Articles",
+    "moreHeading": "More from the blog",
+    "notFoundHeading": "Article not found",
+    "notFoundParagraph": "This article may have been moved or no longer exists.",
+    "notFoundLink": "Back to all articles"
+  },
+  "posts": [
+    {
+      "id": "reduce-failed-deliveries",
+      "category": "guides",
+      "date": "Feb 24, 2026",
+      "title": "5 ways to reduce failed deliveries in Kigali",
+      "excerpt": "Failed drop-offs cost you time and money twice over. Here's what actually moves the needle — from address verification to call-ahead windows.",
+      "content": [
+        "A failed delivery costs you twice — once for the wasted trip today, and again for the retry tomorrow. Across our network, the leading causes repeat themselves, and most are fixable before a parcel ever leaves the warehouse.",
+        "Start with the address. Ask for a landmark, not just a house number — a nearby shop, church, or roundabout name saves a rider real time, since Kigali's numbering isn't always consistent from one street to the next.",
+        "Call ahead instead of just showing up. A short message or call fifteen minutes before arrival gives the recipient a chance to be there, which on its own is the biggest driver of first-attempt success we see.",
+        "Give a two-hour window instead of \"sometime today.\" A vague window leads to missed pickups; a narrow one lets a rider commit to it and plan the rest of the route around it.",
+        "If a first attempt fails, photograph the drop-off point and log it immediately. That photo tells the next rider exactly where to go instead of starting from zero, and it keeps the re-attempt from drifting to the bottom of tomorrow's manifest.",
+        "None of this needs new technology — just discipline applied at a few small moments. It's also exactly why we build these checks directly into our own dispatch workflow, rather than leaving them to memory."
+      ]
+    },
+    {
+      "id": "cod-cash-safety",
+      "category": "company",
+      "date": "Feb 10, 2026",
+      "title": "How we keep your cash-on-delivery money safe",
+      "excerpt": "Every COD collection is logged the moment it happens. A look at the digital ledger and remittance process behind every delivery.",
+      "content": [
+        "Cash on delivery sounds simple until you're the one waiting on the money. For a lot of businesses we work with, COD used to mean a black box between the moment a parcel left the warehouse and the moment — days or weeks later — the cash actually showed up.",
+        "We close that gap by logging every collection the moment it happens. When a rider accepts payment at the door, it's recorded in the app immediately, tied to that delivery, with a digital signature as proof.",
+        "That record feeds a ledger we and our partners can both see, so there's no need to take anyone's word for a collection that happened hours ago. If a payment amount is ever disputed, the timestamped record settles it in minutes, not days.",
+        "Every collection is remitted to your bank or mobile money account within 48 hours, on a fixed schedule rather than whenever it's convenient. For businesses managing tight cash flow, that predictability matters as much as the security does."
+      ]
+    },
+    {
+      "id": "day-in-the-life-rider",
+      "category": "riders",
+      "date": "Jan 28, 2026",
+      "title": "A day in the life of a Packton rider",
+      "excerpt": "From the morning manifest to the last drop-off — what a typical shift actually looks like on two wheels in Kigali traffic.",
+      "content": [
+        "Ask any of our riders what a normal day looks like, and you'll hear some version of the same story: it starts before the city's fully awake.",
+        "The shift opens with the morning manifest — a batch of addresses grouped by neighborhood so a rider isn't crossing the same stretch of road twice. Before the first pickup, there's a quick check of the bike, the delivery box, and the phone mount that keeps the route visible without pulling over every five minutes.",
+        "The middle of the day is a rhythm of drop-offs, phone calls to confirm a recipient is home, and the occasional cash collection that gets logged on the spot. Kigali's hills and traffic mean no two routes take the same amount of time twice, so riders are constantly re-sequencing stops as the day moves.",
+        "By late afternoon, it's about closing out: reconciling any cash collected, flagging the rare failed drop-off for tomorrow's manifest, and heading back in. It's not glamorous work, but it's the layer of the business that actually touches the customer — which is exactly why we build everything else around making that job easier."
+      ]
+    },
+    {
+      "id": "last-mile-hardest-problem",
+      "category": "logistics",
+      "date": "Jan 15, 2026",
+      "title": "Why last-mile delivery is Rwanda's hardest logistics problem",
+      "excerpt": "The final kilometer is where most delivery networks break down. Here's what makes it different from long-haul freight — and how we approach it.",
+      "content": [
+        "Moving a container from Mombasa to Kigali is, in some ways, the easy part of logistics — it's one route, one vehicle, predictable timing. The last kilometer, from a warehouse to someone's front gate, is where most delivery networks actually break down.",
+        "Part of it is geography. Kigali's hills mean two addresses that look close together on a map can be a fifteen-minute ride apart, and an address system that leans on landmarks rather than consistent street numbering rewards local knowledge over GPS alone.",
+        "Part of it is scale in the wrong direction. Long-haul freight moves in bulk — one truck, one route, hundreds of parcels. Last-mile delivery is the opposite: single parcels, dozens of destinations, each one needing its own attempt, sometimes its own phone call.",
+        "That's why our approach leans so heavily on rider density and local routing rather than trying to solve the last mile the way you'd solve a highway route. More riders who know their zones well beats a bigger, smarter algorithm running on outdated address data."
+      ]
+    },
+    {
+      "id": "onboard-in-a-week",
+      "category": "guides",
+      "date": "Jan 3, 2026",
+      "title": "B2B manifests: how to onboard your business in a week",
+      "excerpt": "A practical walkthrough of connecting your order flow to our API or CSV upload, from first manifest to first delivery.",
+      "content": [
+        "The most common question we get from new business partners is how long it takes to actually go live. In most cases, the answer is about a week, split into a few concrete steps.",
+        "Days one and two are the integration call: deciding whether you'll send orders through our REST API or a daily CSV upload, and getting your account manager access set up on our side.",
+        "Day three is a test manifest — a handful of dummy or low-priority orders to confirm the format lines up and routing behaves the way you expect, before any real customer orders are on the line.",
+        "Days four and five move to a pilot batch of real orders, small enough to catch any edge cases without risking your full volume. By the end of the week, most partners are running their entire daily manifest through us, with a dedicated account manager staying on to handle anything that comes up."
+      ]
+    },
+    {
+      "id": "expanding-beyond-kigali",
+      "category": "company",
+      "date": "Dec 18, 2025",
+      "title": "Expanding beyond Kigali: what regional delivery means for you",
+      "excerpt": "As we grow our upcountry and cross-border routes, here's how coverage is expanding and what it unlocks for growing businesses.",
+      "content": [
+        "Most of our volume still moves within Kigali, but a growing share of our partners need to reach customers well outside the capital — and that's where our regional network comes in.",
+        "For upcountry deliveries, we run scheduled transport to major provincial hubs rather than one-off trips, which keeps per-parcel cost down even for lower-volume routes outside the city.",
+        "For cross-border orders into markets like the DRC and Uganda, we coordinate the customs handoff directly, so a business shipping regionally doesn't need to build that relationship or paperwork process themselves.",
+        "For growing businesses, this mostly changes one thing: the map of who you can reliably reach gets bigger, without you needing to build or manage a fleet of your own to cover it."
+      ]
+    }
+  ]
+}

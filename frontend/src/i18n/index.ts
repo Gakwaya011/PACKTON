@@ -6,6 +6,7 @@ import enCommon from './locales/en/common.json';
 import enHome from './locales/en/home.json';
 import enAbout from './locales/en/about.json';
 import enServices from './locales/en/services.json';
+import enBlog from './locales/en/blog.json';
 import enContact from './locales/en/contact.json';
 import enAuth from './locales/en/auth.json';
 import enPortal from './locales/en/portal.json';
@@ -16,6 +17,7 @@ import rwCommon from './locales/rw/common.json';
 import rwHome from './locales/rw/home.json';
 import rwAbout from './locales/rw/about.json';
 import rwServices from './locales/rw/services.json';
+import rwBlog from './locales/rw/blog.json';
 import rwContact from './locales/rw/contact.json';
 import rwAuth from './locales/rw/auth.json';
 import rwPortal from './locales/rw/portal.json';
@@ -26,6 +28,7 @@ import frCommon from './locales/fr/common.json';
 import frHome from './locales/fr/home.json';
 import frAbout from './locales/fr/about.json';
 import frServices from './locales/fr/services.json';
+import frBlog from './locales/fr/blog.json';
 import frContact from './locales/fr/contact.json';
 import frAuth from './locales/fr/auth.json';
 import frPortal from './locales/fr/portal.json';
@@ -45,13 +48,14 @@ void i18n
     fallbackLng: 'en',
     supportedLngs: ['en', 'rw', 'fr'],
     defaultNS: 'common',
-    ns: ['common', 'home', 'about', 'services', 'contact', 'auth', 'portal', 'admin', 'rider'],
+    ns: ['common', 'home', 'about', 'services', 'blog', 'contact', 'auth', 'portal', 'admin', 'rider'],
     resources: {
       en: {
         common: enCommon,
         home: enHome,
         about: enAbout,
         services: enServices,
+        blog: enBlog,
         contact: enContact,
         auth: enAuth,
         portal: enPortal,
@@ -63,6 +67,7 @@ void i18n
         home: rwHome,
         about: rwAbout,
         services: rwServices,
+        blog: rwBlog,
         contact: rwContact,
         auth: rwAuth,
         portal: rwPortal,
@@ -74,6 +79,7 @@ void i18n
         home: frHome,
         about: frAbout,
         services: frServices,
+        blog: frBlog,
         contact: frContact,
         auth: frAuth,
         portal: frPortal,

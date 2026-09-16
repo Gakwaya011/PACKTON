@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "eyebrow": "Blog",
+    "heading": "Analyses et actualités",
+    "paragraph": "Des notes de terrain sur la livraison du dernier kilomètre, la logistique et la construction d'un réseau de coursiers au Rwanda — écrites par celles et ceux qui le font tourner."
+  },
+  "section": {
+    "heading": "Tous les articles",
+    "paragraph": "Guides, actualités et récits venus du terrain — tout ce que nous apprenons en faisant circuler des colis à travers le Rwanda."
+  },
+  "searchPlaceholder": "Rechercher des articles...",
+  "categories": {
+    "all": "Tous les articles",
+    "guides": "Guides",
+    "company": "Entreprise",
+    "logistics": "Logistique",
+    "riders": "Portrait de coursier"
+  },
+  "learnMore": "En savoir plus",
+  "noResults": "Aucun article ne correspond à votre recherche.",
+  "post": {
+    "back": "Tous les articles",
+    "moreHeading": "Plus d'articles du blog",
+    "notFoundHeading": "Article introuvable",
+    "notFoundParagraph": "Cet article a peut-être été déplacé ou n'existe plus.",
+    "notFoundLink": "Retour à tous les articles"
+  },
+  "posts": [
+    {
+      "id": "reduce-failed-deliveries",
+      "category": "guides",
+      "date": "24 févr. 2026",
+      "title": "5 façons de réduire les livraisons manquées à Kigali",
+      "excerpt": "Un dépôt manqué coûte du temps et de l'argent, deux fois. Voici ce qui change vraiment la donne — de la vérification d'adresse aux créneaux d'appel préalable.",
+      "content": [
+        "Une livraison manquée vous coûte deux fois : une fois pour le trajet perdu aujourd'hui, et une seconde fois pour la nouvelle tentative demain. Dans notre réseau, les causes principales reviennent sans cesse, et la plupart peuvent être corrigées avant même qu'un colis ne quitte l'entrepôt.",
+        "Commencez par l'adresse. Demandez un point de repère, pas seulement un numéro de maison — un commerce voisin, une église ou un rond-point font gagner un temps précieux au coursier, car la numérotation à Kigali n'est pas toujours cohérente d'une rue à l'autre.",
+        "Appelez avant d'arriver, plutôt que de vous présenter directement. Un court message ou un appel quinze minutes avant l'arrivée donne au destinataire la chance d'être présent, ce qui, à lui seul, est le facteur le plus déterminant de réussite dès la première tentative.",
+        "Proposez une fenêtre de deux heures plutôt qu'un vague « dans la journée ». Une fenêtre imprécise entraîne des rendez-vous manqués ; une fenêtre resserrée permet au coursier de s'y engager et d'organiser le reste de sa tournée en conséquence.",
+        "Si une première tentative échoue, photographiez le point de dépôt et enregistrez-le immédiatement. Cette photo indique au coursier suivant exactement où aller, au lieu de repartir de zéro, et évite que la nouvelle tentative ne finisse tout en bas du manifeste du lendemain.",
+        "Rien de tout cela ne nécessite une nouvelle technologie — juste de la rigueur à quelques moments clés. C'est exactement pour cela que nous intégrons ces vérifications directement dans notre propre flux de répartition, plutôt que de les laisser à la mémoire de chacun."
+      ]
+    },
+    {
+      "id": "cod-cash-safety",
+      "category": "company",
+      "date": "10 févr. 2026",
+      "title": "Comment nous sécurisons votre argent du paiement à la livraison",
+      "excerpt": "Chaque collecte COD est enregistrée dès qu'elle a lieu. Voici comment fonctionnent notre registre numérique et notre processus de reversement.",
+      "content": [
+        "Le paiement à la livraison paraît simple, jusqu'au moment où c'est vous qui attendez l'argent. Pour beaucoup des entreprises avec lesquelles nous travaillons, le COD ressemblait autrefois à une boîte noire entre le moment où le colis quittait l'entrepôt et celui — parfois des jours ou des semaines plus tard — où l'argent finissait par arriver.",
+        "Nous comblons cet écart en enregistrant chaque collecte dès qu'elle a lieu. Lorsqu'un coursier reçoit un paiement à la porte, celui-ci est immédiatement enregistré dans l'application, relié à cette livraison précise, avec une signature numérique comme preuve.",
+        "Cet enregistrement alimente un registre que nous et nos partenaires pouvons tous deux consulter, sans avoir à se fier à la parole de quiconque pour une collecte effectuée des heures plus tôt. En cas de litige sur un montant, l'horodatage règle la question en quelques minutes, pas en plusieurs jours.",
+        "Chaque collecte est reversée sur votre compte bancaire ou mobile money sous 48 heures, selon un calendrier fixe plutôt qu'au gré des disponibilités. Pour les entreprises qui gèrent une trésorerie serrée, cette prévisibilité compte autant que la sécurité elle-même."
+      ]
+    },
+    {
+      "id": "day-in-the-life-rider",
+      "category": "riders",
+      "date": "28 janv. 2026",
+      "title": "Une journée dans la vie d'un coursier Packton",
+      "excerpt": "Du manifeste du matin à la dernière livraison — à quoi ressemble vraiment une journée de travail à deux roues dans la circulation de Kigali.",
+      "content": [
+        "Demandez à n'importe lequel de nos coursiers à quoi ressemble une journée normale, et vous entendrez une version de la même histoire : tout commence avant même que la ville ne soit vraiment réveillée.",
+        "La journée débute avec le manifeste du matin — un lot d'adresses regroupées par quartier pour éviter de traverser deux fois le même tronçon de route. Avant la première collecte, il y a une vérification rapide de la moto, de la boîte de livraison et du support téléphone qui garde l'itinéraire visible sans avoir à s'arrêter toutes les cinq minutes.",
+        "Le milieu de journée est rythmé par les dépôts, les appels pour confirmer la présence d'un destinataire, et parfois une collecte d'espèces enregistrée sur place. Avec les collines et la circulation de Kigali, deux itinéraires ne prennent jamais exactement le même temps deux fois de suite, si bien que les coursiers réorganisent constamment leurs arrêts au fil de la journée.",
+        "En fin d'après-midi, place au bilan : réconcilier l'argent collecté, signaler le rare dépôt manqué pour le manifeste du lendemain, puis rentrer. Ce n'est pas un travail glamour, mais c'est la partie de l'entreprise qui touche réellement le client — et c'est précisément pour cela que nous construisons tout le reste autour de ce qui peut faciliter cette tâche."
+      ]
+    },
+    {
+      "id": "last-mile-hardest-problem",
+      "category": "logistics",
+      "date": "15 janv. 2026",
+      "title": "Pourquoi la livraison du dernier kilomètre est le problème logistique le plus difficile du Rwanda",
+      "excerpt": "Le dernier kilomètre est là où la plupart des réseaux de livraison échouent. Voici ce qui le distingue du fret longue distance — et comment nous l'abordons.",
+      "content": [
+        "Transporter un conteneur de Mombasa à Kigali est, à certains égards, la partie la plus simple de la logistique — un seul trajet, un seul véhicule, des délais prévisibles. Le dernier kilomètre, de l'entrepôt jusqu'au portail de quelqu'un, est là où la plupart des réseaux de livraison s'effondrent réellement.",
+        "Une partie du problème tient à la géographie. Les collines de Kigali font que deux adresses qui semblent proches sur une carte peuvent être à quinze minutes de route l'une de l'autre, et un système d'adressage qui s'appuie sur des points de repère plutôt que sur une numérotation cohérente des rues récompense la connaissance du terrain plus que le seul GPS.",
+        "Une autre partie tient à une échelle inversée. Le fret longue distance se déplace en gros volumes — un camion, un trajet, des centaines de colis. La livraison du dernier kilomètre, c'est l'inverse : des colis uniques, des dizaines de destinations, chacune nécessitant sa propre tentative, parfois son propre appel téléphonique.",
+        "C'est pourquoi notre approche mise autant sur la densité de coursiers et le routage local plutôt que d'essayer de résoudre le dernier kilomètre comme on résoudrait un trajet autoroutier. Davantage de coursiers connaissant bien leur zone l'emporte sur un algorithme plus sophistiqué s'appuyant sur des données d'adresse dépassées."
+      ]
+    },
+    {
+      "id": "onboard-in-a-week",
+      "category": "guides",
+      "date": "3 janv. 2026",
+      "title": "Manifestes B2B : comment intégrer votre entreprise en une semaine",
+      "excerpt": "Un guide pratique pour connecter votre flux de commandes à notre API ou à un import CSV, du premier manifeste à la première livraison.",
+      "content": [
+        "La question la plus fréquente que nous posent nos nouveaux partenaires est de savoir combien de temps il faut pour être réellement opérationnel. Dans la plupart des cas, la réponse est environ une semaine, répartie en quelques étapes concrètes.",
+        "Les jours un et deux sont consacrés à l'appel d'intégration : décider si vous enverrez vos commandes via notre API REST ou par import CSV quotidien, et mettre en place l'accès de votre gestionnaire de compte de notre côté.",
+        "Le jour trois est réservé à un manifeste test — quelques commandes fictives ou à faible priorité pour vérifier que le format correspond et que le routage se comporte comme prévu, avant qu'une seule vraie commande client ne soit en jeu.",
+        "Les jours quatre et cinq passent à un lot pilote de vraies commandes, suffisamment restreint pour repérer les cas particuliers sans exposer tout votre volume. À la fin de la semaine, la plupart des partenaires font transiter l'intégralité de leur manifeste quotidien par nous, avec un gestionnaire de compte dédié qui reste disponible pour tout imprévu."
+      ]
+    },
+    {
+      "id": "expanding-beyond-kigali",
+      "category": "company",
+      "date": "18 déc. 2025",
+      "title": "S'étendre au-delà de Kigali : ce que la livraison régionale change pour vous",
+      "excerpt": "À mesure que nos itinéraires vers l'intérieur du pays et transfrontaliers se développent, voici comment la couverture s'élargit et ce qu'elle rend possible pour les entreprises en croissance.",
+      "content": [
+        "L'essentiel de notre volume circule encore à l'intérieur de Kigali, mais une part croissante de nos partenaires doit atteindre des clients bien au-delà de la capitale — c'est là qu'intervient notre réseau régional.",
+        "Pour les livraisons vers l'intérieur du pays, nous assurons un transport programmé vers les principaux pôles provinciaux plutôt que des trajets ponctuels, ce qui maintient un coût par colis maîtrisé même sur des itinéraires à faible volume en dehors de la ville.",
+        "Pour les commandes transfrontalières vers des marchés comme la RDC et l'Ouganda, nous coordonnons directement la remise en douane, afin qu'une entreprise expédiant à l'échelle régionale n'ait pas à construire elle-même cette relation ni ce processus administratif.",
+        "Pour les entreprises en croissance, cela change principalement une chose : la carte des clients que vous pouvez atteindre de façon fiable s'agrandit, sans que vous ayez besoin de constituer ou de gérer votre propre flotte pour la couvrir."
+      ]
+    }
+  ]
+}
