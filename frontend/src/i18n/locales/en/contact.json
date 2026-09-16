@@ -1,0 +1,34 @@
+{
+  "eyebrow": "Initiate Dispatch",
+  "headingLine1": "Let's build your",
+  "headingLine2": "logistics pipeline.",
+  "intro": "Whether you need to integrate your e-commerce platform via API or just need a reliable partner for daily bulk dispatches, our operations team is ready to scale with you.",
+  "directLineLabel": "Direct Line",
+  "headquartersLabel": "Headquarters",
+  "headquartersLine1": "Kigali City",
+  "headquartersLine2": "Rwanda",
+  "formHeading": "Submit a Request",
+  "success": {
+    "heading": "Your request has been received.",
+    "message": "Our operations team will reach out to <1>{{email}}</1> shortly.",
+    "resetButton": "Submit another request"
+  },
+  "form": {
+    "fullNameLabel": "Full Name",
+    "fullNamePlaceholder": "Jane Doe",
+    "companyLabel": "Company Name",
+    "companyPlaceholder": "Acme Corp",
+    "emailLabel": "Work Email",
+    "emailPlaceholder": "jane@company.com",
+    "volumeLabel": "Estimated Monthly Volume",
+    "volumes": ["1 - 50 / month", "50 - 500 / month", "500 - 2,000+ / month", "Just exploring"],
+    "messageLabel": "Project Details",
+    "messagePlaceholder": "Tell us about your logistics bottlenecks...",
+    "submitting": "Transmitting...",
+    "submit": "Transmit Request"
+  },
+  "errors": {
+    "missingFields": "Please fill in your name and work email.",
+    "submitFailed": "Could not submit your request. Please try again."
+  }
+}

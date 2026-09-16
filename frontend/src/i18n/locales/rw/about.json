@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "eyebrow": "Abo Turibo",
+    "headingLine1": "Ntabwo tujyanya udusanduku gusa.",
+    "headingLine2": "Twubaka ibikorwa remezo.",
+    "paragraph": "Packton ni urusobe rw'ubwikorezi rushingiye ku ikoranabuhanga. Turi gukemura ibibazo bikomeye by'ubwikorezi bwa nyuma mu Rwanda dukoresheje ihuzwa ry'imodoka nyazo n'ikoranabuhanga rinoze.",
+    "imageAlt": "Umukozi wa Packton yohereza umuzigo ava kuri moto ifite ikirango cya Packton mu Kigali"
+  },
+  "story": {
+    "eyebrow": "Amateka Yacu",
+    "headingLine1": "Intera ntigomba kuba imbogamizi ku",
+    "headingHighlight": "iterambere.",
+    "paragraph1": "Mbere ya Packton, ubucuruzi mu Kigali bwakoranaga n'isoko ry'ubwikorezi ritunganye: gutakaza ibicuruzwa, gutinda kw'amafaranga y'ubwikorezi, no kubura uburyo bwo gukurikirana. Twabonye icyuho, maze tugerageza kugikemura.",
+    "paragraph2": "Ubu, dukoresha uburyo bumwe busanzwe bwo gukora — kuva igihe urutonde rw'ibicuruzwa rushyirwaho kugeza igihe amafaranga agera kuri konti yawe — kugira ngo ubucuruzi bwiyongereze mu bwikorezi nta mpungenge.",
+    "cardTitle": "Icyicaro Gikuru i Kigali",
+    "cardSubtitle": "Dukorera mu Rwanda hose n'akarere"
+  },
+  "missionVision": {
+    "eyebrow": "Icyo Dushingiraho",
+    "heading": "Intego n'Icyerekezo",
+    "pillars": [
+      {
+        "label": "Intego",
+        "title": "Impamvu Turi Hano",
+        "description": "Gukuraho ingorane mu bwikorezi, guha buri bucuruzi mu Rwanda — kuva ku mucuruzi umwe kugeza ku muhuza w'igihugu hose — umufatanyabikorwa mu bwikorezi bashobora kwizera igihe cyose."
+      },
+      {
+        "label": "Icyerekezo",
+        "title": "Aho Tugana",
+        "description": "U Rwanda aho intera itagira aho ibuza amahirwe — aho ubucuruzi ubwo ari bwo bwose bushobora kugera ku mukiriya uwo ari we wese, mu karere kose, ufite icyizere kimwe nk'aho ari hafi."
+      }
+    ]
+  },
+  "values": {
+    "eyebrow": "Uko Dukora",
+    "heading": "Indangagaciro Zacu Nyamukuru",
+    "paragraph": "Amahame agena buri kohereza, buri nzira, n'icyemezo cyose dufata muri Packton.",
+    "items": [
+      {
+        "id": "01",
+        "title": "Umuvuduko",
+        "description": "Buri saha umuzigo umaze utagenda utera igihombo abafatanyabikorwa bacu. Dukohereza vuba kandi dutanga ibicuruzwa vuba, kugira ngo ubucuruzi bwawe butarindira."
+      },
+      {
+        "id": "02",
+        "title": "Ukuri",
+        "description": "Kuva aho ufatirwa kugeza aho usinyirwa, buri ntambwe irakurikiranwa kandi igaragara. Nta gutekereza aho umuzigo uri — kuri wowe, cyangwa ku muntu uwutegereje."
+      },
+      {
+        "id": "03",
+        "title": "Byubatswe Kugira ngo Bikure",
+        "description": "Imizigo cumi ku kwezi cyangwa igihumbi ku munsi — imodoka zacu n'uburyo bwacu bikura hamwe n'ubucuruzi bwawe nta ngorane."
+      },
+      {
+        "id": "04",
+        "title": "Umukiriya ku Mwanya wa Mbere",
+        "description": "Inyuma ya buri kohereza haba hari umuntu utegereje. Dufata buri muzigo, na buri wakira, hamwe n'ubwitonzi tuzifuza ku byacu bwite."
+      }
+    ]
+  }
+}

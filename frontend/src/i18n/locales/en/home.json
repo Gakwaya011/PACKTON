@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "locationIndicator": "Operating in Kigali & Nationwide",
+    "headingLine1": "We deliver your packages",
+    "headingLine2": "safely and on time.",
+    "paragraph": "Packton connects Rwanda through fast, reliable last-mile delivery. Whether you are a business sending hundreds of daily orders or an individual sending a gift, we make sure it gets there.",
+    "ctaPrimary": "Partner with us",
+    "ctaSecondary": "Explore our services",
+    "imageAlt": "Packton logistics dispatch"
+  },
+  "valueProposition": {
+    "headingLine1": "Packton — Structured",
+    "headingLine2": "logistics for Rwanda.",
+    "paragraph": "We move beyond generic delivery services by acting as an extension of your business. Reliable, transparent, and built for scale.",
+    "imageAlt": "Packton logistics operations",
+    "features": [
+      {
+        "title": "Pre-Dispatch Verification",
+        "description": "No more wasted trips. We personally call the recipient to verify coordinates before a package leaves our hub."
+      },
+      {
+        "title": "48h COD Payouts",
+        "description": "Stop chasing money. Cash collected is audited and remitted directly to your bank account within 48 hours."
+      },
+      {
+        "title": "Partner Dashboard",
+        "description": "Manage bulk orders, monitor delivery status, and track your payouts through our secure partner portal."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "Our Process",
+    "heading": "How we deliver.",
+    "paragraph": "Simple, transparent, and built on our core promise: we confirm before we move.",
+    "steps": [
+      {
+        "step": "Step 01",
+        "title": "Book & Upload",
+        "description": "Individuals book instantly online. Businesses upload their daily manifest via our secure B2B portal or API."
+      },
+      {
+        "step": "Step 02",
+        "title": "We Confirm",
+        "description": "Our dispatch team calls every recipient to verify location and availability before a rider ever leaves the hub."
+      },
+      {
+        "step": "Step 03",
+        "title": "Deliver & Remit",
+        "description": "Your package arrives safely. Cash on delivery is collected and remitted to your account within 48 hours."
+      }
+    ]
+  },
+  "homeServices": {
+    "eyebrow": "Our Capabilities",
+    "heading": "Explore our services.",
+    "paragraph": "From bulk B2B deliveries to urgent individual parcels, we turn logistics challenges into operational efficiency and scalable results.",
+    "learnMore": "Learn More",
+    "services": [
+      {
+        "title": "B2B Bulk Delivery",
+        "description": "Upload your client list — we confirm, deliver, and collect cash on delivery. Full dashboard to track every order in real time."
+      },
+      {
+        "title": "B2C Individual Parcels",
+        "description": "Call us, WhatsApp us, or book online. We pick up from your door and deliver anywhere in Rwanda — same day or next day."
+      },
+      {
+        "title": "Cash On Delivery",
+        "description": "We collect payment at the door on your behalf and remit to you within 48 hours. No chasing clients — we handle it."
+      },
+      {
+        "title": "Status Updates",
+        "description": "Every delivery gets a unique tracking number. Sender and recipient both get SMS updates at every stage — booked to delivered."
+      },
+      {
+        "title": "Business Dashboard",
+        "description": "B2B clients get a full portal — upload orders, track deliveries, view COD reports, and export data. All in one place."
+      },
+      {
+        "title": "Cross-Border Delivery",
+        "description": "We deliver beyond Rwanda — Uganda, DRC, Burundi, Tanzania. One partner for all your regional logistics needs."
+      }
+    ]
+  },
+  "quickFacts": {
+    "eyebrow": "Our Commitment",
+    "headingLine1": "Built for business.",
+    "headingLine2": "Accessible to all.",
+    "paragraph": "We confirm every location before dispatch to eliminate failed deliveries. Your packages arrive safely, and cash collected on your behalf is remitted directly to you within 48 hours.",
+    "stats": [
+      { "label": "Deliveries Completed" },
+      { "label": "COD Remittance" },
+      { "label": "Success Rate" },
+      { "label": "Location Verified" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "headingLine1": "Your Questions,",
+    "headingLine2": "Answered!",
+    "paragraph": "Can't find what you're looking for? Reach out and our operations team will get back to you directly.",
+    "contactUs": "Contact Us",
+    "items": [
+      {
+        "q": "How fast do you deliver inside Kigali?",
+        "a": "Most local orders are picked up, verified, and delivered within 2 to 4 hours, depending on the chosen urgency tier and package sizing."
+      },
+      {
+        "q": "How does the Cash on Delivery (COD) workflow function?",
+        "a": "When booking a parcel, specify the required COD collector amount. Our rider verifies the funds directly upon handoff, logs the successful receipt on our platform, and our treasury initiates a payout loop back to your verified account within 48 hours."
+      },
+      {
+        "q": "What regions do you fully cover?",
+        "a": "We offer full-scale delivery solutions throughout Kigali, route links upcountry to major provincial hubs, and coordinate structured cross-border transport options."
+      },
+      {
+        "q": "What happens if a delivery attempt fails?",
+        "a": "If a recipient is unreachable or unavailable, our riders log the attempt and securely return the package to our hub. We automatically schedule a second delivery attempt for the following business day at no extra base charge."
+      },
+      {
+        "q": "Can I integrate my e-commerce store with Packton?",
+        "a": "Absolutely. We provide a robust API and plug-and-play integrations for platforms like Shopify and WooCommerce, allowing your orders to automatically generate dispatch requests in our system."
+      },
+      {
+        "q": "Do you handle bulky or oversized cargo?",
+        "a": "Yes. While our primary fleet consists of dispatch motorcycles for speed, we operate a dedicated fleet of cargo vans and light trucks for oversized deliveries, furniture, and bulk B2B inventory transfers."
+      },
+      {
+        "q": "How do I track my active shipments?",
+        "a": "Every dispatch generates a unique tracking link. Both you (via your Business Dashboard) and the recipient (via SMS) can track the package status from the moment it leaves the hub until the final signature is collected."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "heading": "Ready to get moving?",
+    "paragraph": "Experience clean logistics mapping with no guesswork. Set up your delivery route parameters instantly.",
+    "ctaPrimary": "Create Booking",
+    "ctaSecondary": "Portal Access"
+  }
+}

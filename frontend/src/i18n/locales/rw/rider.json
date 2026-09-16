@@ -1,0 +1,36 @@
+{
+  "home": {
+    "eyebrow": "Ikibanza cy'Umutwara",
+    "greeting": "Muraho, {{name}}",
+    "defaultHeading": "Ibyo ugomba gutanga",
+    "loadError": "Ntibishoboye gutangiza ibyo ugomba gutanga.",
+    "availableForJobs": "Witeguye gukora",
+    "offline": "Ntabwo ahari",
+    "today": "Uyu munsi",
+    "thisWeek": "Iki cyumweru",
+    "assignedDeliveries": "Ibyo Wahawe Gutanga",
+    "loading": "Turimo gutangiza...",
+    "empty": "Nta kintu warahabwa cyo gutanga.",
+    "collectCod": "Kusanya COD: {{amount}}",
+    "updating": "Turimo kuvugurura...",
+    "markStatus": "Shyira {{status}}",
+    "statusUpdateError": "Ntibishoboye kuvugurura uko bwiriza rimeze.",
+    "captureProof": "Fata Ikimenyetso cyo Kugeza",
+    "sidebarDeliveries": "Ibyoherejwe",
+    "sidebarEarnings": "Amafaranga Yinjiye"
+  },
+  "pod": {
+    "eyebrow": "Ikibanza cy'Umutwara",
+    "heading": "Ikimenyetso cyo Kugeza",
+    "missingError": "Ongeraho ifoto, umukono, cyangwa byombi.",
+    "uploadError": "Ntibishoboye koherereza ikimenyetso cyo kugeza.",
+    "photoLabel": "Ifoto",
+    "photoPreviewAlt": "Igaragaza ry'ikimenyetso cyo kugeza",
+    "signatureLabel": "Umukono w'Uwakiriye",
+    "uploading": "Turimo koherereza...",
+    "submit": "Ohereza Ikimenyetso cyo Kugeza"
+  },
+  "signaturePad": {
+    "clear": "Siba umukono"
+  }
+}

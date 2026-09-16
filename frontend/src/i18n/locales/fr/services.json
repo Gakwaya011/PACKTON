@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "eyebrow": "Ce que nous proposons",
+    "headingLine1": "Des services de livraison",
+    "headingLine2": "conçus pour votre entreprise.",
+    "paragraph": "D'un simple colis urgent à des centaines de commandes par jour, voici comment nous vous aidons à faire arriver vos envois là où ils doivent aller — à temps, et en toute traçabilité."
+  },
+  "specsLabel": "Caractéristiques du service",
+  "deployService": "Commencer avec ce service",
+  "services": [
+    {
+      "id": "01",
+      "title": "Manifestes B2B en volume",
+      "shortDesc": "Routage automatisé pour les marchands à fort volume.",
+      "description": "Chargez votre manifeste quotidien par CSV ou API, et nous prenons le relais — les commandes sont automatiquement routées, groupées et affectées à notre flotte. Conçu pour les plateformes e-commerce, les distributeurs et les partenaires corporate qui expédient des centaines de colis par jour.",
+      "specs": [
+        { "label": "Intégration", "value": "API REST & CSV" },
+        { "label": "Routage", "value": "Entièrement automatisé" },
+        { "label": "Support", "value": "Gestionnaire de compte dédié" }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Coursier à la demande",
+      "shortDesc": "Expédition rapide de colis unique dans tout Kigali.",
+      "description": "Quand ça doit arriver maintenant. Demandez un coursier via notre plateforme web ou WhatsApp, et nous assurons l'enlèvement et la livraison porte à porte, sans passage en entrepôt. Idéal pour les documents urgents, les commandes uniques de détail et les pièces urgentes.",
+      "specs": [
+        { "label": "Délai de livraison", "value": "2 à 4 heures" },
+        { "label": "Suivi", "value": "Lien GPS en direct" },
+        { "label": "Tarification", "value": "Devis instantané" }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Paiement à la livraison",
+      "shortDesc": "Collecte d'espèces sécurisée, reversée à temps.",
+      "description": "Le paiement à la livraison fait tourner le commerce local, mais le recouvrement des paiements peut vous ralentir. Nous sécurisons vos fonds dès la remise du colis — chaque collecte est enregistrée numériquement, et le montant total est reversé sur votre compte bancaire ou mobile money sous 48 heures.",
+      "specs": [
+        { "label": "Reversement", "value": "Sous 48 heures" },
+        { "label": "Suivi des registres", "value": "Registre numérique" },
+        { "label": "Versement vers", "value": "Banque & Mobile Money" }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Logistique régionale",
+      "shortDesc": "Livraisons au-delà de la ville.",
+      "description": "Élargissez votre portée sans constituer votre propre flotte. Nous assurons un transport programmé vers les principaux pôles du pays et coordonnons des livraisons transfrontalières sécurisées vers les marchés voisins comme la RDC et l'Ouganda.",
+      "specs": [
+        { "label": "Couverture", "value": "National & transfrontalier" },
+        { "label": "Flotte", "value": "Fourgons & camionnettes" },
+        { "label": "Douane", "value": "Accompagnement dédié" }
+      ]
+    }
+  ],
+  "cta": {
+    "heading": "Pas sûr du service qui vous convient ?",
+    "paragraph": "Parlez-nous de votre volume d'expédition et nous vous aiderons à trouver la formule adaptée — sans pression, sans jargon.",
+    "button": "Parler à notre équipe"
+  }
+}

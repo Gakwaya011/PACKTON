@@ -1,7 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
+interface FaqItem {
+  q: string;
+  a: string;
+}
 
 export default function FAQ() {
+  const { t } = useTranslation('home');
   const [openIndex, setOpenIndex] = useState<number | null>(0); // Default open the first one
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -22,36 +29,7 @@ export default function FAQ() {
   }, []);
 
   // Expanded FAQ list with realistic logistics data
-  const faqs = [
-    {
-      q: "How fast do you deliver inside Kigali?",
-      a: "Most local orders are picked up, verified, and delivered within 2 to 4 hours, depending on the chosen urgency tier and package sizing."
-    },
-    {
-      q: "How does the Cash on Delivery (COD) workflow function?",
-      a: "When booking a parcel, specify the required COD collector amount. Our rider verifies the funds directly upon handoff, logs the successful receipt on our platform, and our treasury initiates a payout loop back to your verified account within 48 hours."
-    },
-    {
-      q: "What regions do you fully cover?",
-      a: "We offer full-scale delivery solutions throughout Kigali, route links upcountry to major provincial hubs, and coordinate structured cross-border transport options."
-    },
-    {
-      q: "What happens if a delivery attempt fails?",
-      a: "If a recipient is unreachable or unavailable, our riders log the attempt and securely return the package to our hub. We automatically schedule a second delivery attempt for the following business day at no extra base charge."
-    },
-    {
-      q: "Can I integrate my e-commerce store with Packton?",
-      a: "Absolutely. We provide a robust API and plug-and-play integrations for platforms like Shopify and WooCommerce, allowing your orders to automatically generate dispatch requests in our system."
-    },
-    {
-      q: "Do you handle bulky or oversized cargo?",
-      a: "Yes. While our primary fleet consists of dispatch motorcycles for speed, we operate a dedicated fleet of cargo vans and light trucks for oversized deliveries, furniture, and bulk B2B inventory transfers."
-    },
-    {
-      q: "How do I track my active shipments?",
-      a: "Every dispatch generates a unique tracking link. Both you (via your Business Dashboard) and the recipient (via SMS) can track the package status from the moment it leaves the hub until the final signature is collected."
-    }
-  ];
+  const faqs = t('faq.items', { returnObjects: true }) as FaqItem[];
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -77,23 +55,23 @@ export default function FAQ() {
               <div className="flex items-center gap-3 mb-8">
                 <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
                 <p className="text-white/60 font-medium tracking-wide text-sm">
-                  Frequently Asked Questions
+                  {t('faq.eyebrow')}
                 </p>
               </div>
 
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-tighter leading-[1.1] mb-6">
-                Your Questions, <br className="hidden lg:block" /> Answered!
+                {t('faq.headingLine1')} <br className="hidden lg:block" /> {t('faq.headingLine2')}
               </h2>
 
               <p className="text-white/60 font-light leading-relaxed mb-8">
-                Can't find what you're looking for? Reach out and our operations team will get back to you directly.
+                {t('faq.paragraph')}
               </p>
 
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-3 text-sm font-bold text-white uppercase tracking-widest group/link transition-colors duration-300 hover:text-brand-orange"
               >
-                Contact Us
+                {t('faq.contactUs')}
                 <span className="transform transition-transform duration-300 ease-out group-hover/link:translate-x-3 text-brand-orange">→</span>
               </Link>
             </div>

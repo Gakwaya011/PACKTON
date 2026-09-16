@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "locationIndicator": "Opérant à Kigali et dans tout le pays",
+    "headingLine1": "Nous livrons vos colis",
+    "headingLine2": "en toute sécurité et à temps.",
+    "paragraph": "Packton connecte le Rwanda grâce à une livraison du dernier kilomètre rapide et fiable. Que vous soyez une entreprise envoyant des centaines de commandes par jour ou un particulier envoyant un cadeau, nous veillons à ce qu'il arrive à destination.",
+    "ctaPrimary": "Devenir partenaire",
+    "ctaSecondary": "Découvrir nos services",
+    "imageAlt": "Centre de répartition logistique Packton"
+  },
+  "valueProposition": {
+    "headingLine1": "Packton — Une logistique structurée",
+    "headingLine2": "pour le Rwanda.",
+    "paragraph": "Nous allons au-delà des services de livraison génériques en agissant comme une extension de votre entreprise. Fiable, transparent et conçu pour évoluer.",
+    "imageAlt": "Opérations logistiques Packton",
+    "features": [
+      {
+        "title": "Vérification avant expédition",
+        "description": "Fini les trajets inutiles. Nous appelons personnellement le destinataire pour vérifier les coordonnées avant qu'un colis ne quitte notre hub."
+      },
+      {
+        "title": "Versements COD sous 48h",
+        "description": "Ne courez plus après votre argent. L'argent collecté est audité et versé directement sur votre compte bancaire sous 48 heures."
+      },
+      {
+        "title": "Tableau de bord partenaire",
+        "description": "Gérez les commandes groupées, suivez le statut des livraisons et contrôlez vos versements via notre portail partenaire sécurisé."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "Notre processus",
+    "heading": "Comment nous livrons.",
+    "paragraph": "Simple, transparent, et fondé sur notre promesse essentielle : nous confirmons avant d'agir.",
+    "steps": [
+      {
+        "step": "Étape 01",
+        "title": "Réservez et téléversez",
+        "description": "Les particuliers réservent instantanément en ligne. Les entreprises téléversent leur manifeste quotidien via notre portail B2B sécurisé ou notre API."
+      },
+      {
+        "step": "Étape 02",
+        "title": "Nous confirmons",
+        "description": "Notre équipe de répartition appelle chaque destinataire pour vérifier la localisation et la disponibilité avant qu'un coursier ne quitte le hub."
+      },
+      {
+        "step": "Étape 03",
+        "title": "Livraison et versement",
+        "description": "Votre colis arrive en toute sécurité. Le paiement à la livraison est collecté et versé sur votre compte sous 48 heures."
+      }
+    ]
+  },
+  "homeServices": {
+    "eyebrow": "Nos capacités",
+    "heading": "Découvrez nos services.",
+    "paragraph": "Des livraisons B2B en volume aux colis individuels urgents, nous transformons les défis logistiques en efficacité opérationnelle et en résultats évolutifs.",
+    "learnMore": "En savoir plus",
+    "services": [
+      {
+        "title": "Livraison B2B en volume",
+        "description": "Téléversez votre liste de clients — nous confirmons, livrons et collectons le paiement à la livraison. Tableau de bord complet pour suivre chaque commande en temps réel."
+      },
+      {
+        "title": "Colis individuels B2C",
+        "description": "Appelez-nous, contactez-nous sur WhatsApp ou réservez en ligne. Nous récupérons le colis à votre porte et livrons partout au Rwanda — le jour même ou le lendemain."
+      },
+      {
+        "title": "Paiement à la livraison",
+        "description": "Nous collectons le paiement à la porte en votre nom et vous le versons sous 48 heures. Plus besoin de courir après vos clients — nous nous en occupons."
+      },
+      {
+        "title": "Mises à jour de statut",
+        "description": "Chaque livraison reçoit un numéro de suivi unique. L'expéditeur et le destinataire reçoivent tous deux des mises à jour par SMS à chaque étape — de la réservation à la livraison."
+      },
+      {
+        "title": "Tableau de bord entreprise",
+        "description": "Les clients B2B disposent d'un portail complet — téléversez des commandes, suivez les livraisons, consultez les rapports COD et exportez les données. Tout au même endroit."
+      },
+      {
+        "title": "Livraison transfrontalière",
+        "description": "Nous livrons au-delà du Rwanda — Ouganda, RDC, Burundi, Tanzanie. Un seul partenaire pour tous vos besoins logistiques régionaux."
+      }
+    ]
+  },
+  "quickFacts": {
+    "eyebrow": "Notre engagement",
+    "headingLine1": "Conçu pour les entreprises.",
+    "headingLine2": "Accessible à tous.",
+    "paragraph": "Nous confirmons chaque localisation avant l'expédition afin d'éliminer les livraisons ratées. Vos colis arrivent en toute sécurité, et l'argent collecté en votre nom vous est versé directement sous 48 heures.",
+    "stats": [
+      { "label": "Livraisons effectuées" },
+      { "label": "Versement COD" },
+      { "label": "Taux de réussite" },
+      { "label": "Localisation vérifiée" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions fréquentes",
+    "headingLine1": "Vos questions,",
+    "headingLine2": "ont une réponse !",
+    "paragraph": "Vous ne trouvez pas ce que vous cherchez ? Contactez-nous et notre équipe opérationnelle vous répondra directement.",
+    "contactUs": "Nous contacter",
+    "items": [
+      {
+        "q": "À quelle vitesse livrez-vous à l'intérieur de Kigali ?",
+        "a": "La plupart des commandes locales sont récupérées, vérifiées et livrées en 2 à 4 heures, selon le niveau d'urgence choisi et la taille du colis."
+      },
+      {
+        "q": "Comment fonctionne le paiement à la livraison (COD) ?",
+        "a": "Lors de la réservation d'un colis, indiquez le montant COD à collecter. Notre coursier vérifie les fonds directement lors de la remise, enregistre la réception réussie sur notre plateforme, et notre trésorerie lance le versement vers votre compte vérifié sous 48 heures."
+      },
+      {
+        "q": "Quelles régions couvrez-vous entièrement ?",
+        "a": "Nous proposons des solutions de livraison complètes dans tout Kigali, des liaisons routières vers les principaux centres provinciaux, et coordonnons des options de transport transfrontalier structurées."
+      },
+      {
+        "q": "Que se passe-t-il si une tentative de livraison échoue ?",
+        "a": "Si un destinataire est injoignable ou indisponible, nos coursiers enregistrent la tentative et rapportent le colis en toute sécurité à notre hub. Nous programmons automatiquement une deuxième tentative de livraison le jour ouvrable suivant, sans frais supplémentaires."
+      },
+      {
+        "q": "Puis-je intégrer ma boutique e-commerce à Packton ?",
+        "a": "Absolument. Nous fournissons une API robuste et des intégrations prêtes à l'emploi pour des plateformes comme Shopify et WooCommerce, permettant à vos commandes de générer automatiquement des demandes d'expédition dans notre système."
+      },
+      {
+        "q": "Gérez-vous les cargaisons volumineuses ou hors gabarit ?",
+        "a": "Oui. Bien que notre flotte principale soit composée de motos de livraison pour la rapidité, nous exploitons une flotte dédiée de fourgonnettes et de petits camions pour les livraisons hors gabarit, les meubles et les transferts d'inventaire B2B en gros volume."
+      },
+      {
+        "q": "Comment suivre mes envois en cours ?",
+        "a": "Chaque expédition génère un lien de suivi unique. Vous (via votre tableau de bord entreprise) et le destinataire (via SMS) pouvez tous deux suivre le statut du colis depuis son départ du hub jusqu'à la signature finale."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "heading": "Prêt à vous lancer ?",
+    "paragraph": "Profitez d'une cartographie logistique claire, sans incertitude. Configurez vos paramètres d'itinéraire de livraison instantanément.",
+    "ctaPrimary": "Créer une réservation",
+    "ctaSecondary": "Accès au portail"
+  }
+}

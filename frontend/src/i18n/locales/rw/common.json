@@ -1,0 +1,64 @@
+{
+  "brand": "Packton",
+  "nav": {
+    "home": "Ahabanza",
+    "about": "Abo turi bo",
+    "services": "Serivisi",
+    "blog": "Blog",
+    "contact": "Twandikire",
+    "login": "Injira",
+    "loginToPortal": "Injira kuri Porogaramu",
+    "logout": "Sohoka",
+    "getQuote": "Saba Igiciro",
+    "dashboard": "Imbonerahamwe",
+    "adminHub": "Ubuyobozi",
+    "riderHub": "Ikibanza cy'Umutwara"
+  },
+  "orderStatus": {
+    "PENDING": "Bitegereje",
+    "PICKED_UP": "Byafashwe",
+    "IN_TRANSIT": "Biri mu Nzira",
+    "DELIVERED": "Byageze",
+    "CANCELLED": "Byahagaritswe"
+  },
+  "notFound": {
+    "eyebrow": "Ikosa 404",
+    "heading": "Iyi paji ntibonetse.",
+    "paragraph": "Paji ushaka ntabwo ibaho cyangwa yashyizwe ahandi.",
+    "backHome": "Subira Ahabanza"
+  },
+  "blogPlaceholder": {
+    "eyebrow": "Ikinyamakuru cya Packton",
+    "heading": "Biraza vuba.",
+    "paragraph": "Turimo twandika inkuru ku bijyanye n'ubwikorezi, imikorere, no kubaka serivisi yo gutanga ibintu mu Rwanda. Ugarutse vuba.",
+    "backHome": "Subira Ahabanza"
+  },
+  "footer": {
+    "ctaEyebrow": "Witeguye kwaguka?",
+    "ctaHeadingLine1": "Ihuteshe imikorere.",
+    "ctaHeadingLine2": "Wagura mu buryo bwitondewe.",
+    "ctaParagraph": "Fatanya na Packton kubaka uburyo bworoshye kandi bunini bwo gutanga ibintu mu Rwanda hose no hanze yaho.",
+    "ctaButton": "Tangira Kohereza",
+    "brandBlurb": "Uburyo bworoshye bwo gutanga ibintu ku ntera ya nyuma. Bwubatswe kugira ngo bunoze ubwikorezi bunini bw'ibigo mu gihe buguma buboneka ku bantu bose bakeneye kohereza ibintu ako kanya.",
+    "servicesHeading": "Serivisi",
+    "servicesLinks": [
+      { "name": "Kohereza Manifeste za B2B", "path": "/services" },
+      { "name": "Umutwara uhita ahamagawe", "path": "/services" },
+      { "name": "Kwishyura mu Gutanga (COD)", "path": "/services" },
+      { "name": "Ikwirakwizwa mu Ntara", "path": "/services" }
+    ],
+    "platformHeading": "Porogaramu",
+    "platformLinks": [
+      { "name": "Abo turi bo", "path": "/about" },
+      { "name": "Uko Bikorwa", "path": "/" },
+      { "name": "Saba Igiciro", "path": "/contact" }
+    ],
+    "systemStatus": "Imiterere ya Sisitemu",
+    "apiDocs": "Inyandiko za API",
+    "clientLogin": "Kwinjira kw'Umukiriya",
+    "commandCenterHeading": "Ikigo Nyobozi",
+    "commandCenterParagraph": "Ikigo cyacu gitunganya ubwikorezi gikorera i Kigali, gihuza inzira mu gihugu hose.",
+    "location": "Kigali, u Rwanda",
+    "copyright": "Uburenganzira bwose bwihariwe."
+  }
+}

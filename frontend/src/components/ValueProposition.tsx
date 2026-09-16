@@ -1,6 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+interface Feature {
+  title: string;
+  description: string;
+}
 
 export default function ValueProposition() {
+  const { t } = useTranslation('home');
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -23,20 +30,7 @@ export default function ValueProposition() {
     return () => observer.disconnect();
   }, []);
 
-  const features = [
-    {
-      title: "Pre-Dispatch Verification",
-      description: "No more wasted trips. We personally call the recipient to verify coordinates before a package leaves our hub.",
-    },
-    {
-      title: "48h COD Payouts",
-      description: "Stop chasing money. Cash collected is audited and remitted directly to your bank account within 48 hours.",
-    },
-    {
-      title: "Partner Dashboard",
-      description: "Manage bulk orders, monitor delivery status, and track your payouts through our secure partner portal.",
-    }
-  ];
+  const features = t('valueProposition.features', { returnObjects: true }) as Feature[];
 
   return (
     <section ref={sectionRef} className="py-20 lg:py-24 bg-gray-50 w-full relative overflow-hidden">
@@ -54,8 +48,8 @@ export default function ValueProposition() {
         >
           <div className="relative aspect-[4/5] lg:aspect-square w-full shadow-2xl overflow-hidden group">
             <img 
-              src="/valuepreposition.jpg" 
-              alt="Packton logistics operations" 
+              src="/valuepreposition.jpg"
+              alt={t('valueProposition.imageAlt')}
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />
             {/* The orange accent corner */}
@@ -76,10 +70,10 @@ export default function ValueProposition() {
             }`}
           >
             <h2 className="text-3xl md:text-4xl font-extrabold text-brand-dark tracking-tighter leading-tight mb-6">
-              Packton — Structured <br /> logistics for Rwanda.
+              {t('valueProposition.headingLine1')} <br /> {t('valueProposition.headingLine2')}
             </h2>
             <p className="text-base text-gray-500 font-light max-w-lg">
-              We move beyond generic delivery services by acting as an extension of your business. Reliable, transparent, and built for scale.
+              {t('valueProposition.paragraph')}
             </p>
           </div>
 

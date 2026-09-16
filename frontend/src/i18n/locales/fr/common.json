@@ -1,0 +1,64 @@
+{
+  "brand": "Packton",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Connexion",
+    "loginToPortal": "Accéder au portail",
+    "logout": "Déconnexion",
+    "getQuote": "Demander un devis",
+    "dashboard": "Tableau de bord",
+    "adminHub": "Admin",
+    "riderHub": "Espace coursier"
+  },
+  "orderStatus": {
+    "PENDING": "En attente",
+    "PICKED_UP": "Récupéré",
+    "IN_TRANSIT": "En transit",
+    "DELIVERED": "Livré",
+    "CANCELLED": "Annulé"
+  },
+  "notFound": {
+    "eyebrow": "Erreur 404",
+    "heading": "Page introuvable.",
+    "paragraph": "La page que vous recherchez n'existe pas ou a peut-être été déplacée.",
+    "backHome": "Retour à l'accueil"
+  },
+  "blogPlaceholder": {
+    "eyebrow": "Journal Packton",
+    "heading": "Bientôt disponible.",
+    "paragraph": "Nous préparons des articles sur la logistique, les opérations et la construction de la livraison du dernier kilomètre au Rwanda. Revenez bientôt.",
+    "backHome": "Retour à l'accueil"
+  },
+  "footer": {
+    "ctaEyebrow": "Prêt à passer à l'échelle ?",
+    "ctaHeadingLine1": "Allez plus vite.",
+    "ctaHeadingLine2": "Évoluez plus intelligemment.",
+    "ctaParagraph": "Associez-vous à Packton pour construire un système de livraison fluide et à grand volume à travers le Rwanda et au-delà.",
+    "ctaButton": "Commencer à expédier",
+    "brandBlurb": "Une architecture de livraison du dernier kilomètre sans friction. Conçue pour optimiser la logistique à grand volume des entreprises tout en gardant la livraison à la demande accessible à tous.",
+    "servicesHeading": "Services",
+    "servicesLinks": [
+      { "name": "Expédition par manifeste B2B", "path": "/services" },
+      { "name": "Coursier à la demande", "path": "/services" },
+      { "name": "Paiement à la livraison (COD)", "path": "/services" },
+      { "name": "Distribution régionale", "path": "/services" }
+    ],
+    "platformHeading": "Plateforme",
+    "platformLinks": [
+      { "name": "À propos de nous", "path": "/about" },
+      { "name": "Comment ça marche", "path": "/" },
+      { "name": "Demander un devis", "path": "/contact" }
+    ],
+    "systemStatus": "État du système",
+    "apiDocs": "Documentation API",
+    "clientLogin": "Connexion client",
+    "commandCenterHeading": "Centre de contrôle",
+    "commandCenterParagraph": "Notre centre de gestion des expéditions opère directement depuis Kigali, coordonnant les itinéraires à l'échelle nationale.",
+    "location": "Kigali, Rwanda",
+    "copyright": "Tous droits réservés."
+  }
+}

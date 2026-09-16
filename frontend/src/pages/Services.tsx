@@ -1,5 +1,42 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactElement } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
+interface ServiceSpec {
+  label: string;
+  value: string;
+}
+
+interface ServiceItem {
+  id: string;
+  title: string;
+  shortDesc: string;
+  description: string;
+  specs: ServiceSpec[];
+}
+
+const serviceIcons: Record<string, ReactElement> = {
+  "01": (
+    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+    </svg>
+  ),
+  "02": (
+    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+    </svg>
+  ),
+  "03": (
+    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+    </svg>
+  ),
+  "04": (
+    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  )
+};
 
 function useReveal() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,6 +64,7 @@ function useReveal() {
 }
 
 export default function Services() {
+  const { t } = useTranslation('services');
   const [isLoaded, setIsLoaded] = useState(false);
   const stack = useReveal();
 
@@ -36,72 +74,7 @@ export default function Services() {
     return () => clearTimeout(timer);
   }, []);
 
-  const services = [
-    {
-      id: "01",
-      title: "B2B Bulk Manifests",
-      shortDesc: "Automated routing for high-volume merchants.",
-      description: "Upload your daily manifest by CSV or API and we take it from there — orders are automatically routed, batched, and assigned to our fleet. Built for e-commerce platforms, distributors, and corporate partners moving hundreds of parcels a day.",
-      specs: [
-        { label: "Integration", value: "REST API & CSV" },
-        { label: "Routing", value: "Fully Automated" },
-        { label: "Support", value: "Dedicated Account Manager" }
-      ],
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-        </svg>
-      )
-    },
-    {
-      id: "02",
-      title: "On-Demand Courier",
-      shortDesc: "Fast, single-parcel dispatch across Kigali.",
-      description: "When it has to get there now. Request a rider through our web platform or WhatsApp and we pick up and deliver door-to-door, with no warehouse layovers. Ideal for urgent documents, single retail orders, and time-sensitive parts.",
-      specs: [
-        { label: "Delivery Window", value: "2 - 4 Hours" },
-        { label: "Tracking", value: "Live GPS Link" },
-        { label: "Pricing", value: "Instant Quote" }
-      ],
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      )
-    },
-    {
-      id: "03",
-      title: "Cash on Delivery",
-      shortDesc: "Secure cash collection, remitted on time.",
-      description: "Cash on delivery keeps local commerce moving, but chasing payments slows you down. We secure your funds the moment a parcel is dropped off — every collection is logged digitally, and the full amount is remitted to your bank or mobile money account within 48 hours.",
-      specs: [
-        { label: "Remittance", value: "Within 48 Hours" },
-        { label: "Record Keeping", value: "Digital Ledger" },
-        { label: "Payout To", value: "Bank & Mobile Money" }
-      ],
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-        </svg>
-      )
-    },
-    {
-      id: "04",
-      title: "Regional Logistics",
-      shortDesc: "Delivery runs beyond the city.",
-      description: "Reach further without building your own fleet. We run scheduled transport to major hubs upcountry and coordinate secure cross-border deliveries into neighboring markets like the DRC and Uganda.",
-      specs: [
-        { label: "Coverage", value: "National & Cross-Border" },
-        { label: "Fleet", value: "Vans & Light Trucks" },
-        { label: "Customs", value: "Handoff Support" }
-      ],
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      )
-    }
-  ];
+  const services = t('services', { returnObjects: true }) as ServiceItem[];
 
   return (
     <div className="w-full bg-white font-sans">
@@ -125,7 +98,7 @@ export default function Services() {
           >
             <div className="w-8 h-[2px] bg-brand-orange"></div>
             <p className="text-brand-orange font-bold tracking-[0.2em] uppercase text-xs">
-              What We Offer
+              {t('hero.eyebrow')}
             </p>
           </div>
 
@@ -134,8 +107,8 @@ export default function Services() {
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            <span className="text-white block mb-2">Delivery services</span>
-            <span className="text-white/30 block">built around your business.</span>
+            <span className="text-white block mb-2">{t('hero.headingLine1')}</span>
+            <span className="text-white/30 block">{t('hero.headingLine2')}</span>
           </h1>
 
           <p
@@ -143,7 +116,7 @@ export default function Services() {
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            From a single urgent parcel to hundreds of orders a day, here's how we help you get things where they need to go — on time, and accounted for.
+            {t('hero.paragraph')}
           </p>
         </div>
       </section>
@@ -165,7 +138,7 @@ export default function Services() {
                 {/* Left Side: Sticky ID & Title */}
                 <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-32 h-fit">
                   <div className="w-14 h-14 bg-gray-50 border border-gray-200 text-brand-dark flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white group-hover:border-brand-orange transition-all duration-500">
-                    {service.icon}
+                    {serviceIcons[service.id]}
                   </div>
                   <span className="text-gray-300 font-mono text-lg font-bold mb-4 block group-hover:text-brand-orange transition-colors duration-300">
                     {service.id} //
@@ -186,7 +159,7 @@ export default function Services() {
 
                   {/* Informational Density: The Spec Box */}
                   <div className="bg-gray-50 border border-gray-200 p-6 lg:p-8 w-full mt-auto">
-                    <p className="text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-6">Service Specifications</p>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-6">{t('specsLabel')}</p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                       {service.specs.map((spec, i) => (
                         <div key={i} className="flex flex-col gap-1">
@@ -200,7 +173,7 @@ export default function Services() {
                   {/* Internal CTA */}
                   <div className="mt-10">
                     <Link to="/contact" className="inline-flex items-center gap-3 text-sm font-bold text-brand-dark uppercase tracking-widest group/link hover:text-brand-orange transition-colors">
-                      Get started with this service
+                      {t('deployService')}
                       <span className="transform transition-transform duration-300 group-hover/link:translate-x-2 text-brand-orange">→</span>
                     </Link>
                   </div>
@@ -222,16 +195,16 @@ export default function Services() {
             </svg>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark tracking-tighter mb-6">
-            Not sure which service fits?
+            {t('cta.heading')}
           </h2>
           <p className="text-base lg:text-lg text-gray-500 font-light mb-10">
-            Tell us about your shipping volume and we'll help you find the right setup — no pressure, no jargon.
+            {t('cta.paragraph')}
           </p>
           <Link
             to="/contact"
             className="inline-flex items-center gap-3 px-10 py-5 bg-brand-orange text-white font-black uppercase tracking-[0.15em] text-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-orange/30"
           >
-            Talk to our team
+            {t('cta.button')}
             <span className="transform transition-transform duration-300">→</span>
           </Link>
         </div>

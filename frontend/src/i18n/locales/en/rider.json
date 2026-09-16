@@ -1,0 +1,36 @@
+{
+  "home": {
+    "eyebrow": "Rider Hub",
+    "greeting": "Hey, {{name}}",
+    "defaultHeading": "Your deliveries",
+    "loadError": "Could not load your deliveries.",
+    "availableForJobs": "Available for jobs",
+    "offline": "Offline",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "assignedDeliveries": "Assigned Deliveries",
+    "loading": "Loading...",
+    "empty": "No deliveries assigned to you yet.",
+    "collectCod": "Collect COD: {{amount}}",
+    "updating": "Updating...",
+    "markStatus": "Mark {{status}}",
+    "statusUpdateError": "Could not update order status.",
+    "captureProof": "Capture Proof of Delivery",
+    "sidebarDeliveries": "Deliveries",
+    "sidebarEarnings": "Earnings"
+  },
+  "pod": {
+    "eyebrow": "Rider Hub",
+    "heading": "Proof of Delivery",
+    "missingError": "Add a photo, a signature, or both.",
+    "uploadError": "Could not upload proof of delivery.",
+    "photoLabel": "Photo",
+    "photoPreviewAlt": "Proof of delivery preview",
+    "signatureLabel": "Recipient Signature",
+    "uploading": "Uploading...",
+    "submit": "Submit Proof of Delivery"
+  },
+  "signaturePad": {
+    "clear": "Clear signature"
+  }
+}

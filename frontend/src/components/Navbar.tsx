@@ -1,11 +1,27 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useAuth } from '../context/AuthContext';
+import { ROLE_HOME } from '../lib/types';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
+  const { t } = useTranslation('common');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, isAuthenticated, logout } = useAuth();
+
+  const handleLogout = async () => {
+    setIsMobileMenuOpen(false);
+    await logout();
+    navigate('/');
+  };
+
+  const dashboardPath = user ? ROLE_HOME[user.role] : '/dashboard';
+  const dashboardLabel = user?.role === 'ADMIN' ? t('nav.adminHub') : user?.role === 'RIDER' ? t('nav.riderHub') : t('nav.dashboard');
 
   const isActive = (path: string) => location.pathname === path;
   const isHomePage = location.pathname === '/';
@@ -31,15 +47,18 @@ export default function Navbar() {
 
   const isTransparent = isHomePage && !isScrolled;
 
-  if (location.pathname === '/login') {
+  if (['/login', '/register', '/forgot-password', '/reset-password'].includes(location.pathname)) {
     return (
-      <nav className="absolute top-0 left-0 right-0 p-8 flex justify-center z-50">
+      <nav className="absolute top-0 left-0 right-0 p-8 flex items-center justify-center z-50">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 bg-brand-orange flex items-center justify-center shadow-sm transition-transform duration-300 group-hover:scale-110">
             <span className="text-white font-black text-xl">P</span>
           </div>
-          <span className="font-black text-2xl text-brand-dark tracking-tighter uppercase transition-colors group-hover:text-brand-orange">Packton</span>
+          <span className="font-black text-2xl text-brand-dark tracking-tighter uppercase transition-colors group-hover:text-brand-orange">{t('brand')}</span>
         </Link>
+        <div className="absolute right-8">
+          <LanguageSwitcher />
+        </div>
       </nav>
     );
   }
@@ -61,12 +80,12 @@ export default function Navbar() {
           <div className="w-9 h-9 bg-brand-orange flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
             <span className="text-white font-black text-lg">P</span>
           </div>
-          <span 
+          <span
             className={`font-black text-xl tracking-tighter uppercase transition-colors duration-300 ${
               isTransparent ? 'text-white drop-shadow-md group-hover:text-brand-orange' : 'text-brand-dark group-hover:text-brand-orange'
             }`}
           >
-            Packton
+            {t('brand')}
           </span>
         </Link>
 
@@ -76,20 +95,20 @@ export default function Navbar() {
           {/* Desktop Links (With Expanding Underlines) */}
           <div className="flex items-center gap-6 xl:gap-8">
             {[
-              { name: 'Home', path: '/' },
-              { name: 'About', path: '/about' },
-              { name: 'Services', path: '/services' },
-              { name: 'Blog', path: '/blog' },
-              { name: 'Contact', path: '/contact' },
+              { name: t('nav.home'), path: '/' },
+              { name: t('nav.about'), path: '/about' },
+              { name: t('nav.services'), path: '/services' },
+              { name: t('nav.blog'), path: '/blog' },
+              { name: t('nav.contact'), path: '/contact' },
             ].map((item) => (
               <Link
-                key={item.name}
+                key={item.path}
                 to={item.path}
                 className={`relative group text-xs font-bold uppercase tracking-widest transition-colors duration-300 ${
                   isActive(item.path)
                     ? 'text-brand-orange'
-                    : isTransparent 
-                      ? 'text-white/80 hover:text-white' 
+                    : isTransparent
+                      ? 'text-white/80 hover:text-white'
                       : 'text-brand-dark/70 hover:text-brand-dark'
                 }`}
               >
@@ -106,19 +125,42 @@ export default function Navbar() {
 
           {/* Right: CTA & Login (With Button Lift) */}
           <div className="flex items-center gap-5 xl:gap-6 border-l pl-6 xl:pl-8 border-white/20 transition-colors duration-300">
-            <Link 
-              to="/login" 
-              className={`text-xs font-bold uppercase tracking-widest transition-colors duration-300 hover:text-brand-orange ${
-                isTransparent ? 'text-white' : 'text-brand-dark'
-              }`}
-            >
-              Login
-            </Link>
-            <Link 
-              to="/contact" 
+            <LanguageSwitcher transparent={isTransparent} />
+            {isAuthenticated ? (
+              <>
+                <Link
+                  to={dashboardPath}
+                  className={`text-xs font-bold uppercase tracking-widest transition-colors duration-300 hover:text-brand-orange ${
+                    isTransparent ? 'text-white' : 'text-brand-dark'
+                  }`}
+                >
+                  {dashboardLabel}
+                </Link>
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  className={`text-xs font-bold uppercase tracking-widest transition-colors duration-300 hover:text-brand-orange ${
+                    isTransparent ? 'text-white' : 'text-brand-dark'
+                  }`}
+                >
+                  {t('nav.logout')}
+                </button>
+              </>
+            ) : (
+              <Link
+                to="/login"
+                className={`text-xs font-bold uppercase tracking-widest transition-colors duration-300 hover:text-brand-orange ${
+                  isTransparent ? 'text-white' : 'text-brand-dark'
+                }`}
+              >
+                {t('nav.login')}
+              </Link>
+            )}
+            <Link
+              to="/contact"
               className="bg-brand-orange text-white px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-widest shadow-md transition-all duration-300 hover:bg-orange-600 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-orange/30"
             >
-              Get a Quote
+              {t('nav.getQuote')}
             </Link>
           </div>
         </div>
@@ -139,26 +181,40 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-2xl p-6 flex flex-col gap-2 lg:hidden z-50 animate-[slideDown_0.3s_ease-out]">
             {[
-              { name: 'Home', path: '/' },
-              { name: 'About', path: '/about' },
-              { name: 'Services', path: '/services' },
-              { name: 'Blog', path: '/blog' },
-              { name: 'Contact', path: '/contact' },
-              { name: 'Login to Portal', path: '/login' },
+              { name: t('nav.home'), path: '/' },
+              { name: t('nav.about'), path: '/about' },
+              { name: t('nav.services'), path: '/services' },
+              { name: t('nav.blog'), path: '/blog' },
+              { name: t('nav.contact'), path: '/contact' },
+              ...(isAuthenticated
+                ? [{ name: dashboardLabel, path: dashboardPath }]
+                : [{ name: t('nav.loginToPortal'), path: '/login' }]),
             ].map((item) => (
               <Link
-                key={item.name}
+                key={item.path}
                 to={item.path}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`px-4 py-3 text-sm font-bold uppercase tracking-wider rounded-lg transition-all duration-200 ${
-                  isActive(item.path) 
-                    ? 'bg-brand-orange/10 text-brand-orange translate-x-2' 
+                  isActive(item.path)
+                    ? 'bg-brand-orange/10 text-brand-orange translate-x-2'
                     : 'text-brand-dark/80 hover:bg-gray-50 hover:text-brand-orange hover:translate-x-2'
                 }`}
               >
                 {item.name}
               </Link>
             ))}
+            {isAuthenticated && (
+              <button
+                type="button"
+                onClick={handleLogout}
+                className="px-4 py-3 text-sm font-bold uppercase tracking-wider rounded-lg text-left transition-all duration-200 text-brand-dark/80 hover:bg-gray-50 hover:text-brand-orange hover:translate-x-2"
+              >
+                {t('nav.logout')}
+              </button>
+            )}
+            <div className="px-4 pt-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         )}
       </nav>

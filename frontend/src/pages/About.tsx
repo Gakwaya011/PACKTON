@@ -1,4 +1,54 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
+
+interface Pillar {
+  label: string;
+  title: string;
+  description: string;
+}
+
+interface CoreValue {
+  id: string;
+  title: string;
+  description: string;
+}
+
+const pillarIcons: ReactElement[] = [
+  (
+    <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.109.732a9 9 0 01-6.086-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5m0 10.5v-10.5" />
+    </svg>
+  ),
+  (
+    <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+    </svg>
+  )
+];
+
+const coreValueIcons: Record<string, ReactElement> = {
+  "01": (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+    </svg>
+  ),
+  "02": (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  ),
+  "03": (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 18L9 11.25l4.306 4.306a11.95 11.95 0 015.814-5.518l2.74-1.22m0 0l-5.94-2.281m5.94 2.28l-2.28 5.941" />
+    </svg>
+  ),
+  "04": (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75M21 12c0 4.556-3.032 8.822-7.5 9.75-4.468-.928-7.5-5.194-7.5-9.75V6.108a2.25 2.25 0 011.16-1.965l5.25-2.917a2.25 2.25 0 012.18 0l5.25 2.917A2.25 2.25 0 0121 6.108V12z" />
+    </svg>
+  )
+};
 
 function useReveal() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,6 +76,7 @@ function useReveal() {
 }
 
 export default function About() {
+  const { t } = useTranslation('about');
   const [isLoaded, setIsLoaded] = useState(false);
   const missionVision = useReveal();
   const values = useReveal();
@@ -36,72 +87,8 @@ export default function About() {
     return () => clearTimeout(timer);
   }, []);
 
-  const pillars = [
-    {
-      label: "Mission",
-      title: "Why we're here",
-      description: "To remove the friction from delivery, giving every business in Rwanda — from a single vendor to a national retailer — a logistics partner they can rely on every time.",
-      icon: (
-        <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.109.732a9 9 0 01-6.086-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5m0 10.5v-10.5" />
-        </svg>
-      )
-    },
-    {
-      label: "Vision",
-      title: "Where we're headed",
-      description: "A Rwanda where distance never limits opportunity — where any business can reach any customer, in any district, with the same confidence as next door.",
-      icon: (
-        <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-        </svg>
-      )
-    }
-  ];
-
-  const coreValues = [
-    {
-      id: "01",
-      title: "Speed",
-      description: "Every hour a parcel sits idle costs our partners money. We dispatch fast and deliver faster, so your business is never left waiting on us.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-        </svg>
-      )
-    },
-    {
-      id: "02",
-      title: "Transparency",
-      description: "From pickup to signature, every step is tracked and visible. No guessing where a parcel is — for you, or for the person waiting on it.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      )
-    },
-    {
-      id: "03",
-      title: "Built to Scale",
-      description: "Ten parcels a month or a thousand a day — our fleet and our systems grow with your business without breaking a sweat.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 18L9 11.25l4.306 4.306a11.95 11.95 0 015.814-5.518l2.74-1.22m0 0l-5.94-2.281m5.94 2.28l-2.28 5.941" />
-        </svg>
-      )
-    },
-    {
-      id: "04",
-      title: "Customer First",
-      description: "Behind every delivery is a person waiting. We treat every parcel, and every recipient, with the same care we'd want for our own.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75M21 12c0 4.556-3.032 8.822-7.5 9.75-4.468-.928-7.5-5.194-7.5-9.75V6.108a2.25 2.25 0 011.16-1.965l5.25-2.917a2.25 2.25 0 012.18 0l5.25 2.917A2.25 2.25 0 0121 6.108V12z" />
-        </svg>
-      )
-    }
-  ];
+  const pillars = t('missionVision.pillars', { returnObjects: true }) as Pillar[];
+  const coreValues = t('values.items', { returnObjects: true }) as CoreValue[];
 
   return (
     <div className="w-full bg-white font-sans">
@@ -112,7 +99,7 @@ export default function About() {
         {/* Background photo with a slow Ken Burns push-in */}
         <img
           src="/about-hero.jpg"
-          alt="Packton courier dispatching a parcel from a branded motorcycle in Kigali"
+          alt={t('hero.imageAlt')}
           className={`absolute inset-0 w-full h-full object-cover object-center z-0 transform transition-all duration-[3000ms] ease-out ${
             isLoaded ? "scale-100 opacity-100" : "scale-110 opacity-0"
           }`}
@@ -130,7 +117,7 @@ export default function About() {
           >
             <div className="w-8 h-[2px] bg-brand-orange"></div>
             <p className="text-brand-orange font-bold tracking-[0.2em] uppercase text-xs">
-              Who We Are
+              {t('hero.eyebrow')}
             </p>
           </div>
 
@@ -139,8 +126,8 @@ export default function About() {
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            <span className="text-white block mb-2">We don't just move boxes.</span>
-            <span className="text-white/40 block">We build infrastructure.</span>
+            <span className="text-white block mb-2">{t('hero.headingLine1')}</span>
+            <span className="text-white/40 block">{t('hero.headingLine2')}</span>
           </h1>
 
           <p
@@ -148,7 +135,7 @@ export default function About() {
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            Packton is a technology-driven logistics network. We are solving the most complex challenges of last-mile delivery in Rwanda by merging physical fleets with digital precision.
+            {t('hero.paragraph')}
           </p>
         </div>
       </section>
@@ -162,21 +149,21 @@ export default function About() {
             <div className="flex items-center gap-4 mb-6">
               <div className="w-8 h-[2px] bg-brand-orange"></div>
               <p className="text-brand-orange font-bold tracking-[0.2em] uppercase text-xs">
-                Our Story
+                {t('story.eyebrow')}
               </p>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark tracking-tighter leading-[1.1] lg:sticky lg:top-32 pr-8">
-              Distance should never be a barrier to <span className="text-brand-orange">growth.</span>
+              {t('story.headingLine1')} <span className="text-brand-orange">{t('story.headingHighlight')}</span>
             </h2>
           </div>
 
           {/* Right Column Text */}
           <div className="lg:col-span-7 lg:pl-16 flex flex-col gap-8">
             <p className="text-base lg:text-lg text-gray-500 font-light leading-relaxed">
-              Before Packton, businesses in Kigali worked with a fragmented delivery market: lost packages, delayed cash remittances, and little to no tracking. We saw a gap, and we set out to close it.
+              {t('story.paragraph1')}
             </p>
             <p className="text-base lg:text-lg text-gray-500 font-light leading-relaxed">
-              Today, we run a single, standardized workflow — from the moment a manifest is uploaded to the second cash lands in your account — so businesses can scale their deliveries without having to think twice about logistics.
+              {t('story.paragraph2')}
             </p>
 
             <div className="mt-8 inline-flex items-center gap-5 p-6 bg-gray-50 border border-gray-100 w-fit">
@@ -187,8 +174,8 @@ export default function About() {
                 </svg>
               </div>
               <div>
-                <p className="text-sm font-bold text-brand-dark uppercase tracking-widest mb-1">Headquartered in Kigali</p>
-                <p className="text-xs text-gray-400 font-mono">Operating across Rwanda &amp; the region</p>
+                <p className="text-sm font-bold text-brand-dark uppercase tracking-widest mb-1">{t('story.cardTitle')}</p>
+                <p className="text-xs text-gray-400 font-mono">{t('story.cardSubtitle')}</p>
               </div>
             </div>
           </div>
@@ -204,11 +191,11 @@ export default function About() {
             <div className="flex items-center gap-4 mb-6">
               <div className="w-8 h-[2px] bg-brand-orange"></div>
               <p className="text-brand-orange font-bold tracking-[0.2em] uppercase text-xs">
-                What Drives Us
+                {t('missionVision.eyebrow')}
               </p>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark tracking-tighter">
-              Mission &amp; Vision
+              {t('missionVision.heading')}
             </h2>
           </div>
 
@@ -222,7 +209,7 @@ export default function About() {
                 }`}
               >
                 <div className="w-14 h-14 flex items-center justify-center border border-brand-orange text-brand-orange rounded-full mb-8">
-                  {pillar.icon}
+                  {pillarIcons[index]}
                 </div>
                 <p className="text-brand-orange font-bold tracking-[0.15em] uppercase text-xs mb-3">
                   {pillar.label}
@@ -248,14 +235,14 @@ export default function About() {
             <div className="flex items-center gap-4 mb-6">
               <div className="w-8 h-[2px] bg-brand-orange"></div>
               <p className="text-brand-orange font-bold tracking-[0.2em] uppercase text-xs">
-                How We Operate
+                {t('values.eyebrow')}
               </p>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark tracking-tighter mb-6">
-              Our Core Values
+              {t('values.heading')}
             </h2>
             <p className="text-base lg:text-lg text-gray-500 font-light leading-relaxed">
-              The standards that shape every dispatch, every route, and every decision we make at Packton.
+              {t('values.paragraph')}
             </p>
           </div>
 
@@ -269,7 +256,7 @@ export default function About() {
                 }`}
               >
                 <div className="w-12 h-12 flex items-center justify-center bg-brand-dark text-brand-orange mb-6">
-                  {value.icon}
+                  {coreValueIcons[value.id]}
                 </div>
                 <h3 className="text-lg font-bold text-brand-dark tracking-tight mb-3">
                   {value.title}

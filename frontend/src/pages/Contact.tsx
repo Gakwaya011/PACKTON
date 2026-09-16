@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+import { apiFetch, ApiError } from '../lib/api';
 
 export default function Contact() {
+  const { t } = useTranslation('contact');
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -8,42 +12,43 @@ export default function Contact() {
   const [activeVolume, setActiveVolume] = useState<string | null>(null);
   const [formData, setFormData] = useState({ name: '', company: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const volumes = [
-    "1 - 50 / month",
-    "50 - 500 / month",
-    "500 - 2,000+ / month",
-    "Just exploring"
-  ];
+  const volumes = t('form.volumes', { returnObjects: true }) as string[];
 
   const handleChange = (field: keyof typeof formData) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({ ...prev, [field]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!formData.name.trim() || !formData.email.trim()) {
-      setError('Please fill in your name and work email.');
+      setError(t('errors.missingFields'));
       return;
     }
 
-    const subject = encodeURIComponent(`New enquiry from ${formData.name}${formData.company ? ` (${formData.company})` : ''}`);
-    const bodyLines = [
-      `Name: ${formData.name}`,
-      formData.company && `Company: ${formData.company}`,
-      `Email: ${formData.email}`,
-      activeVolume && `Estimated monthly volume: ${activeVolume}`,
-      '',
-      formData.message,
-    ].filter(Boolean);
-    const body = encodeURIComponent(bodyLines.join('\n'));
-
-    window.location.href = `mailto:info@packton.com?subject=${subject}&body=${body}`;
-
     setError(null);
-    setSubmitted(true);
+    setSubmitting(true);
+
+    try {
+      await apiFetch('/contact', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: formData.name,
+          company: formData.company || undefined,
+          email: formData.email,
+          message: formData.message || undefined,
+          estimatedVolume: activeVolume ?? undefined,
+        }),
+      });
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof ApiError ? err.message : t('errors.submitFailed'));
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -64,33 +69,33 @@ export default function Contact() {
             <div className="flex items-center gap-4 mb-10">
               <div className="w-8 h-[2px] bg-[#E8520A]"></div>
               <p className="text-[#E8520A] font-bold tracking-[0.2em] uppercase text-xs">
-                Initiate Dispatch
+                {t('eyebrow')}
               </p>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6">
-              Let's build your <br/>
-              <span className="text-white/30">logistics pipeline.</span>
+              {t('headingLine1')} <br/>
+              <span className="text-white/30">{t('headingLine2')}</span>
             </h1>
 
             <p className="text-base lg:text-lg text-white/50 font-light leading-relaxed mb-12">
-              Whether you need to integrate your e-commerce platform via API or just need a reliable partner for daily bulk dispatches, our operations team is ready to scale with you.
+              {t('intro')}
             </p>
           </div>
 
           {/* Hard Contact Data */}
           <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-10 border-t border-white/10 pt-10">
             <div>
-              <p className="text-[#E8520A] font-mono text-xs font-bold tracking-widest uppercase mb-3">Direct Line</p>
+              <p className="text-[#E8520A] font-mono text-xs font-bold tracking-widest uppercase mb-3">{t('directLineLabel')}</p>
               <a href="mailto:info@packton.com" className="text-xl font-bold text-white hover:text-[#E8520A] transition-colors">
                 info@packton.com
               </a>
             </div>
             <div>
-              <p className="text-[#E8520A] font-mono text-xs font-bold tracking-widest uppercase mb-3">Headquarters</p>
+              <p className="text-[#E8520A] font-mono text-xs font-bold tracking-widest uppercase mb-3">{t('headquartersLabel')}</p>
               <p className="text-lg font-light text-white/70">
-                Kigali City<br/>
-                Rwanda
+                {t('headquartersLine1')}<br/>
+                {t('headquartersLine2')}
               </p>
             </div>
           </div>
@@ -101,21 +106,23 @@ export default function Contact() {
           <div className="w-full max-w-2xl">
             
             <h2 className="text-3xl font-black text-brand-dark tracking-tighter mb-10">
-              Submit a Request
+              {t('formHeading')}
             </h2>
 
             {submitted ? (
               <div className="border border-[#E8520A]/30 bg-[#E8520A]/5 p-8 flex flex-col gap-3">
-                <p className="text-lg font-bold text-brand-dark">Your email client should now be open.</p>
+                <p className="text-lg font-bold text-brand-dark">{t('success.heading')}</p>
                 <p className="text-gray-500 font-light leading-relaxed">
-                  We've pre-filled a message to <span className="font-bold text-brand-dark">info@packton.com</span> with your details. Hit send there and our operations team will reply shortly.
+                  <Trans i18nKey="success.message" t={t} values={{ email: formData.email }} components={{ 1: <span className="font-bold text-brand-dark" /> }}>
+                    {`Our operations team will reach out to <1>{{email}}</1> shortly.`}
+                  </Trans>
                 </p>
                 <button
                   type="button"
                   onClick={() => setSubmitted(false)}
                   className="mt-2 text-sm font-bold text-[#E8520A] uppercase tracking-widest w-fit hover:underline"
                 >
-                  Submit another request
+                  {t('success.resetButton')}
                 </button>
               </div>
             ) : (
@@ -124,10 +131,12 @@ export default function Contact() {
               {/* Grid for Name & Company */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-3">
-                  <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">Full Name</label>
+                  <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">{t('form.fullNameLabel')}</label>
                   <input
                     type="text"
-                    placeholder="Jane Doe"
+                    name="name"
+                    autoComplete="name"
+                    placeholder={t('form.fullNamePlaceholder')}
                     required
                     value={formData.name}
                     onChange={handleChange('name')}
@@ -135,10 +144,12 @@ export default function Contact() {
                   />
                 </div>
                 <div className="flex flex-col gap-3">
-                  <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">Company Name</label>
+                  <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">{t('form.companyLabel')}</label>
                   <input
                     type="text"
-                    placeholder="Acme Corp"
+                    name="organization"
+                    autoComplete="organization"
+                    placeholder={t('form.companyPlaceholder')}
                     value={formData.company}
                     onChange={handleChange('company')}
                     className="w-full bg-gray-50 border border-gray-200 p-4 text-brand-dark focus:bg-white focus:border-[#E8520A] focus:ring-1 focus:ring-[#E8520A] transition-all outline-none"
@@ -148,10 +159,12 @@ export default function Contact() {
 
               {/* Email */}
               <div className="flex flex-col gap-3">
-                <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">Work Email</label>
+                <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">{t('form.emailLabel')}</label>
                 <input
                   type="email"
-                  placeholder="jane@company.com"
+                  name="email"
+                  autoComplete="email"
+                  placeholder={t('form.emailPlaceholder')}
                   required
                   value={formData.email}
                   onChange={handleChange('email')}
@@ -161,7 +174,7 @@ export default function Contact() {
 
               {/* Volume Selection (Radio Buttons styled as pills) */}
               <div className="flex flex-col gap-4 mt-4">
-                <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">Estimated Monthly Volume</label>
+                <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">{t('form.volumeLabel')}</label>
                 <div className="grid grid-cols-2 gap-3">
                   {volumes.map((vol) => (
                     <button
@@ -182,10 +195,10 @@ export default function Contact() {
 
               {/* Message Area */}
               <div className="flex flex-col gap-3 mt-4">
-                <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">Project Details</label>
+                <label className="text-xs font-bold text-brand-dark uppercase tracking-widest">{t('form.messageLabel')}</label>
                 <textarea
                   rows={4}
-                  placeholder="Tell us about your logistics bottlenecks..."
+                  placeholder={t('form.messagePlaceholder')}
                   value={formData.message}
                   onChange={handleChange('message')}
                   className="w-full bg-gray-50 border border-gray-200 p-4 text-brand-dark focus:bg-white focus:border-[#E8520A] focus:ring-1 focus:ring-[#E8520A] transition-all outline-none resize-none"
@@ -199,9 +212,10 @@ export default function Contact() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="mt-6 w-full bg-[#1A1A1A] text-white p-5 font-black uppercase tracking-[0.15em] text-sm hover:bg-[#E8520A] transition-colors duration-300 flex items-center justify-center gap-3 group"
+                disabled={submitting}
+                className="mt-6 w-full bg-[#1A1A1A] text-white p-5 font-black uppercase tracking-[0.15em] text-sm hover:bg-[#E8520A] transition-colors duration-300 flex items-center justify-center gap-3 group disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Transmit Request
+                {submitting ? t('form.submitting') : t('form.submit')}
                 <span className="transform transition-transform duration-300 group-hover:translate-x-2">→</span>
               </button>
 

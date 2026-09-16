@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "eyebrow": "Qui nous sommes",
+    "headingLine1": "Nous ne faisons pas que transporter des colis.",
+    "headingLine2": "Nous construisons des infrastructures.",
+    "paragraph": "Packton est un réseau logistique porté par la technologie. Nous résolvons les défis les plus complexes de la livraison du dernier kilomètre au Rwanda en associant une flotte physique à une précision numérique.",
+    "imageAlt": "Un coursier Packton expédiant un colis depuis une moto siglée Packton à Kigali"
+  },
+  "story": {
+    "eyebrow": "Notre histoire",
+    "headingLine1": "La distance ne devrait jamais être un frein à la",
+    "headingHighlight": "croissance.",
+    "paragraph1": "Avant Packton, les entreprises de Kigali évoluaient dans un marché de la livraison fragmenté : colis perdus, envois de fonds retardés et un suivi quasi inexistant. Nous avons vu une lacune, et nous avons décidé de la combler.",
+    "paragraph2": "Aujourd'hui, nous appliquons un flux de travail unique et standardisé — du moment où un manifeste est chargé jusqu'à la seconde où les fonds arrivent sur votre compte — afin que les entreprises puissent développer leurs livraisons sans avoir à se soucier de la logistique.",
+    "cardTitle": "Siège social à Kigali",
+    "cardSubtitle": "Présents dans tout le Rwanda et la région"
+  },
+  "missionVision": {
+    "eyebrow": "Ce qui nous anime",
+    "heading": "Mission et vision",
+    "pillars": [
+      {
+        "label": "Mission",
+        "title": "Pourquoi nous existons",
+        "description": "Éliminer les frictions de la livraison, en donnant à chaque entreprise du Rwanda — d'un simple vendeur à un détaillant national — un partenaire logistique sur lequel elle peut toujours compter."
+      },
+      {
+        "label": "Vision",
+        "title": "Où nous allons",
+        "description": "Un Rwanda où la distance ne limite jamais les opportunités — où toute entreprise peut atteindre n'importe quel client, dans n'importe quel district, avec la même assurance que s'il était juste à côté."
+      }
+    ]
+  },
+  "values": {
+    "eyebrow": "Comment nous travaillons",
+    "heading": "Nos valeurs fondamentales",
+    "paragraph": "Les normes qui façonnent chaque expédition, chaque itinéraire et chaque décision que nous prenons chez Packton.",
+    "items": [
+      {
+        "id": "01",
+        "title": "Rapidité",
+        "description": "Chaque heure où un colis reste immobile coûte de l'argent à nos partenaires. Nous expédions vite et livrons encore plus vite, pour que votre entreprise n'ait jamais à nous attendre."
+      },
+      {
+        "id": "02",
+        "title": "Transparence",
+        "description": "De l'enlèvement à la signature, chaque étape est suivie et visible. Plus besoin de deviner où se trouve un colis — ni pour vous, ni pour la personne qui l'attend."
+      },
+      {
+        "id": "03",
+        "title": "Conçu pour grandir",
+        "description": "Dix colis par mois ou mille par jour — notre flotte et nos systèmes grandissent avec votre entreprise sans jamais fléchir."
+      },
+      {
+        "id": "04",
+        "title": "Le client d'abord",
+        "description": "Derrière chaque livraison, il y a une personne qui attend. Nous traitons chaque colis, et chaque destinataire, avec le même soin que nous voudrions pour les nôtres."
+      }
+    ]
+  }
+}

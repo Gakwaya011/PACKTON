@@ -5,9 +5,200 @@
 
 generator client {
   provider = "prisma-client"
-  output   = "../generated/prisma"
+  output   = "../src/generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
+}
+
+enum Role {
+  CUSTOMER
+  RIDER
+  ADMIN
+}
+
+enum OrderStatus {
+  PENDING
+  PICKED_UP
+  IN_TRANSIT
+  DELIVERED
+  CANCELLED
+}
+
+model Organization {
+  id        String   @id @default(cuid())
+  name      String
+  apiKey    String?  @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  users     User[]
+  manifests Manifest[]
+
+  @@map("organizations")
+}
+
+model User {
+  id             String        @id @default(cuid())
+  email          String        @unique
+  passwordHash   String
+  name           String
+  phone          String?
+  role           Role          @default(CUSTOMER)
+  organizationId String?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  organization   Organization? @relation(fields: [organizationId], references: [id])
+  refreshTokens  RefreshToken[]
+  passwordResetTokens PasswordResetToken[]
+  orders         Order[]       @relation("OrderSender")
+  rider          Rider?
+  savedAddresses SavedAddress[]
+
+  @@map("users")
+}
+
+model SavedAddress {
+  id        String   @id @default(cuid())
+  userId    String
+  label     String
+  address   String
+  lat       Float?
+  lng       Float?
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("saved_addresses")
+}
+
+model RefreshToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime  @default(now())
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("refresh_tokens")
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("password_reset_tokens")
+}
+
+model Rider {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  vehicleType String?
+  isAvailable Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  orders      Order[]  @relation("OrderRider")
+
+  @@map("riders")
+}
+
+model Manifest {
+  id             String       @id @default(cuid())
+  organizationId String
+  createdAt      DateTime     @default(now())
+
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  orders         Order[]
+
+  @@map("manifests")
+}
+
+model Order {
+  id              String        @id @default(cuid())
+  senderId        String?
+  recipientName   String
+  recipientPhone  String
+  pickupAddress   String
+  pickupLat       Float?
+  pickupLng       Float?
+  dropoffAddress  String
+  dropoffLat      Float?
+  dropoffLng      Float?
+  status          OrderStatus   @default(PENDING)
+  codAmount       Decimal?      @db.Decimal(10, 2)
+  price           Decimal       @db.Decimal(10, 2)
+  riderId         String?
+  manifestId      String?
+  podPhotoUrl     String?
+  podSignatureUrl String?
+  podCapturedAt   DateTime?
+  hasInsurance    Boolean       @default(false)
+  insuranceFee    Decimal?      @db.Decimal(10, 2)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  sender          User?         @relation("OrderSender", fields: [senderId], references: [id])
+  rider           Rider?        @relation("OrderRider", fields: [riderId], references: [id])
+  manifest        Manifest?     @relation(fields: [manifestId], references: [id])
+  statusEvents    OrderStatusEvent[]
+  payments        Payment[]
+
+  @@index([senderId])
+  @@index([riderId])
+  @@map("orders")
+}
+
+model OrderStatusEvent {
+  id        String      @id @default(cuid())
+  orderId   String
+  status    OrderStatus
+  note      String?
+  createdAt DateTime    @default(now())
+
+  order     Order       @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+  @@map("order_status_events")
+}
+
+model Payment {
+  id         String    @id @default(cuid())
+  orderId    String
+  amount     Decimal   @db.Decimal(10, 2)
+  method     String
+  remittedAt DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  order      Order     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+  @@map("payments")
+}
+
+model ContactSubmission {
+  id               String   @id @default(cuid())
+  name             String
+  company          String?
+  email            String
+  message          String?
+  estimatedVolume  String?
+  createdAt        DateTime @default(now())
+
+  @@map("contact_submissions")
 }

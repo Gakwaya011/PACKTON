@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "eyebrow": "What We Offer",
+    "headingLine1": "Delivery services",
+    "headingLine2": "built around your business.",
+    "paragraph": "From a single urgent parcel to hundreds of orders a day, here's how we help you get things where they need to go — on time, and accounted for."
+  },
+  "specsLabel": "Service Specifications",
+  "deployService": "Get started with this service",
+  "services": [
+    {
+      "id": "01",
+      "title": "B2B Bulk Manifests",
+      "shortDesc": "Automated routing for high-volume merchants.",
+      "description": "Upload your daily manifest by CSV or API and we take it from there — orders are automatically routed, batched, and assigned to our fleet. Built for e-commerce platforms, distributors, and corporate partners moving hundreds of parcels a day.",
+      "specs": [
+        { "label": "Integration", "value": "REST API & CSV" },
+        { "label": "Routing", "value": "Fully Automated" },
+        { "label": "Support", "value": "Dedicated Account Manager" }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "On-Demand Courier",
+      "shortDesc": "Fast, single-parcel dispatch across Kigali.",
+      "description": "When it has to get there now. Request a rider through our web platform or WhatsApp and we pick up and deliver door-to-door, with no warehouse layovers. Ideal for urgent documents, single retail orders, and time-sensitive parts.",
+      "specs": [
+        { "label": "Delivery Window", "value": "2 - 4 Hours" },
+        { "label": "Tracking", "value": "Live GPS Link" },
+        { "label": "Pricing", "value": "Instant Quote" }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Cash on Delivery",
+      "shortDesc": "Secure cash collection, remitted on time.",
+      "description": "Cash on delivery keeps local commerce moving, but chasing payments slows you down. We secure your funds the moment a parcel is dropped off — every collection is logged digitally, and the full amount is remitted to your bank or mobile money account within 48 hours.",
+      "specs": [
+        { "label": "Remittance", "value": "Within 48 Hours" },
+        { "label": "Record Keeping", "value": "Digital Ledger" },
+        { "label": "Payout To", "value": "Bank & Mobile Money" }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Regional Logistics",
+      "shortDesc": "Delivery runs beyond the city.",
+      "description": "Reach further without building your own fleet. We run scheduled transport to major hubs upcountry and coordinate secure cross-border deliveries into neighboring markets like the DRC and Uganda.",
+      "specs": [
+        { "label": "Coverage", "value": "National & Cross-Border" },
+        { "label": "Fleet", "value": "Vans & Light Trucks" },
+        { "label": "Customs", "value": "Handoff Support" }
+      ]
+    }
+  ],
+  "cta": {
+    "heading": "Not sure which service fits?",
+    "paragraph": "Tell us about your shipping volume and we'll help you find the right setup — no pressure, no jargon.",
+    "button": "Talk to our team"
+  }
+}

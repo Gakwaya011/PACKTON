@@ -1,0 +1,64 @@
+{
+  "brand": "Packton",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Login",
+    "loginToPortal": "Login to Portal",
+    "logout": "Logout",
+    "getQuote": "Get a Quote",
+    "dashboard": "Dashboard",
+    "adminHub": "Admin",
+    "riderHub": "Rider Hub"
+  },
+  "orderStatus": {
+    "PENDING": "Pending",
+    "PICKED_UP": "Picked Up",
+    "IN_TRANSIT": "In Transit",
+    "DELIVERED": "Delivered",
+    "CANCELLED": "Cancelled"
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "heading": "Route not found.",
+    "paragraph": "The page you're looking for doesn't exist or may have moved.",
+    "backHome": "Back to home"
+  },
+  "blogPlaceholder": {
+    "eyebrow": "Packton Journal",
+    "heading": "Coming soon.",
+    "paragraph": "We're writing up stories on logistics, operations, and building last-mile delivery in Rwanda. Check back soon.",
+    "backHome": "Back to home"
+  },
+  "footer": {
+    "ctaEyebrow": "Ready to scale?",
+    "ctaHeadingLine1": "Move faster.",
+    "ctaHeadingLine2": "Scale smarter.",
+    "ctaParagraph": "Partner with Packton to build a frictionless, high-volume delivery pipeline across Rwanda and beyond.",
+    "ctaButton": "Start Shipping",
+    "brandBlurb": "Frictionless last-mile delivery architecture. Built to optimize high-volume logistics for businesses while keeping on-demand shipping accessible for everyone.",
+    "servicesHeading": "Services",
+    "servicesLinks": [
+      { "name": "B2B Manifest Shipping", "path": "/services" },
+      { "name": "On-Demand Courier", "path": "/services" },
+      { "name": "Cash on Delivery (COD)", "path": "/services" },
+      { "name": "Regional Distribution", "path": "/services" }
+    ],
+    "platformHeading": "Platform",
+    "platformLinks": [
+      { "name": "About Us", "path": "/about" },
+      { "name": "How It Works", "path": "/" },
+      { "name": "Get a Quote", "path": "/contact" }
+    ],
+    "systemStatus": "System Status",
+    "apiDocs": "API Docs",
+    "clientLogin": "Client Login",
+    "commandCenterHeading": "Command Center",
+    "commandCenterParagraph": "Our dispatch management grid operates straight out of Kigali, coordinating routes nationwide.",
+    "location": "Kigali, Rwanda",
+    "copyright": "All rights reserved."
+  }
+}

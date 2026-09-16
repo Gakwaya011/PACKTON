@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "eyebrow": "Who We Are",
+    "headingLine1": "We don't just move boxes.",
+    "headingLine2": "We build infrastructure.",
+    "paragraph": "Packton is a technology-driven logistics network. We are solving the most complex challenges of last-mile delivery in Rwanda by merging physical fleets with digital precision.",
+    "imageAlt": "Packton courier dispatching a parcel from a branded motorcycle in Kigali"
+  },
+  "story": {
+    "eyebrow": "Our Story",
+    "headingLine1": "Distance should never be a barrier to",
+    "headingHighlight": "growth.",
+    "paragraph1": "Before Packton, businesses in Kigali worked with a fragmented delivery market: lost packages, delayed cash remittances, and little to no tracking. We saw a gap, and we set out to close it.",
+    "paragraph2": "Today, we run a single, standardized workflow — from the moment a manifest is uploaded to the second cash lands in your account — so businesses can scale their deliveries without having to think twice about logistics.",
+    "cardTitle": "Headquartered in Kigali",
+    "cardSubtitle": "Operating across Rwanda & the region"
+  },
+  "missionVision": {
+    "eyebrow": "What Drives Us",
+    "heading": "Mission & Vision",
+    "pillars": [
+      {
+        "label": "Mission",
+        "title": "Why we're here",
+        "description": "To remove the friction from delivery, giving every business in Rwanda — from a single vendor to a national retailer — a logistics partner they can rely on every time."
+      },
+      {
+        "label": "Vision",
+        "title": "Where we're headed",
+        "description": "A Rwanda where distance never limits opportunity — where any business can reach any customer, in any district, with the same confidence as next door."
+      }
+    ]
+  },
+  "values": {
+    "eyebrow": "How We Operate",
+    "heading": "Our Core Values",
+    "paragraph": "The standards that shape every dispatch, every route, and every decision we make at Packton.",
+    "items": [
+      {
+        "id": "01",
+        "title": "Speed",
+        "description": "Every hour a parcel sits idle costs our partners money. We dispatch fast and deliver faster, so your business is never left waiting on us."
+      },
+      {
+        "id": "02",
+        "title": "Transparency",
+        "description": "From pickup to signature, every step is tracked and visible. No guessing where a parcel is — for you, or for the person waiting on it."
+      },
+      {
+        "id": "03",
+        "title": "Built to Scale",
+        "description": "Ten parcels a month or a thousand a day — our fleet and our systems grow with your business without breaking a sweat."
+      },
+      {
+        "id": "04",
+        "title": "Customer First",
+        "description": "Behind every delivery is a person waiting. We treat every parcel, and every recipient, with the same care we'd want for our own."
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "eyebrow": "Console Opérations",
+    "heading": "Tableau de bord Admin",
+    "tabs": {
+      "orders": "Commandes",
+      "riders": "Coursiers",
+      "payments": "Paiements",
+      "manifests": "Manifestes",
+      "analytics": "Analytique"
+    }
+  },
+  "orders": {
+    "loadError": "Impossible de charger les commandes.",
+    "assignError": "Impossible d'assigner le coursier.",
+    "filterAll": "Toutes",
+    "loading": "Chargement des commandes...",
+    "empty": "Aucune commande ne correspond à ce filtre.",
+    "table": {
+      "recipient": "Destinataire",
+      "sender": "Expéditeur",
+      "price": "Prix",
+      "status": "Statut",
+      "rider": "Coursier"
+    },
+    "senderFallback": "— (manifeste B2B)",
+    "unassigned": "Non assigné"
+  },
+  "riders": {
+    "loadError": "Impossible de charger les coursiers.",
+    "createError": "Impossible de créer le coursier.",
+    "loading": "Chargement des coursiers...",
+    "empty": "Aucun coursier pour le moment — promouvez un utilisateur ci-dessous.",
+    "table": {
+      "name": "Nom",
+      "contact": "Contact",
+      "vehicle": "Véhicule",
+      "available": "Disponible",
+      "deliveredToday": "Livrées aujourd'hui"
+    },
+    "available": "Disponible",
+    "offline": "Hors ligne",
+    "vehicleFallback": "—",
+    "promoteHeading": "Promouvoir en coursier",
+    "promoteHelp": "Il n'y a pas encore de recherche d'utilisateur — collez directement l'ID de l'utilisateur (visible via la base de données ou une future liste d'utilisateurs admin).",
+    "userIdPlaceholder": "ID utilisateur",
+    "vehicleTypePlaceholder": "Type de véhicule (optionnel)",
+    "creating": "Création...",
+    "makeRider": "Créer le coursier",
+    "createUser": {
+      "heading": "Créer un utilisateur",
+      "help": "Crée un nouveau compte avec un mot de passe généré automatiquement et envoie les identifiants de connexion par e-mail — la personne n'a pas besoin de s'inscrire elle-même.",
+      "namePlaceholder": "Nom complet",
+      "emailPlaceholder": "Adresse e-mail",
+      "phonePlaceholder": "Téléphone (optionnel)",
+      "roleRider": "Coursier",
+      "roleCustomer": "Client",
+      "submit": "Créer l'utilisateur",
+      "creating": "Création en cours...",
+      "error": "Impossible de créer l'utilisateur.",
+      "successEmailed": "Identifiants envoyés par e-mail à {{email}}.",
+      "successNoEmail": "L'e-mail n'est pas encore configuré — partagez ce mot de passe temporaire directement avec {{email}} :"
+    }
+  },
+  "payments": {
+    "loadError": "Impossible de charger les paiements.",
+    "loading": "Chargement des paiements...",
+    "empty": "Aucun paiement COD enregistré pour le moment.",
+    "table": {
+      "recipient": "Destinataire",
+      "amount": "Montant",
+      "method": "Méthode",
+      "status": "Statut",
+      "recorded": "Enregistré"
+    },
+    "remitted": "Remis",
+    "pending": "En attente"
+  },
+  "manifests": {
+    "loadError": "Impossible de charger les manifestes.",
+    "loading": "Chargement des manifestes...",
+    "empty": "Aucun manifeste B2B téléversé pour le moment.",
+    "ordersCount": "{{count}} commandes",
+    "table": {
+      "recipient": "Destinataire",
+      "status": "Statut",
+      "price": "Prix"
+    }
+  },
+  "analytics": {
+    "loadError": "Impossible de charger les analyses.",
+    "loading": "Chargement des analyses...",
+    "totalOrders": "Total des commandes",
+    "delivered": "Livrées",
+    "cancelled": "Annulées",
+    "deliverySuccessRate": "Taux de réussite des livraisons",
+    "avgPickupToDelivery": "Délai moyen enlèvement → livraison",
+    "avgMinutesValue": "{{minutes}} min",
+    "avgMinutesFallback": "—",
+    "codCollectedRemitted": "COD collecté / remis",
+    "riderPerformanceHeading": "Performance des coursiers",
+    "noRiders": "Aucun coursier pour le moment.",
+    "riderStats": "{{delivered}} / {{assigned}} livrées · {{rate}}%"
+  }
+}

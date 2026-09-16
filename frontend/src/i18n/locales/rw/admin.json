@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "eyebrow": "Ikigo cy'Imikorere",
+    "heading": "Ikibaho cy'Ubuyobozi",
+    "tabs": {
+      "orders": "Amabwiriza",
+      "riders": "Abatwara",
+      "payments": "Kwishyura",
+      "manifests": "Impapuro z'Ibicuruzwa",
+      "analytics": "Isesengura"
+    }
+  },
+  "orders": {
+    "loadError": "Ntibishoboye gutangiza amabwiriza.",
+    "assignError": "Ntibishoboye guha umutwara iri bwiriza.",
+    "filterAll": "Byose",
+    "loading": "Turimo gutangiza amabwiriza...",
+    "empty": "Nta bwiriza buhuye n'iyi shungura.",
+    "table": {
+      "recipient": "Uwakira",
+      "sender": "Uwohereza",
+      "price": "Igiciro",
+      "status": "Uko Bimeze",
+      "rider": "Umutwara"
+    },
+    "senderFallback": "— (Impapuro za B2B)",
+    "unassigned": "Nta muntu wahawe"
+  },
+  "riders": {
+    "loadError": "Ntibishoboye gutangiza abatwara.",
+    "createError": "Ntibishoboye kohereza umutwara mushya.",
+    "loading": "Turimo gutangiza abatwara...",
+    "empty": "Nta mutwara urahari — zamura umukoresha hano hepfo.",
+    "table": {
+      "name": "Amazina",
+      "contact": "Aho bamubona",
+      "vehicle": "Ikinyabiziga",
+      "available": "Yiteguye",
+      "deliveredToday": "Yagejeje Uyu munsi"
+    },
+    "available": "Yiteguye",
+    "offline": "Ntabwo ahari",
+    "vehicleFallback": "—",
+    "promoteHeading": "Zamura Ube Umutwara",
+    "promoteHelp": "Nta gushakisha umukoresha birahari — shyiramo ID y'umukoresha ubwawe (ibonwa mu bubiko bw'amakuru cyangwa mu rutonde rw'abakoresha rw'ubuyobozi ruzaza).",
+    "userIdPlaceholder": "ID y'Umukoresha",
+    "vehicleTypePlaceholder": "Ubwoko bw'ikinyabiziga (si ngombwa)",
+    "creating": "Turimo kohereza...",
+    "makeRider": "Kora Umutwara",
+    "createUser": {
+      "heading": "Kurema Umukoresha",
+      "help": "Birema konti nshya ifite ijambobanga ryahawe ubuziranenge maze bikohereza amakuru yo kwinjira kuri imeyili — uwo muntu ntiyakenera kwiyandikisha ubwe.",
+      "namePlaceholder": "Amazina yombi",
+      "emailPlaceholder": "Imeyili",
+      "phonePlaceholder": "Telefoni (bidashobora kuba ngombwa)",
+      "roleRider": "Umutwara",
+      "roleCustomer": "Umukiriya",
+      "submit": "Kurema Umukoresha",
+      "creating": "Kurema...",
+      "error": "Ntibishoboye kurema umukoresha.",
+      "successEmailed": "Amakuru yo kwinjira yoherejwe kuri imeyili ya {{email}}.",
+      "successNoEmail": "Imeyili ntiyashyizweho — sangira iri jambobanga ry'agateganyo na {{email}} ubwawe:"
+    }
+  },
+  "payments": {
+    "loadError": "Ntibishoboye gutangiza kwishyura.",
+    "loading": "Turimo gutangiza kwishyura...",
+    "empty": "Nta kwishyura kwa COD kwanditswe kugeza ubu.",
+    "table": {
+      "recipient": "Uwakira",
+      "amount": "Amafaranga",
+      "method": "Uburyo",
+      "status": "Uko Bimeze",
+      "recorded": "Yanditswe"
+    },
+    "remitted": "Yatanzwe",
+    "pending": "Bitegereje"
+  },
+  "manifests": {
+    "loadError": "Ntibishoboye gutangiza impapuro z'ibicuruzwa.",
+    "loading": "Turimo gutangiza impapuro z'ibicuruzwa...",
+    "empty": "Nta rutonde rwa B2B rwashyizweho kugeza ubu.",
+    "ordersCount": "Amabwiriza {{count}}",
+    "table": {
+      "recipient": "Uwakira",
+      "status": "Uko Bimeze",
+      "price": "Igiciro"
+    }
+  },
+  "analytics": {
+    "loadError": "Ntibishoboye gutangiza isesengura.",
+    "loading": "Turimo gutangiza isesengura...",
+    "totalOrders": "Amabwiriza yose",
+    "delivered": "Yageze",
+    "cancelled": "Yahagaritswe",
+    "deliverySuccessRate": "Igipimo cy'intsinzi mu gutanga",
+    "avgPickupToDelivery": "Igihe cyo hagati yo gufata no gutanga",
+    "avgMinutesValue": "Iminota {{minutes}}",
+    "avgMinutesFallback": "—",
+    "codCollectedRemitted": "COD yakusanyijwe / yatanzwe",
+    "riderPerformanceHeading": "Imikorere y'Abatwara",
+    "noRiders": "Nta mutwara urahari.",
+    "riderStats": "{{delivered}} / {{assigned}} byageze · {{rate}}%"
+  }
+}
