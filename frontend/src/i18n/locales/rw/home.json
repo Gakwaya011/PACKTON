@@ -1,0 +1,140 @@
+{
+  "hero": {
+    "locationIndicator": "Dukorera i Kigali no mu Gihugu Hose",
+    "headingLine1": "Dutanga ibipaketi byawe",
+    "headingLine2": "mu mutekano no ku gihe.",
+    "paragraph": "Packton ihuza u Rwanda binyuze mu gutanga ibintu ku ntera ya nyuma vuba kandi byizewe. Niba uri ikigo cyohereza amakuru menshi buri munsi cyangwa umuntu ku giti cye wohereza impano, twizeza ko bigera aho bijya.",
+    "ctaPrimary": "Fatanya natwe",
+    "ctaSecondary": "Reba serivisi zacu",
+    "imageAlt": "Ikigo cy'ubwikorezi cya Packton"
+  },
+  "valueProposition": {
+    "headingLine1": "Packton — Ubwikorezi butunganijwe neza",
+    "headingLine2": "mu Rwanda.",
+    "paragraph": "Turenga serivisi zisanzwe zo gutanga ibintu tugafata uruhare nk'igice cy'ubucuruzi bwawe. Byizewe, birambuye, kandi byubatswe kugira ngo byaguke.",
+    "imageAlt": "Ibikorwa by'ubwikorezi bya Packton",
+    "features": [
+      {
+        "title": "Kugenzura Mbere yo Kohereza",
+        "description": "Nta rugendo rutagira umumaro. Duhamagara ubwacu uwakira kugira ngo dugenzure aho aherereye mbere y'uko igipaketi gisohoka mu kigo cyacu."
+      },
+      {
+        "title": "Kwishyurwa kwa COD mu Masaha 48",
+        "description": "Reka gukurikirana amafaranga. Amafaranga yakusanyijwe agenzurwa maze akoherezwa ku konti yawe ya banki mu masaha 48."
+      },
+      {
+        "title": "Imbonerahamwe y'Abafatanyabikorwa",
+        "description": "Genzura amateka menshi, kurikirana imiterere yo gutanga, kandi ukurikirane ubwishyu bwawe binyuze mu ikaramu y'abafatanyabikorwa yacu irinzwe."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "Uburyo Dukoresha",
+    "heading": "Uko dutanga ibintu.",
+    "paragraph": "Byoroshye, birambuye, kandi byubakiye ku isezerano ryacu ry'ibanze: tugenzura mbere yo kugenda.",
+    "steps": [
+      {
+        "step": "Intambwe ya 01",
+        "title": "Saba kandi Wohereze Urutonde",
+        "description": "Abantu ku giti cyabo basaba ako kanya kuri interineti. Ibigo byohereza urutonde rwabo rwa buri munsi binyuze kuri porogaramu yacu ya B2B irinzwe cyangwa API."
+      },
+      {
+        "step": "Intambwe ya 02",
+        "title": "Turemeza",
+        "description": "Itsinda ryacu ry'ubwikorezi rihamagara buri wakira kugira ngo rigenzure aho aherereye n'ubushobozi bwe mbere y'uko umutwara ava mu kigo."
+      },
+      {
+        "step": "Intambwe ya 03",
+        "title": "Gutanga no Kwishyura",
+        "description": "Igipaketi cyawe kigera mu mutekano. Kwishyura mu gutanga bikusanywa maze bikoherezwa kuri konti yawe mu masaha 48."
+      }
+    ]
+  },
+  "homeServices": {
+    "eyebrow": "Ubushobozi Bwacu",
+    "heading": "Reba serivisi zacu.",
+    "paragraph": "Kuva ku gutanga ibintu byinshi bya B2B kugeza ku bipaketi by'ihutirwa by'abantu ku giti cyabo, duhindura ibibazo by'ubwikorezi mu buryo bunoze n'ibisubizo bishobora kwaguka.",
+    "learnMore": "Menya Byinshi",
+    "services": [
+      {
+        "title": "Gutanga Ibintu Byinshi bya B2B",
+        "description": "Ohereza urutonde rw'abakiriya bawe — turemeza, dutanga, kandi dukusanya kwishyura mu gutanga. Imbonerahamwe yuzuye yo gukurikirana buri kirego ako kanya."
+      },
+      {
+        "title": "Ibipaketi by'Abantu ku Giti Cyabo B2C",
+        "description": "Duhamagare, dukoreshe WhatsApp, cyangwa usabe kuri interineti. Dufata igipaketi ku rugi rwawe tukakigeza ahantu hose mu Rwanda — umunsi umwe cyangwa umunsi ukurikira."
+      },
+      {
+        "title": "Kwishyura mu Gutanga",
+        "description": "Dukusanya ubwishyu ku rugi mu izina ryawe tukagusubiza mu masaha 48. Nta gukurikirana abakiriya — turabikora."
+      },
+      {
+        "title": "Amakuru ku Miterere",
+        "description": "Buri gikorwa cyo gutanga gihabwa nimero yihariye yo gukurikirana. Uwohereza n'uwakira bombi bahabwa amakuru ya SMS ku ntambwe zose — kuva mu gusaba kugeza mu gutanga."
+      },
+      {
+        "title": "Imbonerahamwe y'Ubucuruzi",
+        "description": "Abakiriya ba B2B bahabwa ikaramu yuzuye — kohereza amateka, gukurikirana ibitanzwe, kureba raporo za COD, no gusohora amakuru. Byose ahantu hamwe."
+      },
+      {
+        "title": "Gutanga hakurya y'Imipaka",
+        "description": "Dutanga ibintu hanze y'u Rwanda — Uganda, DRC, Uburundi, Tanzaniya. Umufatanyabikorwa umwe ku byo ukeneye byose by'ubwikorezi mu karere."
+      }
+    ]
+  },
+  "quickFacts": {
+    "eyebrow": "Icyo Twiyemeje",
+    "headingLine1": "Byubakiwe ubucuruzi.",
+    "headingLine2": "Bigerwaho na bose.",
+    "paragraph": "Dugenzura aho hantu hose mbere yo kohereza kugira ngo dukureho ibitanzwe bitagenze neza. Ibipaketi byawe bigera mu mutekano, kandi amafaranga yakusanyijwe mu izina ryawe akoherezwa ako kanya kuri wowe mu masaha 48.",
+    "stats": [
+      { "label": "Ibitanzwe Byarangiye" },
+      { "label": "Kwishyura kwa COD" },
+      { "label": "Igipimo cy'Intsinzi" },
+      { "label": "Aho Hemejwe" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Ibibazo Bikunze Kubazwa",
+    "headingLine1": "Ibibazo Byawe,",
+    "headingLine2": "Byasubijwe!",
+    "paragraph": "Ntushobora kubona icyo ushaka? Twandikire, itsinda ryacu ry'ibikorwa rizagusubiza ako kanya.",
+    "contactUs": "Twandikire",
+    "items": [
+      {
+        "q": "Mutanga ibintu vuba gute imbere muri Kigali?",
+        "a": "Ibitanzwe byinshi byo mu karere bifatwa, bigenzurwa, kandi bikatangwa mu masaha 2 kugeza 4, bitewe n'urwego rw'ihutirwa rwahiswemo n'ingano y'igipaketi."
+      },
+      {
+        "q": "Uburyo bwo Kwishyura mu Gutanga (COD) bukora bute?",
+        "a": "Igihe usaba igipaketi, erekana umubare wa COD ugomba gukusanywa. Umutwara wacu agenzura amafaranga akimara guhabwa igipaketi, akandika ko yayakiriye neza kuri porogaramu yacu, maze ubwiteganyirize bwacu bukatangira gukohereza amafaranga kuri konti yawe yemejwe mu masaha 48."
+      },
+      {
+        "q": "Ni ahantu hehe mutanga ibintu byuzuye?",
+        "a": "Dutanga serivisi zuzuye zo gutanga muri Kigali hose, tugahuza n'ibigo binini by'intara mu gihugu hagati, kandi tugategura uburyo bw'ubwikorezi hakurya y'imipaka butunganijwe."
+      },
+      {
+        "q": "Ni iki gikorwa iyo igikorwa cyo gutanga kitagenze neza?",
+        "a": "Igihe uwakira adashobora kugerwaho cyangwa adahari, abatwara bacu bandika icyo gikorwa maze bakagarura igipaketi mu mutekano mu kigo cyacu. Duteganya mu buryo bwikora igikorwa cya kabiri cyo gutanga umunsi ukurikira w'akazi nta kiguzi cyongeye."
+      },
+      {
+        "q": "Nshobora guhuza ubucuruzi bwanjye bwa interineti na Packton?",
+        "a": "Yego rwose. Dutanga API ikomeye n'uburyo bwo guhuza vuba na porogaramu nka Shopify na WooCommerce, bikemerera amateka yawe gutanga ubusabe bwo kohereza mu buryo bwikora muri sisitemu yacu."
+      },
+      {
+        "q": "Mwakira ibintu binini cyangwa biremereye?",
+        "a": "Yego. Nubwo ubwato bwacu bw'ibanze bugizwe na moto z'ubwikorezi kugira ngo bigende vuba, dukoresha ubwato bwihariye bw'amamodoka manini n'amakamyo magufi ku bintu binini, ibikoresho by'inzu, hamwe n'ubwikorezi bunini bwa B2B."
+      },
+      {
+        "q": "Nakurikirana nte ibintu byanjye biri mu nzira?",
+        "a": "Buri gikorwa cyo kohereza gitanga ihuza ryihariye ryo gukurikirana. Wowe (binyuze mu Mbonerahamwe y'Ubucuruzi bwawe) n'uwakira (binyuze kuri SMS) mwese mushobora gukurikirana imiterere y'igipaketi kuva igihe gisohotse mu kigo kugeza igihe umukono wa nyuma wemejwe."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "heading": "Witeguye gutangira?",
+    "paragraph": "Menya ubwikorezi busobanutse nta gushidikanya. Tegura ibipimo by'inzira yawe yo gutanga ako kanya.",
+    "ctaPrimary": "Kora Ubusabe",
+    "ctaSecondary": "Kwinjira mu Ikaramu"
+  }
+}

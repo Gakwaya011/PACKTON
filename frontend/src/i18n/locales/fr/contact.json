@@ -1,0 +1,34 @@
+{
+  "eyebrow": "Lancer une expédition",
+  "headingLine1": "Construisons votre",
+  "headingLine2": "chaîne logistique.",
+  "intro": "Que vous ayez besoin d'intégrer votre plateforme e-commerce via une API ou simplement d'un partenaire fiable pour des envois quotidiens en gros volume, notre équipe opérationnelle est prête à évoluer avec vous.",
+  "directLineLabel": "Ligne directe",
+  "headquartersLabel": "Siège social",
+  "headquartersLine1": "Ville de Kigali",
+  "headquartersLine2": "Rwanda",
+  "formHeading": "Envoyer une demande",
+  "success": {
+    "heading": "Votre demande a bien été reçue.",
+    "message": "Notre équipe opérationnelle contactera <1>{{email}}</1> sous peu.",
+    "resetButton": "Envoyer une autre demande"
+  },
+  "form": {
+    "fullNameLabel": "Nom complet",
+    "fullNamePlaceholder": "Jane Doe",
+    "companyLabel": "Nom de l'entreprise",
+    "companyPlaceholder": "Acme Corp",
+    "emailLabel": "E-mail professionnel",
+    "emailPlaceholder": "jane@company.com",
+    "volumeLabel": "Volume mensuel estimé",
+    "volumes": ["1 - 50 / mois", "50 - 500 / mois", "500 - 2 000+ / mois", "Je me renseigne seulement"],
+    "messageLabel": "Détails du projet",
+    "messagePlaceholder": "Parlez-nous de vos difficultés logistiques...",
+    "submitting": "Transmission en cours...",
+    "submit": "Transmettre la demande"
+  },
+  "errors": {
+    "missingFields": "Veuillez renseigner votre nom et votre e-mail professionnel.",
+    "submitFailed": "Impossible d'envoyer votre demande. Veuillez réessayer."
+  }
+}

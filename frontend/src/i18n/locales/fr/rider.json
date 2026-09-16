@@ -1,0 +1,36 @@
+{
+  "home": {
+    "eyebrow": "Espace Coursier",
+    "greeting": "Salut, {{name}}",
+    "defaultHeading": "Vos livraisons",
+    "loadError": "Impossible de charger vos livraisons.",
+    "availableForJobs": "Disponible pour des courses",
+    "offline": "Hors ligne",
+    "today": "Aujourd'hui",
+    "thisWeek": "Cette semaine",
+    "assignedDeliveries": "Livraisons assignées",
+    "loading": "Chargement...",
+    "empty": "Aucune livraison ne vous est assignée pour le moment.",
+    "collectCod": "Encaisser le paiement à la livraison : {{amount}}",
+    "updating": "Mise à jour...",
+    "markStatus": "Marquer {{status}}",
+    "statusUpdateError": "Impossible de mettre à jour le statut de la commande.",
+    "captureProof": "Capturer la preuve de livraison",
+    "sidebarDeliveries": "Livraisons",
+    "sidebarEarnings": "Revenus"
+  },
+  "pod": {
+    "eyebrow": "Espace Coursier",
+    "heading": "Preuve de livraison",
+    "missingError": "Ajoutez une photo, une signature, ou les deux.",
+    "uploadError": "Impossible de téléverser la preuve de livraison.",
+    "photoLabel": "Photo",
+    "photoPreviewAlt": "Aperçu de la preuve de livraison",
+    "signatureLabel": "Signature du destinataire",
+    "uploading": "Téléversement...",
+    "submit": "Envoyer la preuve de livraison"
+  },
+  "signaturePad": {
+    "clear": "Effacer la signature"
+  }
+}

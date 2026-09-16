@@ -1,6 +1,14 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+interface Principle {
+  id: string;
+  title: string;
+  description: string;
+}
 
 export default function About() {
+  const { t } = useTranslation('about');
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -9,23 +17,7 @@ export default function About() {
     return () => clearTimeout(timer);
   }, []);
 
-  const principles = [
-    {
-      id: "01",
-      title: "Uncompromising Speed",
-      description: "Time is the only currency that matters in logistics. We route, dispatch, and deliver with relentless efficiency to keep your business moving."
-    },
-    {
-      id: "02",
-      title: "Radical Transparency",
-      description: "No blind spots. From pickup to final signature, our tracking architecture provides total visibility for you, your team, and your clients."
-    },
-    {
-      id: "03",
-      title: "Engineered for Scale",
-      description: "Whether you are shipping 10 parcels a month or 1,000 a day, our digital and physical infrastructure is built to absorb your growth flawlessly."
-    }
-  ];
+  const principles = t('principles', { returnObjects: true }) as Principle[];
 
   return (
     <div className="w-full bg-white font-sans">
@@ -36,7 +28,7 @@ export default function About() {
         {/* Background photo with a slow Ken Burns push-in */}
         <img
           src="/about-hero.jpg"
-          alt="Packton courier dispatching a parcel from a branded motorcycle in Kigali"
+          alt={t('hero.imageAlt')}
           className={`absolute inset-0 w-full h-full object-cover object-center z-0 transform transition-all duration-[3000ms] ease-out ${
             isLoaded ? "scale-100 opacity-100" : "scale-110 opacity-0"
           }`}
@@ -54,7 +46,7 @@ export default function About() {
           >
             <div className="w-8 h-[2px] bg-[#E8520A]"></div>
             <p className="text-[#E8520A] font-bold tracking-[0.2em] uppercase text-xs">
-              Who We Are
+              {t('hero.eyebrow')}
             </p>
           </div>
 
@@ -63,8 +55,8 @@ export default function About() {
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            <span className="text-white block mb-2">We don't just move boxes.</span>
-            <span className="text-white/40 block">We build infrastructure.</span>
+            <span className="text-white block mb-2">{t('hero.headingLine1')}</span>
+            <span className="text-white/40 block">{t('hero.headingLine2')}</span>
           </h1>
 
           <p
@@ -72,7 +64,7 @@ export default function About() {
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            Packton is a technology-driven logistics network. We are solving the most complex challenges of last-mile delivery in Rwanda by merging physical fleets with digital precision.
+            {t('hero.paragraph')}
           </p>
         </div>
       </section>
@@ -84,26 +76,26 @@ export default function About() {
           {/* Sticky Left Column */}
           <div className="lg:col-span-5">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark tracking-tighter leading-[1.1] lg:sticky lg:top-32 pr-8">
-              Distance should never be a barrier to <span className="text-[#E8520A]">growth.</span>
+              {t('mission.headingLine1')} <span className="text-[#E8520A]">{t('mission.headingHighlight')}</span>
             </h2>
           </div>
 
           {/* Right Column Text */}
           <div className="lg:col-span-7 lg:pl-16 flex flex-col gap-8">
             <p className="text-base lg:text-lg text-gray-500 font-light leading-relaxed">
-              Before Packton, businesses in Kigali struggled with a fragmented delivery market. Lost packages, delayed cash remittances, and zero tracking visibility were the industry standard. We knew there had to be a better way.
+              {t('mission.paragraph1')}
             </p>
             <p className="text-base lg:text-lg text-gray-500 font-light leading-relaxed">
-              We engineered a system that removes the friction from shipping. By standardizing the workflow—from the moment you upload a manifest to the exact second the cash hits your account—we give businesses the confidence to scale without worrying about logistics.
+              {t('mission.paragraph2')}
             </p>
-            
+
             <div className="mt-8 inline-flex items-center gap-5 p-6 bg-gray-50 border border-gray-100 w-fit">
               <div className="w-12 h-12 bg-[#1A1A1A] flex items-center justify-center">
                 <span className="text-white font-black text-xl">P</span>
               </div>
               <div>
-                <p className="text-sm font-bold text-brand-dark uppercase tracking-widest mb-1">Leadership Team</p>
-                <p className="text-xs text-gray-400 font-mono">HQ: KIGALI, RWANDA</p>
+                <p className="text-sm font-bold text-brand-dark uppercase tracking-widest mb-1">{t('mission.cardTitle')}</p>
+                <p className="text-xs text-gray-400 font-mono">{t('mission.cardSubtitle')}</p>
               </div>
             </div>
           </div>
@@ -117,10 +109,10 @@ export default function About() {
 
           <div className="mb-16 max-w-3xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark tracking-tighter mb-6">
-              Our Operating Principles
+              {t('principlesSection.heading')}
             </h2>
             <p className="text-base lg:text-lg text-gray-500 font-light leading-relaxed">
-              The uncompromising standards that dictate every dispatch, route, and technological update we make at Packton.
+              {t('principlesSection.paragraph')}
             </p>
           </div>
 

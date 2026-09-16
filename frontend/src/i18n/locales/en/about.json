@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "eyebrow": "Who We Are",
+    "headingLine1": "We don't just move boxes.",
+    "headingLine2": "We build infrastructure.",
+    "paragraph": "Packton is a technology-driven logistics network. We are solving the most complex challenges of last-mile delivery in Rwanda by merging physical fleets with digital precision.",
+    "imageAlt": "Packton courier dispatching a parcel from a branded motorcycle in Kigali"
+  },
+  "mission": {
+    "headingLine1": "Distance should never be a barrier to",
+    "headingHighlight": "growth.",
+    "paragraph1": "Before Packton, businesses in Kigali struggled with a fragmented delivery market. Lost packages, delayed cash remittances, and zero tracking visibility were the industry standard. We knew there had to be a better way.",
+    "paragraph2": "We engineered a system that removes the friction from shipping. By standardizing the workflow—from the moment you upload a manifest to the exact second the cash hits your account—we give businesses the confidence to scale without worrying about logistics.",
+    "cardTitle": "Leadership Team",
+    "cardSubtitle": "HQ: KIGALI, RWANDA"
+  },
+  "principlesSection": {
+    "heading": "Our Operating Principles",
+    "paragraph": "The uncompromising standards that dictate every dispatch, route, and technological update we make at Packton."
+  },
+  "principles": [
+    {
+      "id": "01",
+      "title": "Uncompromising Speed",
+      "description": "Time is the only currency that matters in logistics. We route, dispatch, and deliver with relentless efficiency to keep your business moving."
+    },
+    {
+      "id": "02",
+      "title": "Radical Transparency",
+      "description": "No blind spots. From pickup to final signature, our tracking architecture provides total visibility for you, your team, and your clients."
+    },
+    {
+      "id": "03",
+      "title": "Engineered for Scale",
+      "description": "Whether you are shipping 10 parcels a month or 1,000 a day, our digital and physical infrastructure is built to absorb your growth flawlessly."
+    }
+  ]
+}

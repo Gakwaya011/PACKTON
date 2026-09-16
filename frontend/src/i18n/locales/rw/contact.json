@@ -1,0 +1,34 @@
+{
+  "eyebrow": "Tangira Kohereza",
+  "headingLine1": "Reka twubake uburyo bwawe",
+  "headingLine2": "bwo gutwara ibintu.",
+  "intro": "Niba ukeneye guhuza urubuga rwawe rwo kudandaza kuri interineti binyuze kuri API cyangwa ukeneye gusa umufatanyabikorwa wizewe wo kohereza ibintu byinshi buri munsi, itsinda ryacu rishinzwe ibikorwa riteguye gukura hamwe nawe.",
+  "directLineLabel": "Umurongo Butaziguye",
+  "headquartersLabel": "Icyicaro Gikuru",
+  "headquartersLine1": "Umujyi wa Kigali",
+  "headquartersLine2": "u Rwanda",
+  "formHeading": "Ohereza Icyifuzo",
+  "success": {
+    "heading": "Icyifuzo cyawe cyakiriwe.",
+    "message": "Itsinda ryacu rishinzwe ibikorwa rizavugana na <1>{{email}}</1> vuba.",
+    "resetButton": "Ohereza ikindi cyifuzo"
+  },
+  "form": {
+    "fullNameLabel": "Amazina Yombi",
+    "fullNamePlaceholder": "Jane Doe",
+    "companyLabel": "Izina ry'Ikigo",
+    "companyPlaceholder": "Acme Corp",
+    "emailLabel": "Imeyili y'Akazi",
+    "emailPlaceholder": "jane@company.com",
+    "volumeLabel": "Umubare w'Ibintu Ugereranije ku Kwezi",
+    "volumes": ["1 - 50 / ukwezi", "50 - 500 / ukwezi", "500 - 2,000+ / ukwezi", "Ndakiri gushakisha amakuru"],
+    "messageLabel": "Ibisobanuro by'Umushinga",
+    "messagePlaceholder": "Tubwire ibibazo ufite mu gutwara ibintu...",
+    "submitting": "Kohereza...",
+    "submit": "Ohereza Icyifuzo"
+  },
+  "errors": {
+    "missingFields": "Uzuza amazina yawe n'imeyili y'akazi.",
+    "submitFailed": "Ntibyakunze kohereza icyifuzo cyawe. Ongera ugerageze."
+  }
+}

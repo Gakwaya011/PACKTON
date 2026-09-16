@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "eyebrow": "Qui nous sommes",
+    "headingLine1": "Nous ne faisons pas que transporter des colis.",
+    "headingLine2": "Nous construisons des infrastructures.",
+    "paragraph": "Packton est un réseau logistique porté par la technologie. Nous résolvons les défis les plus complexes de la livraison du dernier kilomètre au Rwanda en associant une flotte physique à une précision numérique.",
+    "imageAlt": "Un coursier Packton expédiant un colis depuis une moto siglée Packton à Kigali"
+  },
+  "mission": {
+    "headingLine1": "La distance ne devrait jamais être un frein à la",
+    "headingHighlight": "croissance.",
+    "paragraph1": "Avant Packton, les entreprises de Kigali étaient confrontées à un marché de la livraison fragmenté. Colis perdus, envois de fonds retardés et absence totale de suivi étaient la norme du secteur. Nous savions qu'il existait une meilleure solution.",
+    "paragraph2": "Nous avons conçu un système qui élimine les frictions dans la livraison. En standardisant le flux de travail — du moment où vous chargez un manifeste jusqu'à la seconde exacte où les fonds arrivent sur votre compte — nous donnons aux entreprises la confiance nécessaire pour se développer sans se soucier de la logistique.",
+    "cardTitle": "Équipe de direction",
+    "cardSubtitle": "SIÈGE : KIGALI, RWANDA"
+  },
+  "principlesSection": {
+    "heading": "Nos principes opérationnels",
+    "paragraph": "Les normes exigeantes qui régissent chaque expédition, chaque itinéraire et chaque mise à jour technologique que nous réalisons chez Packton."
+  },
+  "principles": [
+    {
+      "id": "01",
+      "title": "Une rapidité sans compromis",
+      "description": "Le temps est la seule monnaie qui compte en logistique. Nous planifions les itinéraires, expédions et livrons avec une efficacité implacable pour que votre activité ne s'arrête jamais."
+    },
+    {
+      "id": "02",
+      "title": "Une transparence radicale",
+      "description": "Aucune zone d'ombre. De l'enlèvement à la signature finale, notre architecture de suivi offre une visibilité totale pour vous, votre équipe et vos clients."
+    },
+    {
+      "id": "03",
+      "title": "Conçu pour grandir",
+      "description": "Que vous expédiiez 10 colis par mois ou 1 000 par jour, notre infrastructure numérique et physique est conçue pour absorber votre croissance sans faille."
+    }
+  ]
+}

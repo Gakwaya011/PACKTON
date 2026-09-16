@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "eyebrow": "Ops Console",
+    "heading": "Admin Dashboard",
+    "tabs": {
+      "orders": "Orders",
+      "riders": "Riders",
+      "payments": "Payments",
+      "manifests": "Manifests",
+      "analytics": "Analytics"
+    }
+  },
+  "orders": {
+    "loadError": "Could not load orders.",
+    "assignError": "Could not assign rider.",
+    "filterAll": "All",
+    "loading": "Loading orders...",
+    "empty": "No orders match this filter.",
+    "table": {
+      "recipient": "Recipient",
+      "sender": "Sender",
+      "price": "Price",
+      "status": "Status",
+      "rider": "Rider"
+    },
+    "senderFallback": "— (B2B manifest)",
+    "unassigned": "Unassigned"
+  },
+  "riders": {
+    "loadError": "Could not load riders.",
+    "createError": "Could not create rider.",
+    "loading": "Loading riders...",
+    "empty": "No riders yet — promote a user below.",
+    "table": {
+      "name": "Name",
+      "contact": "Contact",
+      "vehicle": "Vehicle",
+      "available": "Available",
+      "deliveredToday": "Delivered Today"
+    },
+    "available": "Available",
+    "offline": "Offline",
+    "vehicleFallback": "—",
+    "promoteHeading": "Promote to Rider",
+    "promoteHelp": "There's no user search yet — paste the user's ID directly (visible via the database or a future admin user list).",
+    "userIdPlaceholder": "User ID",
+    "vehicleTypePlaceholder": "Vehicle type (optional)",
+    "creating": "Creating...",
+    "makeRider": "Make Rider",
+    "createUser": {
+      "heading": "Create User",
+      "help": "Creates a new account with a generated password and emails the login credentials directly — they don't need to register themselves.",
+      "namePlaceholder": "Full name",
+      "emailPlaceholder": "Email address",
+      "phonePlaceholder": "Phone (optional)",
+      "roleRider": "Rider",
+      "roleCustomer": "Customer",
+      "submit": "Create User",
+      "creating": "Creating...",
+      "error": "Could not create user.",
+      "successEmailed": "Credentials emailed to {{email}}.",
+      "successNoEmail": "Email isn't configured yet — share this temporary password with {{email}} directly:"
+    }
+  },
+  "payments": {
+    "loadError": "Could not load payments.",
+    "loading": "Loading payments...",
+    "empty": "No COD payments recorded yet.",
+    "table": {
+      "recipient": "Recipient",
+      "amount": "Amount",
+      "method": "Method",
+      "status": "Status",
+      "recorded": "Recorded"
+    },
+    "remitted": "Remitted",
+    "pending": "Pending"
+  },
+  "manifests": {
+    "loadError": "Could not load manifests.",
+    "loading": "Loading manifests...",
+    "empty": "No B2B manifests uploaded yet.",
+    "ordersCount": "{{count}} orders",
+    "table": {
+      "recipient": "Recipient",
+      "status": "Status",
+      "price": "Price"
+    }
+  },
+  "analytics": {
+    "loadError": "Could not load analytics.",
+    "loading": "Loading analytics...",
+    "totalOrders": "Total orders",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled",
+    "deliverySuccessRate": "Delivery success rate",
+    "avgPickupToDelivery": "Avg. pickup to delivery",
+    "avgMinutesValue": "{{minutes}} min",
+    "avgMinutesFallback": "—",
+    "codCollectedRemitted": "COD collected / remitted",
+    "riderPerformanceHeading": "Rider Performance",
+    "noRiders": "No riders yet.",
+    "riderStats": "{{delivered}} / {{assigned}} delivered · {{rate}}%"
+  }
+}

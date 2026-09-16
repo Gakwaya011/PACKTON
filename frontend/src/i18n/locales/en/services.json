@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "eyebrow": "Operational Capabilities",
+    "headingLine1": "End-to-end",
+    "headingLine2": "delivery architecture.",
+    "paragraph": "From single-parcel urgent dispatches to high-volume API-driven routing. Explore the physical and digital services we deploy to scale your business."
+  },
+  "specsLabel": "Service Specifications",
+  "deployService": "Deploy this service",
+  "services": [
+    {
+      "id": "01",
+      "title": "B2B Bulk Manifests",
+      "shortDesc": "High-volume, automated routing for enterprise merchants.",
+      "description": "Stop manually entering orders. Upload your daily dispatch manifest via CSV or API, and our system automatically routes, batches, and assigns the deliveries to our urban fleet. Designed for e-commerce platforms, distributors, and corporate partners who need to move hundreds of parcels a day without friction.",
+      "specs": [
+        { "label": "Integration", "value": "REST API & CSV" },
+        { "label": "Batching", "value": "Algorithmic Routing" },
+        { "label": "Support", "value": "Dedicated Account Mgr" }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "On-Demand Courier",
+      "shortDesc": "Hyper-fast, single-parcel dispatch across Kigali.",
+      "description": "When it has to be there right now. Request a rider instantly through our web platform or WhatsApp. We guarantee rapid pickup and direct door-to-door delivery with zero warehouse layovers. Perfect for urgent documents, retail single-orders, and emergency parts logistics.",
+      "specs": [
+        { "label": "SLA Time", "value": "2 - 4 Hours" },
+        { "label": "Tracking", "value": "Live GPS Link" },
+        { "label": "Pricing", "value": "Instant Quoting" }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "COD Management",
+      "shortDesc": "Secure, audited cash collection and remittance.",
+      "description": "Cash on Delivery is the lifeblood of local commerce, but chasing payments slows you down. We secure your funds at the exact moment of drop-off. Our riders digitally log the collection, and our treasury department remits the full amount directly to your verified bank or mobile money account within 48 hours.",
+      "specs": [
+        { "label": "Remittance", "value": "48h Guarantee" },
+        { "label": "Audit", "value": "Digital Ledger" },
+        { "label": "Payouts", "value": "Bank & MoMo" }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Regional Logistics",
+      "shortDesc": "Linehaul transport beyond the city limits.",
+      "description": "Expand your market reach without building your own fleet. We execute structured transport runs to major provincial hubs upcountry and coordinate highly secure cross-border logistics into neighboring markets like the DRC and Uganda.",
+      "specs": [
+        { "label": "Network", "value": "National & Borders" },
+        { "label": "Assets", "value": "Vans & Light Trucks" },
+        { "label": "Customs", "value": "Handoff Support" }
+      ]
+    }
+  ],
+  "cta": {
+    "heading": "Not sure which tier fits?",
+    "paragraph": "Let our operations team audit your current shipping volume and build a custom pricing model that scales with you.",
+    "button": "Contact Sales"
+  }
+}

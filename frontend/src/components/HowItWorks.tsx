@@ -1,6 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+interface Step {
+  step: string;
+  title: string;
+  description: string;
+}
 
 export default function HowItWorks() {
+  const { t } = useTranslation('home');
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -19,23 +27,7 @@ export default function HowItWorks() {
     return () => observer.disconnect();
   }, []);
 
-  const steps = [
-    {
-      step: "Step 01",
-      title: "Book & Upload",
-      description: "Individuals book instantly online. Businesses upload their daily manifest via our secure B2B portal or API."
-    },
-    {
-      step: "Step 02",
-      title: "We Confirm",
-      description: "Our dispatch team calls every recipient to verify location and availability before a rider ever leaves the hub."
-    },
-    {
-      step: "Step 03",
-      title: "Deliver & Remit",
-      description: "Your package arrives safely. Cash on delivery is collected and remitted to your account within 48 hours."
-    }
-  ];
+  const steps = t('howItWorks.steps', { returnObjects: true }) as Step[];
 
   return (
     <section ref={sectionRef} className="bg-white py-20 lg:py-24 w-full overflow-hidden border-t border-gray-100">
@@ -50,14 +42,14 @@ export default function HowItWorks() {
           <div className="flex items-center gap-4 mb-6">
             <div className="w-8 h-[2px] bg-brand-orange"></div>
             <p className="text-brand-orange font-bold tracking-[0.2em] uppercase text-xs">
-              Our Process
+              {t('howItWorks.eyebrow')}
             </p>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-brand-dark tracking-tighter leading-[1.1] mb-6">
-            How we deliver.
+            {t('howItWorks.heading')}
           </h2>
           <p className="text-base md:text-lg text-gray-500 font-light leading-relaxed">
-            Simple, transparent, and built on our core promise: we confirm before we move.
+            {t('howItWorks.paragraph')}
           </p>
         </div>
 

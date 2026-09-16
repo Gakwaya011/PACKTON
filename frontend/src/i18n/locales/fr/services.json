@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "eyebrow": "Capacités opérationnelles",
+    "headingLine1": "Une architecture de livraison",
+    "headingLine2": "de bout en bout.",
+    "paragraph": "Des envois urgents à colis unique au routage haut volume piloté par API. Découvrez les services physiques et numériques que nous déployons pour faire grandir votre entreprise."
+  },
+  "specsLabel": "Caractéristiques du service",
+  "deployService": "Activer ce service",
+  "services": [
+    {
+      "id": "01",
+      "title": "Manifestes B2B en volume",
+      "shortDesc": "Routage automatisé à haut volume pour les marchands professionnels.",
+      "description": "Ne saisissez plus vos commandes manuellement. Chargez votre manifeste d'expédition quotidien via CSV ou API, et notre système achemine, groupe et affecte automatiquement les livraisons à notre flotte urbaine. Conçu pour les plateformes e-commerce, les distributeurs et les partenaires corporate qui doivent expédier des centaines de colis par jour sans friction.",
+      "specs": [
+        { "label": "Intégration", "value": "API REST & CSV" },
+        { "label": "Groupage", "value": "Routage algorithmique" },
+        { "label": "Support", "value": "Gestionnaire de compte dédié" }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Coursier à la demande",
+      "shortDesc": "Expédition ultra-rapide de colis unique dans tout Kigali.",
+      "description": "Quand ça doit arriver maintenant. Demandez un coursier instantanément via notre plateforme web ou WhatsApp. Nous garantissons un enlèvement rapide et une livraison directe de porte à porte, sans passage en entrepôt. Idéal pour les documents urgents, les commandes uniques de détail et la logistique de pièces d'urgence.",
+      "specs": [
+        { "label": "Délai garanti", "value": "2 à 4 heures" },
+        { "label": "Suivi", "value": "Lien GPS en direct" },
+        { "label": "Tarification", "value": "Devis instantané" }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Gestion du paiement à la livraison",
+      "shortDesc": "Collecte et reversement d'espèces sécurisés et audités.",
+      "description": "Le paiement à la livraison est le moteur du commerce local, mais le recouvrement des paiements peut vous ralentir. Nous sécurisons vos fonds dès l'instant de la remise. Nos coursiers enregistrent numériquement chaque collecte, et notre service de trésorerie reverse l'intégralité du montant directement sur votre compte bancaire ou mobile money vérifié sous 48 heures.",
+      "specs": [
+        { "label": "Reversement", "value": "Garantie 48h" },
+        { "label": "Audit", "value": "Registre numérique" },
+        { "label": "Versements", "value": "Banque & Mobile Money" }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Logistique régionale",
+      "shortDesc": "Transport longue distance au-delà des limites de la ville.",
+      "description": "Élargissez votre marché sans constituer votre propre flotte. Nous assurons des liaisons de transport structurées vers les principaux pôles provinciaux du pays et coordonnons une logistique transfrontalière hautement sécurisée vers les marchés voisins comme la RDC et l'Ouganda.",
+      "specs": [
+        { "label": "Réseau", "value": "National & transfrontalier" },
+        { "label": "Moyens", "value": "Fourgons & camionnettes" },
+        { "label": "Douane", "value": "Accompagnement dédié" }
+      ]
+    }
+  ],
+  "cta": {
+    "heading": "Vous hésitez sur la formule à choisir ?",
+    "paragraph": "Laissez notre équipe opérationnelle auditer votre volume d'expédition actuel et construire un modèle tarifaire sur mesure qui évolue avec vous.",
+    "button": "Contacter les ventes"
+  }
+}

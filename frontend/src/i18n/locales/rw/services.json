@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "eyebrow": "Ubushobozi mu Mikorere",
+    "headingLine1": "Ubwikorezi buhuriweho",
+    "headingLine2": "kuva ku ntangiriro kugeza ku iherezo.",
+    "paragraph": "Kuva ku bwikorezi bw'ihuse bw'umuzigo umwe kugeza ku bwikorezi bunini bukoresha API. Reba serivisi zifatika n'iz'ikoranabuhanga dukoresha kugira ngo ubucuruzi bwawe bukure."
+  },
+  "specsLabel": "Ibisobanuro bya Serivisi",
+  "deployService": "Koresha iyi serivisi",
+  "services": [
+    {
+      "id": "01",
+      "title": "Urutonde runini rw'Ubucuruzi (B2B)",
+      "shortDesc": "Uburyo bwikoresha bwo kohereza ibicuruzwa byinshi ku bucuruzi bunini.",
+      "description": "Reka kwandika amabwiriza ku giti cyawe. Ohereza urutonde rwawe rwa buri munsi ukoresheje CSV cyangwa API, maze uburyo bwacu bukohereze, bugerageze, kandi buhe abakozi bacu bo mu mujyi gutanga ibicuruzwa. Byakorewe uruganda rw'ubucuruzi kuri interineti, abasaba ibicuruzwa, n'abafatanyabikorwa binini bakeneye kohereza amagana y'imizigo ku munsi nta ngorane.",
+      "specs": [
+        { "label": "Ihuzwa", "value": "REST API na CSV" },
+        { "label": "Igerageza", "value": "Uburyo bw'Igenamiterere" },
+        { "label": "Ubufasha", "value": "Umuyobozi wihariye wa Konti" }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Umukozi Uboneka Igihe Ushaka",
+      "shortDesc": "Kohereza umuzigo umwe vuba cyane hirya no hino i Kigali.",
+      "description": "Igihe bigomba kugera ubu nonaha. Saba umukozi ako kanya binyuze kuri urubuga rwacu cyangwa WhatsApp. Dutanga icyizere cyo gutora vuba no gutanga ibicuruzwa inzu ku nzu nta gihe cyo kubika mu bubiko. Byiza cyane ku nyandiko z'ihutirwa, itumiza rimwe rimwe mu bucuruzi, no ku bwikorezi bw'ibice by'ihutirwa.",
+      "specs": [
+        { "label": "Igihe cyo Gutanga", "value": "Amasaha 2-4" },
+        { "label": "Gukurikirana", "value": "Ihuza rya GPS mu Gihe Nyacyo" },
+        { "label": "Ibiciro", "value": "Igereranyo Ryihuse" }
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Gucunga Kwishyura Igihe cyo Gutanga (COD)",
+      "shortDesc": "Gukusanya no kwishyura amafaranga mu buryo bwizewe kandi bugenzurwa.",
+      "description": "Kwishyura igihe cyo gutanga ni ihame ry'ubucuruzi bw'aho iwacu, ariko gukurikirana kwishyura bigabanya umuvuduko wawe. Turinda amafaranga yawe ako kanya ibicuruzwa bigeze aho bijyanwa. Abakozi bacu banditse ku buryo bw'ikoranabuhanga icyo bakusanyije, kandi ishami ryacu ry'imari rikohereza amafaranga yose ku konti yawe ya banki cyangwa mobile money yemejwe mu masaha 48.",
+      "specs": [
+        { "label": "Kohereza Amafaranga", "value": "Ubwizigirwa mu Masaha 48" },
+        { "label": "Igenzura", "value": "Igitabo cy'Ikoranabuhanga" },
+        { "label": "Kwishyura", "value": "Banki na MoMo" }
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Ubwikorezi mu Ntara",
+      "shortDesc": "Ubwikorezi bunini hanze y'umujyi.",
+      "description": "Gura isoko ryawe nta kugira umuparata wawe bwite. Dukora ingendo z'ubwikorezi zitunganijwe zerekeza ku bigo binini by'intara mu gihugu hose kandi dutegura ubwikorezi bwizewe cyane bunyura ku mipaka bujya mu masoko ari hafi nka DRC na Uganda.",
+      "specs": [
+        { "label": "Urusobe", "value": "Igihugu Hose n'Imipaka" },
+        { "label": "Ibikoresho", "value": "Amamodoka n'Amakamyo Magufi" },
+        { "label": "Ibya Kirimbuzi", "value": "Ubufasha mu Kwimurwa" }
+      ]
+    }
+  ],
+  "cta": {
+    "heading": "Ntabwo uzi urwego rukwiye?",
+    "paragraph": "Reka itsinda ryacu ry'imikorere rigenzure umubare w'ibicuruzwa utanga ubu maze ryubake uburyo bw'ibiciro bwihariye bukura hamwe nawe.",
+    "button": "Vugana n'Abacuruzi"
+  }
+}

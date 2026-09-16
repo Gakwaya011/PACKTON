@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import heroBackgroundImage from '../assets/hero-bg.jpg';
 
 export default function Hero() {
+  const { t } = useTranslation('home');
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -17,8 +19,8 @@ export default function Hero() {
       
       {/* LAYER 1: The Background Image with Cinematic "Ken Burns" Effect */}
       <img 
-        src={heroBackgroundImage} 
-        alt="Packton logistics dispatch" 
+        src={heroBackgroundImage}
+        alt={t('hero.imageAlt')}
         className={`absolute inset-0 w-full h-full object-cover object-center z-0 transform transition-all duration-[3000ms] ease-out ${
           isLoaded ? "scale-100 opacity-100" : "scale-110 opacity-0"
         }`}
@@ -43,7 +45,7 @@ export default function Hero() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
-            Operating in Kigali & Nationwide
+            {t('hero.locationIndicator')}
           </div>
 
           {/* Headline - Staggered slide up */}
@@ -53,14 +55,14 @@ export default function Hero() {
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
               }`}
             >
-              We deliver your packages
+              {t('hero.headingLine1')}
             </span>
-            <span 
+            <span
               className={`text-brand-orange mt-2 transform transition-all duration-1000 delay-700 ease-out ${
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
               }`}
             >
-              safely and on time.
+              {t('hero.headingLine2')}
             </span>
           </h1>
           
@@ -70,7 +72,7 @@ export default function Hero() {
               isLoaded ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            Packton connects Rwanda through fast, reliable last-mile delivery. Whether you are a business sending hundreds of daily orders or an individual sending a gift, we make sure it gets there.
+            {t('hero.paragraph')}
           </p>
 
           {/* Buttons - Pop in last with hover micro-interactions */}
@@ -83,14 +85,14 @@ export default function Hero() {
               to="/contact" 
               className="bg-brand-orange text-white px-8 py-4 rounded-lg text-sm font-bold uppercase tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(247,105,37,0.3)] hover:shadow-[0_0_30px_rgba(247,105,37,0.6)] hover:bg-orange-600 hover:-translate-y-1"
             >
-              Partner with us
+              {t('hero.ctaPrimary')}
             </Link>
-            
-            <Link 
-              to="/services" 
+
+            <Link
+              to="/services"
               className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-lg text-sm font-bold uppercase tracking-widest transition-all duration-300 shadow-lg hover:bg-white hover:text-black hover:-translate-y-1"
             >
-              Explore our services
+              {t('hero.ctaSecondary')}
             </Link>
           </div>
         </div>

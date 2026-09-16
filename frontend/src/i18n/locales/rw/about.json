@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "eyebrow": "Abo Turibo",
+    "headingLine1": "Ntabwo tujyanya udusanduku gusa.",
+    "headingLine2": "Twubaka ibikorwa remezo.",
+    "paragraph": "Packton ni urusobe rw'ubwikorezi rushingiye ku ikoranabuhanga. Turi gukemura ibibazo bikomeye by'ubwikorezi bwa nyuma mu Rwanda dukoresheje ihuzwa ry'imodoka nyazo n'ikoranabuhanga rinoze.",
+    "imageAlt": "Umukozi wa Packton yohereza umuzigo ava kuri moto ifite ikirango cya Packton mu Kigali"
+  },
+  "mission": {
+    "headingLine1": "Intera ntigomba kuba imbogamizi ku",
+    "headingHighlight": "iterambere.",
+    "paragraph1": "Mbere ya Packton, ubucuruzi mu Kigali bwahuraga n'isoko ry'ubwikorezi ritunganye. Kubura ibicuruzwa, kutinda kw'amafaranga y'ubwikorezi, no kubura uburyo bwo gukurikirana byari bimenyerewe muri uru rwego. Twari tuzi ko habaho uburyo bwiza.",
+    "paragraph2": "Twateje imbere uburyo bukuraho ingorane mu bwikorezi. Dushyiraho uburyo bumwe bwo gukora—kuva igihe wohereza urutonde rw'ibicuruzwa kugeza igihe amafaranga agera kuri konti yawe—duha ubucuruzi icyizere cyo kwiyongera batitaye ku bwikorezi.",
+    "cardTitle": "Itsinda ry'Ubuyobozi",
+    "cardSubtitle": "ICYICARO: KIGALI, U RWANDA"
+  },
+  "principlesSection": {
+    "heading": "Amahame Ngenderwaho mu Mikorere Yacu",
+    "paragraph": "Amahame adasubirwaho agenga buri kohereza, buri nzira, n'ivugurura ry'ikoranabuhanga ryose dukora muri Packton."
+  },
+  "principles": [
+    {
+      "id": "01",
+      "title": "Umuvuduko Utagira Ugupfobya",
+      "description": "Igihe ni cyo cyonyine cy'agaciro mu bwikorezi. Dukurikirana inzira, dukohereza, tugatanga ibicuruzwa n'umuvuduko udahwema kugira ngo ubucuruzi bwawe bukomeze gutera imbere."
+    },
+    {
+      "id": "02",
+      "title": "Ukuri Ntagipimo",
+      "description": "Nta handi hihishira. Kuva igihe cyo gutora ibicuruzwa kugeza igihe cyo gusinya iheruka, uburyo bwacu bwo gukurikirana butanga ubwisanzure busesuye kuri wowe, itsinda ryawe, n'abakiriya bawe."
+    },
+    {
+      "id": "03",
+      "title": "Byubatswe ku Iterambere",
+      "description": "Niba wohereza ibicuruzwa 10 ku kwezi cyangwa 1,000 ku munsi, ibikorwa remezo byacu by'ikoranabuhanga n'ibifatika byubatswe kugira ngo bikire iterambere ryawe nta ngorane."
+    }
+  ]
+}

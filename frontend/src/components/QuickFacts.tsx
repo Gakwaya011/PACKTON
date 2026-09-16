@@ -1,4 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+interface StatLabel {
+  label: string;
+}
 
 // Custom component to handle the smooth number counting
 const StatItem = ({ endValue, suffix, label, delay, isVisible }: { endValue: number, suffix: string, label: string, delay: number, isVisible: boolean }) => {
@@ -66,6 +71,7 @@ const StatItem = ({ endValue, suffix, label, delay, isVisible }: { endValue: num
 };
 
 export default function QuickFacts() {
+  const { t } = useTranslation('home');
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -87,12 +93,17 @@ export default function QuickFacts() {
     return () => observer.disconnect();
   }, []);
 
-  const stats = [
-    { value: 500, suffix: "+", label: "Deliveries Completed" },
-    { value: 48, suffix: "h", label: "COD Remittance" },
-    { value: 98, suffix: "%", label: "Success Rate" },
-    { value: 100, suffix: "%", label: "Location Verified" }
+  const statLabels = t('quickFacts.stats', { returnObjects: true }) as StatLabel[];
+  const statValues = [
+    { value: 500, suffix: "+" },
+    { value: 48, suffix: "h" },
+    { value: 98, suffix: "%" },
+    { value: 100, suffix: "%" }
   ];
+  const stats = statValues.map((stat, index) => ({
+    ...stat,
+    label: statLabels[index].label
+  }));
 
   return (
     <section ref={sectionRef} className="w-full bg-brand-ultra/50 py-20 lg:py-24 overflow-hidden border-t border-gray-100">
@@ -107,7 +118,7 @@ export default function QuickFacts() {
           >
             <div className="w-10 h-[2px] bg-brand-orange"></div>
             <p className="text-brand-orange font-bold tracking-[0.2em] uppercase text-xs">
-              Our Commitment
+              {t('quickFacts.eyebrow')}
             </p>
           </div>
 
@@ -116,8 +127,8 @@ export default function QuickFacts() {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            Built for business. <br/>
-            <span className="text-brand-light">Accessible to all.</span>
+            {t('quickFacts.headingLine1')} <br/>
+            <span className="text-brand-light">{t('quickFacts.headingLine2')}</span>
           </h2>
 
           <p
@@ -125,7 +136,7 @@ export default function QuickFacts() {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
             }`}
           >
-            We confirm every location before dispatch to eliminate failed deliveries. Your packages arrive safely, and cash collected on your behalf is remitted directly to you within 48 hours.
+            {t('quickFacts.paragraph')}
           </p>
         </div>
 
